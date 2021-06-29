@@ -601,23 +601,38 @@ for (ntypelist in c("n_10","n_40")){
   
   for (ntype in get(ntypelist)[grepl("RF",get(ntypelist))]){
     df_temp <- df_plot[1,]
-    df_temp <- rbind(df_temp, filter(df_plot, type==ntype, signal %in% filter(df_influencer, typelist==ntypelist)$signal[[1]]))
-    df_temp <- rbind(df_temp, filter(df_plot, type==get(ntypelist)[grepl("ER",get(ntypelist))], signal %in% filter(df_influencer, typelist==ntypelist)$signal[[1]]))
+    df_temp <- rbind(df_temp, 
+                     filter(df_plot, 
+                            type==ntype, 
+                            signal %in% filter(df_influencer, typelist==ntypelist)$signal[[1]]))
+    df_temp <- rbind(df_temp, 
+                     filter(df_plot, 
+                            type==get(ntypelist)[grepl("ER",get(ntypelist))], 
+                            signal %in% filter(df_influencer, typelist==ntypelist)$signal[[1]]))
     df_temp <- df_temp[-1,]
     df_temp$mean <- as.numeric(df_temp$mean)
     
     final <- ggplot(df_temp, aes(x=mean, fill=type)) +
-      geom_histogram(breaks = seq(0,1,0.2), color="white", closed = "left")+
-      stat_bin(breaks = seq(0,1,0.2), geom="text", closed = "left", aes(label= ifelse(..count.. > 0, ..count.., ""), y=0.5+(..count..))) +
+      geom_histogram(breaks = seq(0,1,0.2), 
+                     color="white", 
+                     closed = "left")+
+      stat_bin(breaks = seq(0,1,0.2), 
+               geom="text", 
+               closed = "left", 
+               aes(label= ifelse(..count.. > 0, ..count.., ""), 
+                   y=0.5+(..count..))) +
       facet_wrap(~ factor(type))+
       
       ylim(NA, length(filter(df_influencer, typelist==ntypelist)$signal[[1]])) +
-      scale_x_continuous(breaks=seq(0,1,0.1), limits = c(-0.05, 1.05))+
-      xlab("Average guess of network") + ylab(paste0("Frequency of networks"))+
+      scale_x_continuous(breaks=seq(0,1,0.1), 
+                         limits = c(-0.05, 1.05))+
+      xlab("Average guess of network") + 
+      ylab(paste0("Frequency of networks"))+
       
       ggtitle(paste0("Effects of bad influencers, ", ntypelist))+
       theme_bw()+
-      theme(legend.title = element_blank(), legend.position="none")
+      theme(legend.title = element_blank(), 
+            legend.position="none")
     
     tname <- paste0("../output/influencer,", ntypelist, ".pdf")
     #pdf(tname, width=7, height=5)

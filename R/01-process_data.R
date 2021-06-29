@@ -84,7 +84,7 @@ max_prd <- max(df_tot$period)
 # Import DeGroot simulation results
 df_simulation <-
   read_csv(
-    paste0("dataframe/df_simulation.csv"),
+    paste0("../output/dataframe/df_simulation.csv"),
     col_types = cols(X1 = col_skip())
   )
 df_simulation <- as.data.frame(df_simulation)
@@ -92,9 +92,7 @@ df_simulation <- as.data.frame(df_simulation)
 # Import Bayesian simulation results
 df_simulation2 <-
   read_csv(
-    paste0(
-      "C:/Users/tyyto/Desktop/Social Learning/Simulation_DeGroot/Simulation_data_Bayesian,n_10.csv"
-    ),
+    paste0("../output/dataframe/df_bay_sim.csv"),
     col_types = cols(X1 = col_skip())
   )
 df_simulation2 <- as.data.frame(df_simulation2)
@@ -155,7 +153,7 @@ df_summary <- df_summary[-1, ]
 df_summary$type <- as.factor(as.character(df_summary$type))
 
 # Export df_tot
-write.csv(df_summary,"dataframe/df_summary.csv", row.names = FALSE)
+write.csv(df_summary,"../output/dataframe/df_summary.csv", row.names = FALSE)
 
 # # % of those who guesses their initial signal (df_summary2)  ---------------------------
 # df_summary2=data.frame(group = NA, round = NA, period = NA, mean = NA, type =NA)
@@ -200,3 +198,4 @@ mean(signals, na.rm = TRUE) - 1
 
 # Saving environment for later use
 save.image("RData/01-process_data-envir.RData")
+

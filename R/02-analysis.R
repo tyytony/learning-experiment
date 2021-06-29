@@ -20,7 +20,7 @@ df_signal <-   data.frame(
 )
 for (ntypelist in c("n_10", "n_10_partial", "n_40")) {
   balls <-
-    as.matrix(read_csv(paste0("input/signals/Signals_", ntypelist, ".csv"), 
+    as.matrix(read_csv(paste0("../input/signals/Signals_", ntypelist, ".csv"), 
                        col_names = FALSE)) - 1
   balls[balls == -1] <- 0.5
   for (ntype in get(ntypelist)) {

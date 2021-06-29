@@ -58,7 +58,9 @@ df_pre_reg <- df_pre_reg %>%  #Recoding type, size, group, round
                   ifelse(signal %in% goods$goodbad[goods$type=="ER_40"][[1]],"Goods", "Non-goods")),
   )
 df_pre_reg <- merge(df_pre_reg,df_signal)
-df_pre_reg <- mutate_at(df_pre_reg, vars(group, round, type, size, typesizegroup, typesizegroupround, good_signal), as.factor)
+df_pre_reg <- mutate_at(df_pre_reg, vars(group, round, type, size, 
+                                         typesizegroup, typesizegroupround, 
+                                         good_signal), as.factor)
 
 # Period 7-12 distribution of average guess across groups and rounds ---------------------------
 for (ntypelist in c("n_10","n_40")){
