@@ -214,19 +214,23 @@ for (style in c("consensus", "truth")) {
     if (style == "consensus") {
       # check if consensus to 1 or 0 with error of width
       df_plot <-
-        filter(df_summary, period == 10, (mean >= (1 - wd) | mean <= wd))
+        filter(df_summary, type %in% c(n_10,n_40), 
+               period >= 7, (mean >= (1 - wd) | mean <= wd))
       df_plot2 <-
-        filter(df_simulation, period == 10, (mean >= (1 - wd) | mean <= wd))
+        filter(df_simulation, type %in% c(n_10,n_40), 
+               period >= 7, (mean >= (1 - wd) | mean <= wd))
     }
     if (style == "truth") {
       # check if obtain close to correct consensus
-      df_plot <- filter(df_summary, period == 10, mean >= (1 - wd))
-      df_plot2 <- filter(df_simulation, period == 10, mean >= (1 - wd))
+      df_plot <- filter(df_summary, type %in% c(n_10,n_40), 
+                        period >= 7, mean >= (1 - wd))
+      df_plot2 <- filter(df_simulation, type %in% c(n_10,n_40), 
+                         period >= 7, mean >= (1 - wd))
     }
     df_plot <- 
-      df_plot %>% group_by(type, .drop = FALSE) %>% summarise(counts = n())
+      df_plot %>% group_by(type, .drop = FALSE) %>% summarise(mean = mean(mean))
     df_plot2 <-
-      df_plot2 %>% group_by(type, .drop = FALSE) %>% summarise(counts = n())
+      df_plot2 %>% group_by(type, .drop = FALSE) %>% summarise(mean = mean(mean))
     
     df_plot$id <- "Data"
     df_plot2$id <- "Simulation"
@@ -237,7 +241,7 @@ for (style in c("consensus", "truth")) {
     for (ntypelist in c("n_10", "n_40")) {
       final <-
         ggplot(filter(df_temp, type %in% get(ntypelist)),
-               aes( x = type, y = counts, group = id, fill = id )) +
+               aes( x = type, y = mean, group = id, fill = id )) +
         geom_bar(
           position = "dodge",
           stat = "identity",
@@ -245,7 +249,7 @@ for (style in c("consensus", "truth")) {
           width = 0.6
         ) +
         geom_text(
-          aes(label = counts, group = id),
+          aes(label = mean, group = id),
           vjust = -0.3,
           position = position_dodge(width = 0.6)
         ) +
@@ -306,6 +310,92 @@ for (style in c("falsehood", "breakdown")) {
         theme_bw()
       tname <-
         paste0("../output/no.",style,",",ntypelist,",width=",wd,".pdf")
+      #pdf(tname, width=7, height=5)
+      print(final)
+      #dev.off()
+    }
+  }
+}
+
+# Compare 4 main learning outcomes across networks (p."style") ---------------------------
+# consensus, truth, falsehood, breakdown
+
+width <- c(0.15, 0.2) #margin of error allowed
+for (style in c("consensus", "truth", "falsehood", "breakdown")) {
+  for (wd in width) {
+    if (style == "consensus") {
+      # check if consensus to 1 or 0 with error of width
+      df_plot <- df_summary %>%
+        mutate(consensus = ifelse(mean >= 1 - wd | mean <= wd, 1,0))
+      df_plot2 <- df_simulation %>%
+        mutate(consensus = ifelse(mean >= 1 - wd | mean <= wd, 1,0))
+    }
+    if (style == "truth") {
+      # check if obtain close to correct consensus
+      df_plot <- df_summary %>%
+        mutate(consensus = ifelse(mean >= 1 - wd, 1,0))
+      df_plot2 <- df_simulation %>%
+        mutate(consensus = ifelse(mean >= 1 - wd, 1,0))
+    }
+    if (style == "falsehood") {
+      # check if consensus to 1 or 0 with error of width
+      df_plot <- df_summary %>%
+        mutate(consensus = ifelse(mean <= wd, 1,0))
+      df_plot2 <- df_simulation %>%
+        mutate(consensus = ifelse(mean <= wd, 1,0))
+    }
+    if (style == "breakdown") {
+      # check if obtain close to correct consensus
+      df_plot <- df_summary %>%
+        mutate(consensus = ifelse(mean < (1 - wd) & mean > wd, 1,0))
+      df_plot2 <- df_simulation %>%
+        mutate(consensus = ifelse(mean < (1 - wd) & mean > wd, 1,0))
+    }
+    
+    df_plot <- df_plot %>% 
+      filter(type %in% c(n_10,n_40), period >= 7) %>%
+      group_by(type, .drop = FALSE) %>% 
+      summarise(mean = mean(consensus),
+                count = n()) %>% 
+      mutate(sd = (mean * (1 - mean) / count)^(0.5))
+    
+    df_plot2 <- df_plot2 %>% 
+      filter(type %in% c(n_10,n_40), period >= 7) %>%
+      group_by(type, .drop = FALSE) %>% 
+      summarise(mean = mean(consensus),
+                count = n()) %>% 
+      mutate(sd = (mean * (1 - mean) / count)^(0.5))
+    
+    df_plot$id <- "Data"
+    df_plot2$id <- "Simulation"
+    df_temp <- df_plot #only data bar plot
+    #df_temp <- rbind(df_plot2, df_plot) #combine data and simulation
+    
+    # print results bar charts
+    for (ntypelist in c("n_10", "n_40")) {
+      final <-
+        ggplot(filter(df_temp, type %in% get(ntypelist)),
+               aes( x = type, y = mean, group = id, fill = id )) +
+        geom_bar(
+          position = "dodge",
+          stat = "identity",
+          color = "white",
+          width = 0.6
+        ) +
+        geom_text(
+          aes(label = signif(mean,3), group = id),
+          vjust = -1.7,
+          position = position_dodge(width = 0.6)
+        ) +
+        geom_errorbar(aes(ymin=mean-sd, ymax=mean+sd), 
+                      width = .2,
+                      position = position_dodge(0.6)) +
+        
+        ylim(NA, 1) +
+        ggtitle(paste0(str_to_sentence(style), ", width=", wd, ", ", ntypelist)) +
+        xlab("Network type") + ylab("Fraction of networks") +
+        theme_bw()
+      tname <- paste0("../output/p.",style,",",ntypelist,",width=",wd,".pdf")
       #pdf(tname, width=7, height=5)
       print(final)
       #dev.off()
@@ -596,7 +686,7 @@ for (ntypelist in c("n_10","n_40")){
 df_influencer <- df_influencer[-1,]
 
 for (ntypelist in c("n_10","n_40")){
-  df_plot <- filter(df_summary, type %in% get(ntypelist), period ==10)
+  df_plot <- filter(df_summary, type %in% get(ntypelist), period >= 7)
   df_plot$signal <- df_plot$round+(df_plot$group-1)*6
   
   for (ntype in get(ntypelist)[grepl("RF",get(ntypelist))]){
@@ -613,17 +703,17 @@ for (ntypelist in c("n_10","n_40")){
     df_temp$mean <- as.numeric(df_temp$mean)
     
     final <- ggplot(df_temp, aes(x=mean, fill=type)) +
-      geom_histogram(breaks = seq(0,1,0.2), 
+      geom_histogram(breaks = seq(0,1,0.1), 
                      color="white", 
                      closed = "left")+
-      stat_bin(breaks = seq(0,1,0.2), 
+      stat_bin(breaks = seq(0,1,0.1), 
                geom="text", 
                closed = "left", 
                aes(label= ifelse(..count.. > 0, ..count.., ""), 
                    y=0.5+(..count..))) +
       facet_wrap(~ factor(type))+
       
-      ylim(NA, length(filter(df_influencer, typelist==ntypelist)$signal[[1]])) +
+      #ylim(NA, length(filter(df_influencer, typelist==ntypelist)$signal[[1]])) +
       scale_x_continuous(breaks=seq(0,1,0.1), 
                          limits = c(-0.05, 1.05))+
       xlab("Average guess of network") + 

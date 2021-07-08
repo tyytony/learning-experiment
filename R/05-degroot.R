@@ -1,3 +1,9 @@
+# To print all output into "output" folder
+# Use ctrl-F to:
+# replace "#pdf(" with "pdf("
+# replace "#dev.off()" with "dev.off()"
+# replace "#sink(" with "sink("
+
 setwd(getwd())
 
 library(igraph)
@@ -7,12 +13,16 @@ library(ggplot2)
 library(tidyverse)
 library(dplyr)
 library(scales)
+library(miceadds)
+library(texreg)
+library(Zelig)
 options(digits = 4)
 options(max.print = 100)
-source("function/Function-DeGroot_once,DeGroot.R")
+source("function/Function-DeGroot_once,DeGroot,Simulation.R")
+source("function/Function-Bayesian.R")
 
 # *** Part 1 - Creates dataframes from df_tot ---------------------
-
+load("RData/01-process_data-envir.RData")
 load("RData/02-analysis-envir.RData")
 
 # forming period by period guess vector from data (df_detail, df_truth)  ---------------------------
@@ -20,19 +30,35 @@ df_detail <- data.frame(group = NA, round = NA, period = NA, type =NA,
                         guess =NA, id_subj = NA, id_grp = NA)
 df_truth <- data.frame(group = NA, round = NA, type =NA, truth = NA)
 
-for (ntype in c(n_10_all,n_40)){
+for (ntype in c(n_10,n_40)){
   for (grp in c(1:max_grp)){
     for (rnd in c(1:max_rnd)){
-      df_temp <- filter(df_tot, type==ntype & group == grp & round == rnd)
-      tru <- round(mean(df_temp$sig),0)-1 #Majority of signal from group-round: 1 if mean signal >=0.5
+      
+      df_temp <- filter(df_tot, type==ntype, group == grp, round == rnd)
+      df_temp2 <- filter(df_temp, period == 1)
+      # Majority of signal from group-round: 1 if mean signal >=0.5
+      tru <- round(mean(df_temp2$sig), 0) - 1 
       df_truth <- rbind(df_truth, c(grp, rnd, ntype, tru))
       
-      for (prd in c(1:max_prd)){
-        df_temp2<- filter(df_temp, period==prd)
-        s<- df_temp2[order(df_temp2$id_grp),]$choice #the vector of guesses from...
-        subj <- df_temp2[order(df_temp2$id_grp),]$id_subj #the subjects, in order
-        location <- df_temp2[order(df_temp2$id_grp),]$id_grp
-        df_detail <- rbind(df_detail,list(grp, rnd, prd, ntype, list(s-1),list(subj),list(location)))
+      for (prd in c(0:max_prd)){
+        df_temp2 <- df_temp %>% filter(period == max(prd, 1))
+        df_temp2 <- df_temp2[order(df_temp2$id_grp),] #reorder rows by group id 1-n
+        subj <- df_temp2$id_subj #the subjects, in order
+        location <- df_temp2$id_grp #the locations of subjects, in order
+        
+        if (prd == 0){
+          if (tru == 0) {s <- 1- (df_temp2$sig - 1)}
+          else {s <- df_temp2$sig - 1} #signals 
+          
+        }
+        else{
+          if (tru == 0) {s <- 1 - (df_temp2$choice - 1)}
+          else {s <- df_temp2$choice - 1} #guesses at prd
+           
+        }
+
+        df_detail <- df_detail %>%
+          rbind(list(grp, rnd, prd, ntype, list(s), list(subj), list(location)))
       }
     }
   }
@@ -41,84 +67,108 @@ df_detail <- df_detail[-1,]
 df_truth <- df_truth[-1,]
 
 # performing DeGroot of next period on guess vector using network glist (df_DeGroot, df_DeGrootmore)  ---------------------------
-df_DeGroot=data.frame(group = NA, round = NA, period = NA, 
+df_DeGroot <- data.frame(group = NA, round = NA, period = NA, 
                       type =NA, DeGroot =NA, id_subj = NA)
-df_DeGrootmore=data.frame(group = NA, round = NA, period = NA, 
-                          type =NA, DeGroot =NA, id_subj = NA)
 
-for (ntype in c(n_10_all,n_40)){
-  g <- glist[ntype][[1]]
+for (ntype in c(n_10,n_40)){
+  g <- glist[[ntype]]
   for (grp in c(1:max_grp)){
     for (rnd in c(1:max_rnd)){
-      for (prd in c(1:(max_prd-1))){
-        s <- as.numeric(filter(df_detail, type==ntype & group == grp & round == rnd & period == prd)$guess[[1]]) #Guess vector from data at period t
-        s_next <- as.numeric(filter(df_detail, type==ntype & group == grp & round == rnd & period == (prd+1))$guess[[1]]) #Guess vector from data at period t+1
-        predict <- DeGroot_once(g,s,w,tre) #Simulation from guess vector at period t for next period
-        subj <- filter(df_detail, type==ntype & group == grp & round == rnd & period == prd)$id_subj[[1]]
-        df_DeGroot <- rbind(df_DeGroot,list(grp, rnd, prd+1, ntype, list(as.numeric(s_next==predict)),list(subj))) #check if the simulation matches with guess at period t+1
-        for (j in 1:length(subj)){
-          df_DeGrootmore <- rbind(df_DeGrootmore,c(grp, rnd, prd+1, ntype, as.numeric(s_next==predict)[j],subj[j]))
+      for (prd in c(0:(max_prd-1))){
+        df_temp <- filter(df_detail, type == ntype, group == grp, round == rnd)
+        # Guess vector from data at period t
+        s <- as.numeric(filter(df_temp, period == prd)$guess[[1]])
+        # Guess vector from data at period t+1
+        s_next <- as.numeric(filter(df_temp, period == (prd+1))$guess[[1]])
+        # Simulation from guess vector at period t for next period
+        if (prd == 0){
+          predict <- s #at period 0, DeGroot should guess signal
         }
+        else {
+          predict <- DeGroot_once(g, s, w = 0, tre = 0) 
+        }
+        fit <- 1 - abs(s_next - predict) #check if simulation matches with guess at period t+1
+        subj <- filter(df_temp, period == prd)$id_subj[[1]] #subjects
+        df_DeGroot <- df_DeGroot %>%
+          rbind(list(grp, rnd, prd+1, ntype, 
+                     list(fit), 
+                     list(subj)))
       }
     }
   }
 }
 df_DeGroot <- df_DeGroot[-1,]
-df_DeGrootmore <- df_DeGrootmore[-1,]
-df_DeGrootmore$DeGroot <- as.numeric(df_DeGrootmore$DeGroot)
 
-# Repeat for just guessing signal, how well that matches with DeGroot (df_sigdetail, df_sigDeGroot)  ---------------------------
-df_sigdetail=data.frame(group = NA, round = NA, period = NA, type =NA, guess =NA, id_subj = NA)
-for (ntype in c(n_10_all,n_40)){
-  for (grp in c(1:max_grp)){
-    for (rnd in c(1:max_rnd)){
-      df_temp <- filter(df_tot, type==ntype & group == grp & round == rnd)
-      
-      for (prd in c(1:max_prd)){
-        df_temp2<- filter(df_temp, period==prd)
-        s<- df_temp2[order(df_temp2$id_grp),]$sig
-        subj <- df_temp2[order(df_temp2$id_grp),]$id_subj
-        df_sigdetail <- rbind(df_sigdetail,list(grp, rnd, prd, ntype, list(s-1),list(subj)))
-      }
-    }
-  }
-}
-df_sigdetail <- df_sigdetail[-1,]
+df_temp <- df_DeGroot %>% 
+  separate(type, into = c(NA, "size"), sep = -2, remove = FALSE) %>%
+  mutate(size = as.numeric(size)) %>%
+  select(group, round, period, type, size)
 
-df_sigDeGroot=data.frame(group = NA, round = NA, period = NA, type =NA, DeGroot =NA, id_subj = NA)
+df_DeGrootmore <- as.data.frame(lapply(df_temp, rep, df_temp$size))
+df_DeGrootmore <- df_DeGrootmore %>% 
+  cbind(DeGroot = unlist(df_DeGroot$DeGroot), id_subj = unlist(df_DeGroot$id_subj)) %>%
+  select(-"size")
+
+# Repeat for just guessing signal, how well that matches with DeGroot (df_sigDeGroot, df_sigDeG_more)  ---------------------------
+
+df_sigDeGroot <- data.frame(group = NA, round = NA, period = NA, 
+                            type =NA, DeGroot =NA, id_subj = NA)
 for (ntype in c(n_10,n_40)){
-  g <- glist[ntype][[1]]
+  g <- glist[[ntype]]
   for (grp in c(1:max_grp)){
     for (rnd in c(1:max_rnd)){
-      for (prd in c(1:(max_prd-1))){
-        s <- as.numeric(filter(df_sigdetail, type==ntype & group == grp & round == rnd & period == prd)$guess[[1]])
-        s_next <- as.numeric(filter(df_sigdetail, type==ntype & group == grp & round == rnd & period == (prd+1))$guess[[1]])
-        predict <- DeGroot_once(g,s)
-        subj <- filter(df_sigdetail, type==ntype & group == grp & round == rnd & period == prd)$id_subj
-        df_sigDeGroot <- rbind(df_sigDeGroot,list(grp, rnd, prd+1, ntype, list(as.numeric(s_next==predict)),subj))
+      for (prd in c(0:(max_prd-1))){
+        df_temp <- filter(df_detail, type == ntype, group == grp, round == rnd)
+        # Signal vector at period 0
+        sig <- as.numeric(filter(df_temp, period == 0)$guess[[1]])
+        # Guess vector from data at period t+1
+        s_next <- as.numeric(filter(df_temp, period == (prd+1))$guess[[1]])
+        # Simulation from guess vector at period t for next period
+        predict <- sig #at period prd, agents guess signal
+        fit <- 1 - abs(s_next - predict) #check if simulation matches with guess at period t+1
+        subj <- filter(df_temp, period == prd)$id_subj[[1]] #subjects
+        df_sigDeGroot <- df_sigDeGroot %>%
+          rbind(list(grp, rnd, prd+1, ntype, 
+                     list(fit),
+                     list(subj)))
       }
     }
   }
 }
 df_sigDeGroot <- df_sigDeGroot[-1,]
 
+df_temp <- df_sigDeGroot %>% 
+  separate(type, into = c(NA, "size"), sep = -2, remove = FALSE) %>%
+  mutate(size = as.numeric(size)) %>%
+  select(group, round, period, type, size)
+
+df_sigDeG_more <- as.data.frame(lapply(df_temp, rep, df_temp$size))
+df_sigDeG_more <- df_sigDeG_more %>% 
+  cbind(DeGroot = unlist(df_sigDeGroot$DeGroot), id_subj = unlist(df_sigDeGroot$id_subj)) %>%
+  select(-"size")
 
 # Analyze per network type's percentage of DeGroot match, and other matches (df_match)  ---------------------------
-df_match <- data.frame(type=NA,match=NA,percentage=NA)
-for (ntype in c(n_10,n_40)){
-  sum_sig<- sum(as.numeric(lapply(filter(df_DeGroot, type ==ntype)$DeGroot,sum)))
-  num_sig<- sum(as.numeric(lapply(filter(df_DeGroot, type ==ntype)$DeGroot,length)))
-  df_match <- rbind(df_match,c(ntype, "Data match with DeGroot", signif(sum_sig/num_sig,3)))
-  
-  sum_sig<- sum(as.numeric(lapply(filter(df_sigDeGroot, type ==ntype)$DeGroot,sum)))
-  num_sig<- sum(as.numeric(lapply(filter(df_sigDeGroot, type ==ntype)$DeGroot,length)))
-  df_match <- rbind(df_match,c(ntype, "Guessing signal match with DeGroot", signif(sum_sig/num_sig,3)))
-}
-df_match <- df_match[-1,]
-df_match$percentage <- as.numeric(df_match$percentage)
+df_temp <- df_DeGrootmore %>% 
+  filter(type %in% c(n_10,n_40)) %>%
+  group_by(type, .drop = FALSE) %>% 
+  summarise(percentage = mean(DeGroot),
+            count = n()) %>% 
+  mutate(sd = (percentage * (1 - percentage) / count)^(0.5),
+         match = "Data match with DeGroot")
+
+df_temp2 <- df_sigDeG_more %>% 
+  filter(type %in% c(n_10,n_40)) %>%
+  group_by(type, .drop = FALSE) %>% 
+  summarise(percentage = mean(DeGroot),
+            count = n()) %>% 
+  mutate(sd = (percentage * (1 - percentage) / count)^(0.5),
+         match = "Guessing signal match with DeGroot")
+
+df_match <- rbind(df_temp, df_temp2)
 
 # Percentage of agents switching guess between prd, prd-1 (df_switch) ---------------------------
-df_switch <- data.frame(type=NA, group=NA, round=NA, period = NA, switch =NA )
+df_switch <- data.frame(type = NA, group = NA, round = NA, 
+                        period = NA, switch = NA)
 for (ntype in c(n_10,n_40)){
   for (prd in c(2:12)){
     for (grp in c(1:max_grp)){
@@ -138,34 +188,185 @@ df_switch$typelist <- as.factor(as.character(df_switch$typelist))
 # Guess signal instead of DeGroot, when DeGroot contradict with your signal (df_guess_signal) ---------------------------
 
 df_guess_signal <- 
-  data.frame(group = NA, round = NA, period = NA, type =NA, DeGroot =NA, id_subj = NA, id_grp =NA)
+  data.frame(group = NA, round = NA, period = NA, type =NA, 
+             DeGroot =NA, id_subj = NA, id_grp =NA)
 
 for (ntype in c(n_10,n_40)){
-  g <- glist[ntype][[1]]
+  g <- glist[[ntype]]
   for (grp in c(1:max_grp)){
     for (rnd in c(1:max_rnd)){
-      df_temp <- 
-        filter(df_tot, type==ntype, group == grp, round == rnd, period ==1)
-      signal <- df_temp[order(df_temp$id_grp),]$sig -1
       for (prd in c(1:(max_prd-1))){
-        df_temp <- df_temp
-        s <- as.numeric(df_temp$guess[[1]]) #Guess vector from data at period t
-        s_next <- as.numeric(filter(df_detail, type==ntype & group == grp & round == rnd & period == (prd+1))$guess[[1]]) #Guess vector from data at period t+1
-        predict <- DeGroot_once(g,s,w,tre)
-        subj <- df_temp$id_subj[[1]]
-        fit <- (1-as.numeric(s_next==predict))*(s_next==signal)
-        id <- as.numeric(df_temp$id_grp[[1]])
+        df_temp <- filter(df_detail, type == ntype, group == grp, round == rnd)
+        # Signal vector at period 0
+        sig <- as.numeric(filter(df_temp, period == 0)$guess[[1]])
+        
+        # Guess vector from data at period t
+        s <- as.numeric(filter(df_temp, period == prd)$guess[[1]])
+        # Guess vector from data at period t+1
+        s_next <- as.numeric(filter(df_temp, period == (prd+1))$guess[[1]])
+        # Simulation from guess vector at period t for next period
+        predict <- DeGroot_once(g, s, w = 0, tre = 0)
+        
+        # Only care about the cases where signal against DeGroot
+        x <- abs(sig - predict) #indicator of signal and prediction not matching
+        x[x == 0 | x == 0.5] <- NA #remove cases where sig and predict match, or could match 50% of the time
 
-        for(j in id){
-          df_guess_signal <- rbind(df_guess_signal,list(grp, rnd, prd+1, ntype, fit[j],subj[j], j)) #check if the simulation matches with guess at period t+1
-        }
+        # When DeGroot against signal, follow signal
+        fit <- x * (s_next == sig)
+        
+        subj <- filter(df_temp, period == prd)$id_subj[[1]] #subjects
+        id <- as.numeric(filter(df_temp, period == prd)$id_grp[[1]]) #subject location in network
+        df_guess_signal <- df_guess_signal %>%
+          rbind(list(grp, rnd, prd+1, ntype, list(fit), list(subj), list(id)))
       }
     }
   }
 }
 df_guess_signal <- df_guess_signal[-1,]
-df_guess_signal_n_10 <- filter(df_guess_signal, type %in% n_10, id_subj!=0)
-df_guess_signal_n_40 <- filter(df_guess_signal, type %in% n_40, id_subj!=0)
+
+df_temp <- df_guess_signal %>% 
+  separate(type, into = c(NA, "size"), sep = -2, remove = FALSE) %>%
+  mutate(size = as.numeric(size)) %>%
+  select(group, round, period, type, size)
+
+df_gsig_more <- as.data.frame(lapply(df_temp, rep, df_temp$size))
+df_gsig_more <- df_gsig_more %>% 
+  cbind(DeGroot = unlist(df_guess_signal$DeGroot), id_subj = unlist(df_guess_signal$id_subj)) %>%
+  select(-"size")
+
+df_gsig_n_10 <- filter(df_gsig_more, type %in% n_10, id_subj!=0)
+df_gsig_n_40 <- filter(df_gsig_more, type %in% n_40, id_subj!=0)
+
+# Share of time info. dominated fail to copy dominant (df_leader) ---------------------------
+
+df_leader <- data.frame(type = NA, leader = NA, follower = NA)
+for (ntype in c(n_10,n_40)){
+  g <- glist[[ntype]]
+  for (i in 1:(ncol(g)-1)){
+    for (j in (i+1):ncol(g)){
+      if (!is.na(match(-1,g[i,]-g[j,])) & #we can find someone that j observes but i doesn't, and
+          is.na(match(-1,g[j,]-g[i,]))){  #we cannot find someone that i observes but j doesn't
+        df_leader <- rbind(df_leader, c(ntype, j,i)) #then j is an information leader of i
+      }
+      if (!is.na(match(-1,g[j,]-g[i,])) & #vice versa
+          is.na(match(-1,g[i,]-g[j,]))){  
+        df_leader <- rbind(df_leader, c(ntype, i,j)) #then i is an information leader of j
+      }
+    }
+  }
+}
+df_leader <- df_leader[-1,]
+
+# if i is a leader of j, but a follower of k
+# j should remove i as a leader and follow k instead
+# note that this is a directed graph
+for (ntype in c(n_10,n_40)){
+
+  df_temp <- filter(df_leader, type == ntype)
+  # el <- cbind(df_temp$follower,df_temp$leader) #create edgelist of follower to leader
+  # g <- graph.edgelist(el)
+  # plot(g)
+  
+  # remove leaders that are followers of others
+  for (i in df_temp$follower){
+    df_leader <- df_leader[!(df_leader$type == ntype & df_leader$leader == i), ]
+  }
+  
+  df_temp <- filter(df_leader, type == ntype)
+  
+  # people who follow more than one leader, should choose one leader by degree
+  n_occur <- data.frame(table(df_temp$follower))
+  multi_follow <- df_temp[df_temp$follower %in% n_occur$Var1[n_occur$Freq > 1],] #dataframe of people following more than one person
+  
+  if(nrow(multi_follow)==0){next} #If no more agent following multiple people, then move on
+
+  for (j in n_occur[n_occur$Freq > 1,]$Var1){
+    df_temp2 <- filter(df_temp, follower==j)
+    x <- degree(graph.adjacency(glist[[ntype]]),df_temp2$leader) #named vector of degrees of j's leaders
+    y <- names(x)[-(which.max(x))] #name of the neighbour with non-max degree
+    df_leader <- df_leader[!(df_leader$type == ntype & #remove other leaders
+                             df_leader$follower == j &
+                             df_leader$leader %in% y) , ]
+  }
+  
+  df_temp <- filter(df_leader, type == ntype)
+  
+  n_occur <- data.frame(table(df_temp$follower))
+  multi_follow <- df_temp[df_temp$follower %in% n_occur$Var1[n_occur$Freq > 1],] #dataframe of people following more than one person
+  if(nrow(multi_follow)==0){next} #If no more agent following multiple people, then move on
+  else{ #otherwise, stop and show where it went wrong
+    print(paste0("Oh no...", ntype))
+    break
+  }
+}
+
+# Following leader instead of DeGroot, when DeGroot contradict with your leader (df_info_dom) ---------------------------
+
+df_info_dom <-
+  data.frame(group = NA, round = NA, period = NA, type =NA, 
+             DeGroot =NA, id_subj = NA, id_grp =NA)
+
+for (ntype in c(n_10,n_40)){
+  g <- glist[[ntype]]
+  
+  # leader-follower graph - who i follows in network g
+  df_temp2 <- filter(df_leader, type == ntype)
+  el <- cbind(df_temp2$follower,df_temp2$leader) #create edgelist of follower to leader
+  m <- as.matrix(as_adjacency_matrix(make_graph(el)))
+  
+  # Zero matrix, replace the row and columns that has data from m
+  m0 <- matrix(0, ncol(g), ncol(g))
+  location_mat <- cbind(
+    as.numeric(rep(rownames(m), ncol(m))), 
+    as.numeric(rep(colnames(m), each=nrow(m))) 
+  )
+  m0[location_mat] <- as.vector(m)
+  
+  # if follower has no leader, we don't care about them for now
+  m0[rowSums(m0)==0,] <- NA
+  
+  for (grp in c(1:max_grp)){
+    for (rnd in c(1:max_rnd)){
+      for (prd in c(1:(max_prd-1))){
+        df_temp <- filter(df_detail, type == ntype, group == grp, round == rnd)
+        # Guess vector from data at period t
+        s <- as.numeric(filter(df_temp, period == prd)$guess[[1]])
+        # Guess vector from data at period t+1
+        s_next <- as.numeric(filter(df_temp, period == (prd+1))$guess[[1]])
+        # Simulation from guess vector at period t for next period
+        predict <- DeGroot_once(g, s, w = 0, tre = 0)
+
+        # What you would guess at t+1 if you followed your leader's guess at t
+        s_leader <- c(m0 %*% s)
+          
+        # Only care about the cases where following leader is against DeGroot
+        x <- abs(s_leader - predict) #indicator of signal and prediction not matching
+        x[x == 0 | x == 0.5] <- NA #remove cases where sig and predict match, or could match 50% of the time
+        
+          
+        # When DeGroot against following leader, follow leader
+        fit <- x * (s_next == s_leader)
+        
+        subj <- filter(df_temp, period == prd)$id_subj[[1]] #subjects
+        id <- as.numeric(filter(df_temp, period == prd)$id_grp[[1]]) #subject location in network
+        df_info_dom <- df_info_dom %>%
+          rbind(list(grp, rnd, prd+1, ntype, list(fit), list(subj), list(id)))
+      }
+    }
+  }
+}
+df_info_dom <- df_info_dom[-1,]
+
+df_temp <- df_info_dom %>% 
+  separate(type, into = c(NA, "size"), sep = -2, remove = FALSE) %>%
+  mutate(size = as.numeric(size)) %>%
+  select(group, round, period, type, size)
+
+df_info_dom_more <- as.data.frame(lapply(df_temp, rep, df_temp$size))
+df_info_dom_more <- df_info_dom_more %>% 
+  cbind(DeGroot = unlist(df_info_dom$DeGroot), id_subj = unlist(df_info_dom$id_subj)) %>%
+  select(-"size") %>%
+  filter(id_subj != 0) #remove bots
 
 # Saving environment for later use
 save.image("RData/05-degroot-envir.RData")
@@ -182,7 +383,9 @@ for (ntypelist in c("n_10","n_40")){
                   aes(x=type, y=percentage, group=match, fill=str_wrap(match,15))) +
     geom_bar(position="dodge", stat="identity", color = "white", width=0.6) +
     geom_text(aes(label=scales::percent(percentage,1), group=match), 
-              vjust = -0.3, position = position_dodge(width = 0.6)) + 
+              vjust = -0.8, position = position_dodge(width = 0.6)) +
+    geom_errorbar(aes(ymin=percentage-sd, ymax=percentage+sd), 
+                  width = .2, position = position_dodge(0.6)) +
     
     scale_y_continuous(labels=scales::percent, limits = c(0,1)) + 
     coord_cartesian(ylim=c(0.5,1)) +
@@ -243,10 +446,10 @@ for (ntypelist in c("n_10", "n_40")){
   #dev.off()
 }
 
-# Analyze % of data matching DeGroot per network over periods ---------------------------
-df_plot=data.frame(type = NA, period = NA, DeGroot_per =NA)
+# Analyze % of data matching DeGroot per network over periods (Match_mistake.tex) ---------------------------
+df_plot <- data.frame(type = NA, period = NA, DeGroot_per =NA)
 for (ntype in c(n_10_all,n_40)){
-  for (prd in c(2:max_prd)){
+  for (prd in c(1:max_prd)){
     sum_sig<- sum(as.numeric(lapply(filter(df_DeGroot, type ==ntype & period ==prd)$DeGroot,sum)))
     num_sig<- sum(as.numeric(lapply(filter(df_DeGroot, type ==ntype & period ==prd)$DeGroot,length)))
     df_plot<-rbind(df_plot,list(ntype, prd, signif(sum_sig/num_sig,3)))
@@ -262,7 +465,7 @@ for (ntypelist in c("n_10", "n_40")){
     geom_point(aes(shape=type, color=type), size = 3, stroke = 1) +
     scale_shape_manual(values=c(15,16,17,18))+
     
-    scale_x_continuous(name="Period", limits=c(2, 12), breaks = c(0:12), expand = c(0.02, 0) ) +
+    scale_x_continuous(name="Period", limits=c(1, 12), breaks = c(0:12), expand = c(0.02, 0) ) +
     scale_y_continuous(name="fraction of DeGroot guesses", limits=c(0.7, 1), expand = c(0.02, 0)) +
     
     coord_cartesian(clip = 'off') +
@@ -276,6 +479,51 @@ for (ntypelist in c("n_10", "n_40")){
   #pdf(tname, width=7, height=5)
   print(final)
   #dev.off()
+}
+
+# Binomial probability of period 1 and 2 guess goes against Bayesian and DeGroot (Match_mistake.tex)
+for (ntypelist in c("n_10", "n_40")){
+  df_temp <- filter(df_DeGrootmore, type %in% get(ntypelist), period <= 2, DeGroot != 0.5)
+  df_reg <- df_temp %>%  #Recoding type, size, group, round
+    mutate(DeGroot = 1 - DeGroot, #indicator for mistake made
+           typesize = df_temp$type,
+           type = str_split_fixed(df_temp$type, "_",2)[,1],
+           size = str_split_fixed(df_temp$type, "_",2)[,2],
+           typesizegroup = paste0(as.character(type), 
+                                  as.character(size), 
+                                  as.character(group),
+                                  sep = ''),
+           typesizegroupround = paste0(as.character(type),
+                                       as.character(size),
+                                       as.character(group),
+                                       as.character(round),sep = ''),
+    ) %>%
+    mutate_at(vars(group, round, type, size, 
+                   typesizegroup, typesizegroupround), as.factor) %>%
+    filter(!is.na(DeGroot))
+  
+  lin.1 <- lm.cluster(data = df_reg, formula = DeGroot ~ typesize, cluster = "typesizegroup")
+  logit.1 <- glm.cluster(data = df_reg, formula = DeGroot ~ typesize, family = "binomial", cluster="typesizegroup")
+  print(
+    screenreg(list(lin.1, logit.1),
+              ci.test = 0, ci.force.level = 0.95,
+              custom.model.names = c("OLS (Bayesian & DeGroot predicts 0)", "Logit"),
+              custom.header = list("Guess against majority in period 1,2" = 1:2))
+  )
+  
+  # Print reg into LaTeX
+  #sink(paste0("../output/latex/Match_mistake,",ntypelist,".tex"))
+  print(
+    texreg(list(lin.1, logit.1), 
+           ci.test = 0, ci.force.level = 0.95,
+           custom.model.names = c("OLS (Bayesian, DeGroot predicts 0)", "Logit"),
+           custom.header = list("Guess against majority in period 1,2" = 1:2),
+           booktabs = TRUE, dcolumn = FALSE, use.packages = FALSE,
+           label = paste0("table:match_mistake,", ntypelist),
+           caption = print(paste0("Fraction of guesses against Bayesian and DeGroot prediction")),
+    )
+  )
+  #sink()
 }
 
 # Analyze % of data matching DeGroot by network position ---------------------------
@@ -292,7 +540,7 @@ for (n in c(10,40)){
     }
     df_netpos[ntype,] <- signif(df_temp2/nrow(df_temp),3) #average all rows
     
-    g <- graph_from_adjacency_matrix(as.matrix(glist[ntype][[1]])-diag(n))
+    g <- graph_from_adjacency_matrix(as.matrix(glist[[ntype]])-diag(n))
     #pdf(paste0("../output/DeGroot_percent,",ntype, ".pdf"), width=9, height=9)
     plot(g, edge.arrow.size= if(grepl("RF",ntype)){0.4} else{0},
          main = ntype,
@@ -309,214 +557,309 @@ for (n in c(10,40)){
 }
 
 # Analyze % of data matching DeGroot per network by person id_subj ---------------------------
+df_plot <- data.frame(id_subj = NA, type = NA, mean = NA, match = NA, avg.mean = NA)
+for (ntypelist in c("n_10","n_40")){
+  for (mth in c("df_DeGrootmore", "df_sigDeG_more")){
+    df_temp <- filter(get(mth), type %in% get(ntypelist))
+    df_temp <- aggregate(df_temp$DeGroot, list(df_temp$id_subj, df_temp$type),
+                         drop=FALSE, FUN=function(x) mean = mean(x))
+    df_temp <- cbind(df_temp, match = mth)
+    colnames(df_temp) <- c("id_subj", "type", "mean", "match")
+    
+    df_temp2 <- df_temp %>% 
+      group_by(type) %>% 
+      mutate(avg.mean = mean(mean)) %>%
+      filter(id_subj != 0)
+    
+    df_plot <- rbind(df_plot, df_temp2)
+  }
+}
+df_plot <- df_plot[-1,]
 
-{
-  df_temp <- filter(df_DeGrootmore, type %in% n_10)
-  agg <- aggregate(df_temp$DeGroot, list(df_temp$id_subj, df_temp$type), 
-                   drop=FALSE, FUN=function(x) mean = mean(x))
-  df_temp <- do.call(data.frame, agg)
-  colnames(df_temp) <- c("id_subj","type","mean") 
-  df_temp <- filter(df_temp, id_subj !=0 )
-  df_temp <- df_temp %>% group_by(type) %>% mutate(avg.mean = mean(mean))
-  df_plot <- filter(df_temp, id_subj !=0 )
-  
-  df_temp <- filter(df_DeGrootmore, type %in% n_40)
-  agg <- aggregate(df_temp$DeGroot, list(df_temp$id_subj, df_temp$type, df_temp$group), 
-                   drop=FALSE, FUN=function(x) mean = mean(x))
-  df_temp <- do.call(data.frame, agg)
-  colnames(df_temp) <- c("id_subj","type","group","mean") 
-  df_temp <- filter(df_temp, id_subj !=0 )
-  df_temp <- df_temp %>% group_by(type) %>% mutate(avg.mean = mean(mean))
-  df_plot2 <- filter(df_temp, id_subj !=0 )
-  
-  final <- ggplot(df_plot, aes(x=mean)) +
-    geom_histogram(breaks = seq(0,1,0.05), color="white", closed = "left")+
-    stat_bin(breaks = seq(0,1,0.05), 
-             closed = "left", 
-             geom="text", 
-             colour="black", 
-             size=2.5, 
-             aes(label= ifelse(..count.. > 0, ..count.., ""), group=type, y=1+(..count..))) +
+
+for (ntypelist in c("n_10","n_40")){
+  df_plot2 <- filter(df_plot, type %in% get(ntypelist))
+  final <- ggplot(df_plot2, aes(x = mean, fill = match)) +
+    geom_histogram(breaks = seq(0,1,0.05), color="white", closed = "left", 
+                   position = "identity", alpha = 0.5)+
+    # stat_bin(breaks = seq(0,1,0.05), 
+    #          closed = "left", 
+    #          geom="text", 
+    #          colour="black", 
+    #          size=2.5, 
+    #          aes(label= ifelse(..count.. > 0, ..count.., ""), group=type, y=1+(..count..))) +
     #geom_vline(aes(xintercept=avg.mean, group=type, color="mean")) +
-    #geom_vline(data=filter(df_match, match=="Guessing signal match with DeGroot", type %in% n_10), aes(xintercept=percentage, group=type, color = "Guessing signal match with DeGroot"), linetype="dashed")+
-    
-    facet_wrap(~ factor(type, levels=n_10))+
-    #ylim(NA, 20) +
-    scale_colour_manual(values = c("#00bfc4","#f8766d") )+
-    scale_x_continuous(breaks=seq(0,1,0.1), 
-                       limits = c(-0.05, 1.05), 
-                       labels = scales::percent_format(accuracy = 1))+
-    
-    ggtitle(paste0("Distribution of DeGroot match across networks, n_10"))+
-    xlab("Percentage of guesses matching with DeGroot") + 
-    ylab("Frequency of subjects (out of 40)")+
-    
-    theme_bw() +
-    theme(legend.title = element_blank(), 
-          strip.text.x = element_text(size = 13), 
-          legend.justification=c(1,1), 
-          legend.text = element_text(size=10), 
-          legend.position=c(0.3,0.92))
+    # geom_vline(data=filter(df_match, 
+    #                        match=="Guessing signal match with DeGroot", 
+    #                        type %in% get(ntypelist)),
+    #            aes(xintercept=percentage, 
+  #                group=type, 
+  #                color = "Guessing signal match with DeGroot"), 
+  #            linetype="dashed")+
   
-  tname <- paste0("../output/DeGroot_match_distr,n_10.pdf")
-  #pdf(tname, width=10, height=7)
-  print(final)
-  #dev.off()
-  
-  final <- ggplot(df_plot2, aes(x=mean)) +
-    geom_histogram(breaks = seq(0,1,0.05), color="white", closed = "left")+
-    stat_bin(breaks = seq(0,1,0.05), 
-             closed = "left", 
-             geom="text", 
-             colour="black", 
-             size=2.5, 
-             aes(label= ifelse(..count.. > 0, ..count.., ""), group=type, y=1+(..count..))) +
-    #geom_vline(aes(xintercept=avg.mean, group=type, color="mean")) +
-    geom_vline(data=filter(df_match, 
-                           match=="Guessing signal match with DeGroot", 
-                           type %in% n_40),
-               aes(xintercept=percentage, 
-                   group=type, 
-                   color = "Guessing signal match with DeGroot"), 
-               linetype="dashed")+
-    
-    facet_wrap(~ factor(type, levels=n_40))+
+  facet_wrap(~ factor(type, levels = get(ntypelist)))+
     #ylim(NA, 60) +
     scale_colour_manual(values = c("#00bfc4","#f8766d"))+
+    scale_fill_discrete(labels = c("Data match \nwith DeGroot", "Guessing signal match \nwith DeGroot")) +
     scale_x_continuous(breaks=seq(0,1,0.1), 
                        limits = c(-0.05, 1.05), 
-                       labels = scales::percent_format(accuracy = 1))+
+                       labels = scales::percent_format(accuracy = 1)) +
     
-    ggtitle(paste0("Distribution of DeGroot match across networks, n_40"))+
+    ggtitle(paste0("Distribution of DeGroot match across networks, ", 
+                   ntypelist))+
     xlab("Percentage of guesses matching with DeGroot") + 
-    ylab("Frequency of subjects (out of 160)")+
+    ylab("Frequency of subjects")+
     theme_bw() +
     theme(legend.title = element_blank(), 
           strip.text.x = element_text(size = 13), 
           legend.justification=c(1,1), 
           legend.text = element_text(size=10), 
-          legend.position=c(0.3,0.92))
+          legend.position=c(0.3,0.92),
+          legend.key.size = unit(1, "cm"),
+          legend.key.width = unit(0.5,"cm")
+          )
   
-  tname <- paste0("../output/DeGroot_match_distr,n_40.pdf")
+  tname <- paste0("../output/DeGroot_match_distr,", ntypelist, ".pdf")
   #pdf(tname, width=10, height=7)
   print(final)
   #dev.off()
 }
 
-# Analyze % of guessing signal against DeGroot per network by person id_subj ---------------------------
+# Analyze % of guessing signal against DeGroot per network by person id_subj (Match_fol_sig.tex) ---------------------------
+# Guessing signal when DeGroot predict otherwise
+
+# Initialize file for learning rule matching with data, against DeGroot.
+
+{
+  df_plotn_10 <- 
+    aggregate(df_gsig_n_10$DeGroot, 
+              list(df_gsig_n_10$type, df_gsig_n_10$group, df_gsig_n_10$id_subj), 
+              FUN=function(x) c(mean = mean(x, na.rm=TRUE)))
+  colnames(df_plotn_10) <- c("type","group","id_subj","mean")
+  #df_plot <- filter(df_plot, mean!=0)
+
+  df_plotn_40 <- 
+    aggregate(df_gsig_n_40$DeGroot, 
+              list(df_gsig_n_40$type, df_gsig_n_40$group, df_gsig_n_40$round, df_gsig_n_40$id_subj), 
+              FUN=function(x) c(mean = mean(x, na.rm=TRUE)))
+  colnames(df_plotn_40) <- c("type","group","round","id_subj","mean")
+  #df_plot2 <- filter(df_plot2, mean!=0)
+  
+  # Mean of each network of guessing signal against DeGroot
+  aggregate(df_gsig_n_10$DeGroot,
+            list(df_gsig_n_10$type), 
+            FUN=function(x) c(mean = mean(x, na.rm=TRUE)))
+  aggregate(df_gsig_n_40$DeGroot, 
+            list(df_gsig_n_40$type), 
+            FUN=function(x) c(mean = mean(x, na.rm=TRUE)))
+  
+  # # Histogram of each network of guessing signal against DeGroot
+  # for (ntypelist in c("n_10","n_40")){
+  #   final <- ggplot(get(paste0("df_plot",ntypelist)), aes(x=mean)) +
+  #     geom_histogram(breaks = seq(0,1,0.1), color="white", closed = "left")+
+  #     stat_bin(breaks = seq(0,1,0.1), closed = "left", geom="text", colour="black", size=2.5, aes(label= ifelse(..count.. > 0, ..count.., ""), group=type, y=1+(..count..))) +
+  #     #geom_vline(aes(xintercept=avg.mean, group=type, color="mean")) +
+  #     #geom_vline(data=filter(df_match, match=="Guessing signal match with DeGroot", type %in% n_10), aes(xintercept=percentage, group=type, color = "Guessing signal match with DeGroot"), linetype="dashed")+
+  # 
+  #     facet_wrap(~ factor(type, levels=get(ntypelist)))+
+  #     #ylim(NA, 25) +
+  #     scale_colour_manual(values = c("#00bfc4","#f8766d"))+
+  #     scale_x_continuous(breaks=seq(0,1,0.1), limits = c(-0.05, 1.05), labels = scales::percent_format(accuracy = 1))+
+  #     ggtitle(paste0("Distribution of Data matching with Guessing signal across networks, ",ntypelist))+
+  #     xlab("Percentage of guesses matching with guessing signal, against DeGroot") + ylab("Frequency of subjects")+
+  #     theme_bw() +
+  #     theme(legend.title = element_blank(), strip.text.x = element_text(size = 13), legend.justification=c(1,1), legend.text = element_text(size=10), legend.position=c(0.3,0.92))
+  # 
+  #   tname <- paste0("../output/DeGroot_match_guesssig_distr,",ntypelist,".pdf")
+  #   #pdf(tname, width=10, height=7)
+  #   print(final)
+  #   #dev.off()
+  # }
+  
+  # Regression of Indicator on type 
+  df_fol_sig <- data.frame(type = NA, fol_sig = NA, fol_sig_sd = NA)
+  for (ntypelist in c("n_10", "n_40")){
+    df_temp <- get(paste0("df_gsig_", ntypelist))
+    df_reg <- df_temp %>%  #Recoding type, size, group, round
+      mutate(typesize = df_temp$type,
+             type = str_split_fixed(df_temp$type, "_",2)[,1],
+             size = str_split_fixed(df_temp$type, "_",2)[,2],
+             typesizegroup = paste0(as.character(type), 
+                                    as.character(size), 
+                                    as.character(group),
+                                    sep = ''),
+             typesizegroupround = paste0(as.character(type),
+                                         as.character(size),
+                                         as.character(group),
+                                         as.character(round),sep = ''),
+      ) %>%
+      mutate_at(vars(group, round, type, size, 
+                     typesizegroup, typesizegroupround), as.factor) %>%
+      filter(!is.na(DeGroot))
+    
+    lin.1 <- lm.cluster(data = df_reg, formula = DeGroot ~ typesize, cluster = "typesizegroup")
+    logit.1 <- glm.cluster(data = df_reg, formula = DeGroot ~ typesize, family = "binomial", cluster="typesizegroup")
+    print(
+      screenreg(list(lin.1, logit.1),
+                ci.test = 0, ci.force.level = 0.95,
+                custom.model.names = c("OLS (Stubbornness predicts 1)", "Logit"),
+                custom.header = list("Always follow signal" = 1:2))
+    )
+    
+    # Print reg into LaTeX (Match_fol_sig.tex)
+    #sink(paste0("../output/latex/Match_fol_sig,",ntypelist,".tex"))
+    print(
+      texreg(list(lin.1, logit.1), 
+             ci.test = 0, ci.force.level = 0.95,
+             custom.model.names = c("OLS (Stubbornness predicts 1)", "Logit"),
+             custom.header = list("Always follow signal" = 1:2),
+             booktabs = TRUE, dcolumn = FALSE, use.packages = FALSE,
+             label = paste0("table:fol_sig,", ntypelist),
+             caption = print(paste0("Fraction of guesses following signal against DeGroot prediction")),
+      )
+    )
+    #sink()
+    df_temp <- 
+      as.data.frame(unname(cbind(get(ntypelist), 
+                                 summary(lin.1)[,1] + c(0, rep(summary(lin.1)[1,1],3)),
+                                 summary(lin.1)[,2])))
+    df_fol_sig <- rbind(df_fol_sig, setNames(df_temp, names(df_fol_sig)))
+  }
+  df_fol_sig <- df_fol_sig[-1,]
+}
+
+# Analyze % of following leader against DeGroot per network by person id_subj (Match_imi_lead.tex) ---------------------------
 # Guessing signal when DeGroot predict otherwise
 
 {
-  agg <- aggregate(df_guess_signal_n_10$DeGroot, list(df_guess_signal_n_10$type, df_guess_signal_n_10$group, df_guess_signal_n_10$id_subj), FUN=function(x) c(mean = mean(x), sd = sd(x)))
-  df_plotn_10 <- do.call(data.frame, agg)
-  colnames(df_plotn_10) <- c("type","group","id_subj","mean","sd")
-  #df_plot <- filter(df_plot, mean!=0)
+  df_temp <- filter(df_info_dom_more, type %in% n_10)
+  df_plotn_10 <- 
+    aggregate(df_temp$DeGroot, 
+              list(df_temp$type, df_temp$group, df_temp$id_subj), 
+              FUN=function(x) c(mean = mean(x, na.rm=TRUE)))
+  colnames(df_plotn_10) <- c("type","group","id_subj","mean")
+  
+  df_temp <- filter(df_info_dom_more, type %in% n_40)
+  df_plotn_40 <- 
+    aggregate(df_temp$DeGroot, 
+              list(df_temp$type, df_temp$group, df_temp$round, df_temp$id_subj), 
+              FUN=function(x) c(mean = mean(x, na.rm=TRUE)))
+  colnames(df_plotn_40) <- c("type","group","round","id_subj","mean")
+  
+  # Mean of each network of guessing signal against DeGroot
+  df_temp <- filter(df_info_dom_more, type %in% n_10)
+  aggregate(df_temp$DeGroot,
+            list(df_temp$type), 
+            FUN=function(x) c(mean = mean(x, na.rm=TRUE)))
+  df_temp <- filter(df_info_dom_more, type %in% n_40)
+  aggregate(df_temp$DeGroot, 
+            list(df_temp$type), 
+            FUN=function(x) c(mean = mean(x, na.rm=TRUE)))
+  
+  # # Histogram of each network of following leader against DeGroot
+  # for (ntypelist in c("n_10","n_40")){
+  #   final <- ggplot(get(paste0("df_plot",ntypelist)), aes(x=mean)) +
+  #     geom_histogram(breaks = seq(0,1,0.1), color="white", closed = "left")+
+  #     stat_bin(breaks = seq(0,1,0.1), closed = "left", geom="text", colour="black", size=2.5, aes(label= ifelse(..count.. > 0, ..count.., ""), group=type, y=1+(..count..))) +
+  #     #geom_vline(aes(xintercept=avg.mean, group=type, color="mean")) +
+  #     #geom_vline(data=filter(df_match, match=="Guessing signal match with DeGroot", type %in% n_10), aes(xintercept=percentage, group=type, color = "Guessing signal match with DeGroot"), linetype="dashed")+
+  # 
+  #     facet_wrap(~ factor(type, levels=get(ntypelist)))+
+  #     #ylim(NA, 25) +
+  #     scale_colour_manual(values = c("#00bfc4","#f8766d"))+
+  #     scale_x_continuous(breaks=seq(0,1,0.1), limits = c(-0.05, 1.05), labels = scales::percent_format(accuracy = 1))+
+  #     ggtitle(paste0("Distribution of Data matching with Guessing signal across networks, ",ntypelist))+
+  #     xlab("Percentage of guesses matching with guessing signal, against DeGroot") + ylab("Frequency of subjects")+
+  #     theme_bw() +
+  #     theme(legend.title = element_blank(), strip.text.x = element_text(size = 13), legend.justification=c(1,1), legend.text = element_text(size=10), legend.position=c(0.3,0.92))
+  # 
+  #   tname <- paste0("../output/DeGroot_match_folead_distr,",ntypelist,".pdf")
+  #   #pdf(tname, width=10, height=7)
+  #   print(final)
+  #   #dev.off()
+  # }
+  
 
-  agg <- aggregate(df_guess_signal_n_40$DeGroot, list(df_guess_signal_n_40$type, df_guess_signal_n_40$group, df_guess_signal_n_40$round, df_guess_signal_n_40$id_subj), FUN=function(x) c(mean = mean(x), sd = sd(x)))
-  df_plotn_40 <- do.call(data.frame, agg)
-  colnames(df_plotn_40) <- c("type","group","round","id_subj","mean","sd")
-  #df_plot2 <- filter(df_plot2, mean!=0)
-
-  for (ntypelist in c("n_10","n_40")){
-    final <- ggplot(get(paste0("df_plot",ntypelist)), aes(x=mean)) +
-      geom_histogram(breaks = seq(0,1,0.1), color="white", closed = "left")+
-      stat_bin(breaks = seq(0,1,0.1), closed = "left", geom="text", colour="black", size=2.5, aes(label= ifelse(..count.. > 0, ..count.., ""), group=type, y=1+(..count..))) +
-      #geom_vline(aes(xintercept=avg.mean, group=type, color="mean")) +
-      #geom_vline(data=filter(df_match, match=="Guessing signal match with DeGroot", type %in% n_10), aes(xintercept=percentage, group=type, color = "Guessing signal match with DeGroot"), linetype="dashed")+
-
-      facet_wrap(~ factor(type, levels=get(ntypelist)))+
-      #ylim(NA, 25) +
-      scale_colour_manual(values = c("#00bfc4","#f8766d"))+
-      scale_x_continuous(breaks=seq(0,1,0.1), limits = c(-0.05, 1.05), labels = scales::percent_format(accuracy = 1))+
-      ggtitle(paste0("Distribution of Data matching with Guessing signal across networks, ",ntypelist))+
-      xlab("Percentage of guesses matching with guessing signal, against DeGroot") + ylab("Frequency of subjects")+
-      theme_bw() +
-      theme(legend.title = element_blank(), strip.text.x = element_text(size = 13), legend.justification=c(1,1), legend.text = element_text(size=10), legend.position=c(0.3,0.92))
-
-    tname <- paste0("../output/DeGroot_match_guesssig_distr,",ntypelist,".pdf")
-    #pdf(tname, width=10, height=7)
-    print(final)
-    #dev.off()
-  }
-}
-
-# DeGroot simulation results of signals for 12 periods ---------------------------
-
-# Import signal
-balls <- as.matrix(read_csv("Signals_n_10.csv", col_names = FALSE))-1
-for (ntype in n_10){
-  g <- glist[ntype][[1]]
-  xy <- data.frame()
-  # For each set of signals, loop
-  for (i in c(1:nrow(balls))){
-    s<-balls[i,]
-    #Set majority signal as truth
-    if (mean(s)<0.5){s<-1-s}
-    # Perform DeGroot_once for 12 periods, iteratively
-    record<-DeGroot(g,s,12,tremble=tre)
-    s<-record[nrow(record),]
-    print(s)
-    xy<- rbind(xy,mean(s))
-  }
-  colnames(xy) <- "weight"
-  final <- ggplot(xy, aes(x=weight)) + geom_histogram(binwidth=0.05)+ylim(NA, nrow(balls)) +
-    scale_x_continuous(breaks=seq(0,1,0.1), limits = c(-0.05, 1.05))+
-    ggtitle(paste0("DeGroot simulation, majority signal as truth, ",ntype)) +
-    xlab("Average guess at period 12") + ylab("Frequency of networks (out of 24)")
-  #pdf(paste("Simulation_DeGroot_majorsig", ntype, ".pdf"), width=7, height=5)
-  print(final)
-  #dev.off()
-}
-
-for (tre in c(0)){
-  for (ntype in n_10){
-    g <- glist[ntype][[1]]
-    df_plot=data.frame(period = NA, mean = NA, signal = NA)
-    for (i in c(1:nrow(balls))){
-      s<-balls[i,]
-      # Set majority signal as truth
-      if (mean(s)<0.5){s<-1-s}
-      # Perform DeGroot_once for 12 periods, iteratively
-      record<-DeGroot(g,s,max_prd,tremble=tre)
-      
-      for (prd in c(1:max_prd)){
-        x <- mean(record[prd,])
-        df_plot<-rbind(df_plot,list(prd,x,i))
-      }
-    }
-    df_plot <- df_plot[-1,]
-    df_plot$signal<- as.factor(as.character(df_plot$signal))
+  # Regression of Indicator on type
+  df_pre_reg <- df_info_dom_more %>%  #Recoding type, size, group, round
+    mutate(typesize = df_info_dom_more$type,
+           type = str_split_fixed(df_info_dom_more$type, "_",2)[,1],
+           size = str_split_fixed(df_info_dom_more$type, "_",2)[,2],
+           typesizegroup = paste0(as.character(type), 
+                                  as.character(size), 
+                                  as.character(group),
+                                  sep = ''),
+           typesizegroupround = paste0(as.character(type),
+                                       as.character(size),
+                                       as.character(group),
+                                       as.character(round),sep = ''),
+           ) %>%
+    mutate_at(vars(group, round, type, size, 
+                   typesizegroup, typesizegroupround), as.factor) %>%
+    filter(!is.na(DeGroot))
+  
+  df_imi_lead <- data.frame(type = NA, imi_lead = NA, imi_lead_sd = NA)
+  for (ntypelist in c("n_10", "n_40")){
+    df_reg <- filter(df_pre_reg, typesize %in% get(ntypelist))
+    lin.1 <- lm.cluster(data = df_reg, formula = DeGroot ~ typesize, cluster = "typesizegroup")
+    logit.1 <- glm.cluster(data = df_reg, formula = DeGroot ~ typesize, family = "binomial", cluster="typesizegroup")
+    print(
+      screenreg(list(lin.1, logit.1), 
+                ci.test = 0, ci.force.level = 0.95,
+                custom.model.names = c("OLS (Bayesian predicts 1)", "Logit"),
+                custom.header = list("Correctly Imitate Leader" = 1:2))
+    )
+    # Print reg into LaTeX (Match_imi_lead.tex)
+    #sink(paste0("../output/latex/Match_imi_lead,",ntypelist,".tex"))
+    print(
+    texreg(list(lin.1, logit.1), 
+           ci.test = 0, ci.force.level = 0.95,
+           custom.model.names = c("OLS (Bayesian predicts 1)", "Logit"),
+           custom.header = list("Correctly follow leader" = 1:2),
+           booktabs = TRUE, dcolumn = FALSE, use.packages = FALSE,
+           label = paste0("table:match_imi_lead,", ntypelist),
+           caption = print(paste0("Fraction of guesses imitate leader against DeGroot prediction")),
+    )
+    )
+    #sink()
     
-    {final <- ggplot(df_plot, aes(x=period, y=mean, group=signal)) +
-        geom_line(aes(color=signal)) +
-        geom_point(aes(shape=signal, color=signal), size = 1, stroke = 1) +
-        scale_shape_manual(values=c(1:24))+
-        
-        scale_x_continuous(name="Period", 
-                           limits=c(1, 12), 
-                           breaks = c(0:12), 
-                           expand = c(0.02, 0) ) +
-        scale_y_continuous(name="fraction of players", 
-                           limits=c(0, 1), 
-                           expand = c(0.02, 0)) +
-        
-        coord_cartesian(clip = 'off') +
-        theme_bw() +
-        theme(legend.title = element_blank(), 
-              legend.justification=c(1,1), 
-              legend.position=c(0.9,0.4),
-              legend.key.size = unit(0.4, 'cm'))+
-        
-        ggtitle(paste0("Simulation",ntype))
-      
-      #final <- final + geom_hline(yintercept=avg_sig,linetype="dashed", color = "red")
-    }
-    tname <- paste0("Simulation_DeGroot_majorsig ",ntype,"_extensive.pdf")
-    #pdf(tname, width=10, height=7)
-    print(final)
-    #dev.off()
+    df_temp <- 
+      as.data.frame(unname(cbind(get(ntypelist), 
+                                 summary(lin.1)[,1] + c(0, rep(summary(lin.1)[1,1],3)),
+                                 summary(lin.1)[,2])))
+    df_imi_lead <- rbind(df_imi_lead, setNames(df_temp, names(df_imi_lead)))
   }
+  df_imi_lead <- df_imi_lead[-1,]
 }
+
+# Plot scatter plot between df_fol_sig, df_imi_lead ---------------------------
+df_plot <- cbind(df_fol_sig, df_imi_lead[,-1])
+df_plot$type <- as.factor(df_plot$type)
+df_plot[,2:5] <- sapply(df_plot[,2:5], as.numeric)
+
+final <- ggplot(df_plot,aes(x=fol_sig, y=imi_lead, shape=type, color=type )) + 
+  geom_point(size = 3) +
+  geom_errorbar(aes(ymin=pmax(imi_lead-imi_lead_sd,0), ymax=imi_lead+imi_lead_sd), width=.002,) +
+  geom_errorbar(aes(xmin=fol_sig-fol_sig_sd, xmax=fol_sig+fol_sig_sd), width=.002,) +
+  scale_shape_manual(values=c(0,15,1,16,2,17,4,18)) +
+  
+  scale_y_continuous(breaks=seq(0,1,0.1), 
+                     limits = c(0, 0.4), 
+                     labels = scales::percent_format(accuracy = 1)) +
+  scale_x_continuous(breaks=seq(0,1,0.1), 
+                     limits = c(0,0.4), 
+                     labels = scales::percent_format(accuracy = 1)) +
+  
+  ggtitle(paste0("Learning rule - Guesses going against DeGroot"))+
+  ylab("Fraction correctly imitate leader") + 
+  xlab("Fraction always follow signal")+
+  theme_bw()
+
+tname <- paste0("../output/Match_sig_lead.pdf")
+#pdf(tname, width=10, height=7)
+print(final)
+#dev.off()
+
 
 # Clan DeGroot checking ---------------------------
 # # import list of clans of each ntype

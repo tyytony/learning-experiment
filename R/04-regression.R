@@ -16,6 +16,7 @@ library(scales)
 library(miceadds)
 library(texreg)
 library(Zelig)
+library(xtable)
 # library(aod)
 # library(sandwich)
 # library(multiwayvcov)
@@ -33,8 +34,8 @@ load("RData/02-analysis-envir.RData")
 #               laplacian = col_factor(levels = c("1","0")) ) )
 
 
-#Create dataframe for regression
-df_pre_reg <- filter(df_summary, period>=7) #Selecting rounds
+# Create dataframe for regression (df_pre_reg) ---------------------------
+df_pre_reg <- filter(df_summary, period>=7, type %in% c(n_10, n_40)) #Selecting rounds
 # df_pre_reg <- aggregate(df_pre_reg$mean, drop=FALSE, list(df_pre_reg$group, df_pre_reg$round, df_pre_reg$type), FUN=function(x) mean = mean(x))
 # colnames(df_pre_reg) <- c("group", "round", "type","mean")
 
@@ -56,7 +57,7 @@ df_pre_reg <- df_pre_reg %>%  #Recoding type, size, group, round
            ifelse(size == "10", 
                   ifelse(signal %in% goods$goodbad[goods$type=="ER_10"][[1]],"Goods", "Non-goods"),
                   ifelse(signal %in% goods$goodbad[goods$type=="ER_40"][[1]],"Goods", "Non-goods")),
-  )
+         )
 df_pre_reg <- merge(df_pre_reg,df_signal)
 df_pre_reg <- mutate_at(df_pre_reg, vars(group, round, type, size, 
                                          typesizegroup, typesizegroupround, 
@@ -113,7 +114,7 @@ for (ntypelist in c("n_10","n_40")){
 }
 
 # Regressions (Reg_output) ---------------------------
-for (func in c("absolute","indicator_0.1","indicator_0.2","NtNs","NtNs_censored")){
+for (func in c("indicator")){ #,"absolute","NtNs","NtNs_censored"
   #sink(paste0("../output/Reg_output_", func ,".txt"))
   #sink()
   
@@ -123,7 +124,7 @@ for (func in c("absolute","indicator_0.1","indicator_0.2","NtNs","NtNs_censored"
       
       df_reg <- df_pre_reg %>%
         filter(good_signal %in% x, size == n) %>%
-        mutate(type = relevel(type, ref = "ER"))
+        mutate(type = relevel(type, ref = "ER")) #set reference level for constant
       
       if (func == "NtNs"){
         # Fraction of learning from initial signal (Nt,Ns)
@@ -205,30 +206,22 @@ for (func in c("absolute","indicator_0.1","indicator_0.2","NtNs","NtNs_censored"
                                            "OLS - Breakdown"))
         )
         #sink()
-        
-        # #Print reg into LaTeX
-        # texreg(list(lin.1, tobit.2, tobit.3), ci.test=0, ci.force.level = 0.95,
-        #        custom.model.names = c("OLS - Consensus", "Tobit - Correct Consensus", "Tobit - Incorrect Consensus"),
-        #        booktabs = TRUE, dcolumn=FALSE, label = "tab:1",
-        #        caption= paste0("Regression of network size ",n,", partition of ",x," signals with clustering SE by network, size, group"),
-        # )
       }
       
-      if (func == "indicator_0.1"){
+      if (func == "indicator"){
         # Indicator of width wd
-        wd<-0.1
+        wd <- 0.2
         df_reg <- df_reg %>%
-          mutate(consensus = ifelse(mean >=1-wd | mean <= wd, 1,0),
-                 cor_con   = ifelse(mean >=1-wd, 1,0),
-                 incor_con = ifelse(mean < 0.3, 1,0),
-                 breakdown = ifelse(mean < 0.7 & mean >0.3, 1, 0)
+          mutate(consensus = ifelse(mean >= 1 - wd | mean <= wd, 1,0),
+                 cor_con   = ifelse(mean >= 1 - wd, 1,0),
+                 incor_con = ifelse(mean < wd, 1,0),
+                 breakdown = ifelse(mean < 1 - wd & mean > wd, 1, 0)
           )
         logit.1 <- miceadds::glm.cluster(data=df_reg, formula=consensus ~ type, family = "binomial", cluster="typesizegroup")
-        logit.2 <- miceadds::glm.cluster(data=df_reg, formula=cor_con ~ type, family = "binomial", cluster="typesizegroup")
+        logit.2 <- miceadds::glm.cluster(data=df_reg, formula=cor_con   ~ type, family = "binomial", cluster="typesizegroup")
         logit.3 <- miceadds::glm.cluster(data=df_reg, formula=incor_con ~ type, family = "binomial", cluster="typesizegroup")
         logit.4 <- miceadds::glm.cluster(data=df_reg, formula=breakdown ~ type, family = "binomial", cluster="typesizegroup")
         
-        #sink(paste0("../output/Reg_output_", func ,".txt"), append = TRUE)
         ifelse(length(x)>1,
                print(paste0("Regression of network size ", n)),
                print(paste0("Regression using partition of ", x, " signals, of network size ", n , collapse = '')))
@@ -239,40 +232,93 @@ for (func in c("absolute","indicator_0.1","indicator_0.2","NtNs","NtNs_censored"
                                            "Logit - Incorrect Consensus", 
                                            "Logit - Breakdown"))
         )
-        #sink()
-      }
-      
-      if (func == "indicator_0.2"){
-        # Indicator of width wd
-        wd<-0.2
-        df_reg <- df_reg %>%
-          mutate(consensus = ifelse(mean >=1-wd | mean <= wd, 1,0),
-                 cor_con   = ifelse(mean >=1-wd, 1,0),
-                 incor_con = ifelse(mean < 0.2, 1,0),
-                 breakdown = ifelse(mean < 0.8 & mean >0.2, 1, 0)
-          )
-        logit.1 <- miceadds::glm.cluster(data=df_reg, formula=consensus ~ type, family = "binomial", cluster="typesizegroup")
-        logit.2 <- miceadds::glm.cluster(data=df_reg, formula=cor_con ~ type, family = "binomial", cluster="typesizegroup")
-        logit.3 <- miceadds::glm.cluster(data=df_reg, formula=incor_con ~ type, family = "binomial", cluster="typesizegroup")
-        logit.4 <- miceadds::glm.cluster(data=df_reg, formula=breakdown ~ type, family = "binomial", cluster="typesizegroup")
-        
-        #sink(paste0("../output/Reg_output_", func ,".txt"), append = TRUE)
-        ifelse(length(x)>1,
-               print(paste0("Regression of network size ", n)),
-               print(paste0("Regression using partition of ", x, " signals, of network size ", n , collapse = '')))
+        # Print reg into LaTeX
+        sink(paste0("../output/latex/Regression_indicator",wd,",n=",n,".tex"))
         print(
-          screenreg(list(logit.1, logit.2, logit.3, logit.4), ci.test=0, ci.force.level = 0.95,
-                    custom.model.names = c("Logit - Consensus", 
-                                           "Logit - Correct Consensus", 
-                                           "Logit - Incorrect Consensus", 
-                                           "Logit - Breakdown"))
+          texreg(list(logit.1, logit.2, logit.3, logit.4), ci.test=0, ci.force.level = 0.95,
+                 custom.model.names = c("Consensus", 
+                                        "Correct Consensus", 
+                                        "Incorrect Consensus", 
+                                        "Breakdown"),
+                 booktabs = TRUE, dcolumn=FALSE, use.packages = FALSE,
+                 caption= ifelse(length(x)>1,
+                                 print(paste0("Logistic regression of network size ", n, ", indicator function of width = ", wd)),
+                                 print(paste0("Logistic regression using partition of ", x, 
+                                              " signals, of network size ", n , collapse = ''))),
+          )
         )
-        #sink()
+        sink()
       }
     }
   }
 }
 
+
+# Create pseudo network with 90% correct consensus
+df_pre_reg_psuedo <- df_pre_reg
+set.seed(1)
+for (n in c(10, 40)){
+  df_temp <- df_pre_reg %>%
+    filter(size == n, type == "ER") %>%
+    mutate(type = "psuedo",
+           size = n,
+           good_signal = "Goods",
+           typesize = paste0(as.character(type), "_",
+                             as.character(size), 
+                             sep = ''),
+           typesizegroup = paste0(as.character(type), "_",
+                                  as.character(size), 
+                                  as.character(group),
+                                  sep = ''),
+           typesizegroupround = paste0(as.character(type), "_",
+                                       as.character(size),
+                                       as.character(group),
+                                       as.character(round),
+                                       sep = ''),) %>%
+    rowwise() %>%
+    mutate(mean = mean(rbinom(n, 1, .85)))
+  df_pre_reg_psuedo <- rbind(df_pre_reg_psuedo, df_temp)
+}
+
+wd <- 0.2
+for (n in c(10, 40)){
+  df_reg <- df_pre_reg_psuedo %>%
+    mutate(type = as.factor(type),
+           type = relevel(type, ref = "psuedo"),
+           consensus = ifelse(mean >= 1 - wd | mean <= wd, 1,0)) %>%
+    filter(size == n)
+  
+  
+  logit.1 <- miceadds::glm.cluster(data=df_reg, formula=consensus ~ type, family = "binomial", cluster="typesizegroup")
+  print(  
+    screenreg(list(logit.1), ci.test=1, ci.force.level = 0.95,
+              custom.model.names = c("Logit - Consensus"))
+  )
+}
+
+df_plot <- data.frame(type = NA, mean = NA, sd = NA)
+for (ntypelist in c("n_10", "n_40")){
+  wd <- 0.2
+  m <- matrix(data = NA, nrow = 4, ncol = 5, 
+              dimnames = list(get(ntypelist),
+                              c("Estimate","Conf. int.","p value","Num. obs.", "sd")))
+  for (ntype in get(ntypelist)){
+    df_reg <- df_pre_reg_psuedo %>%
+      mutate(type = as.factor(type),
+             consensus = ifelse(mean >= 1 - wd | mean <= wd, 1,0)) %>%
+      filter(typesize == ntype)
+    x <- binom.test(sum(df_reg$consensus), nrow(df_reg), p = 1)
+    m[ntype,"Estimate"] <- signif(x$estimate, 3)
+    m[ntype,"Conf. int."] <- paste0("[", signif(x$conf.int[1], 3), ",",
+                                    signif(x$conf.int[2], 3), "]")
+    m[ntype,"p value"] <- signif(x$p.value, 3)
+    m[ntype,"Num. obs."] <- x$parameter
+    m[ntype,"sd"] <- (x$estimate * (1 - x$estimate) / x$parameter)^(0.5)
+  }
+  print(m)
+}
+
+xtable(m)
 
 # Other functions to indicate the 4 dependent variables for robustness ---------------------------
 #
@@ -300,7 +346,12 @@ for (func in c("absolute","indicator_0.1","indicator_0.2","NtNs","NtNs_censored"
 # confint(reg) #confidence interval
 # wald.test(b = coef(reg), Sigma = vcov(reg), Terms = 3:4) #wald test
 # wald.test(b = coef(reg), Sigma = vcov(reg), cbind(0, 1, 0, -1)) #hypothesis testing of beta1=beta2
-# exp(cbind(OR = coef(reg), confint(reg))) #odds ratios
+# exp(cbind(Odds_Ratio = coef(reg), confint(reg))) #odds ratios
 # 
 # step <- stepAIC(reg_mean, direction="both") # step-wise regression
 # step$anova # display results
+
+# for (x in c(1:4)){
+#   reg <- get(paste0("logit.",x))
+#   exp(cbind(Odds_Ratio = coef(reg), confint(reg))) #odds ratios
+# }

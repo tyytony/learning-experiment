@@ -433,7 +433,7 @@ for (ntypelist in c("n_10","n_40")){
 # Plot extended form of guess across periods ---------------------------
 for (ntypelist in c("n_10","n_40")){
   for (ntype in get(ntypelist)){
-    df_plot <- filter(df_simulation,type==ntype)
+    df_plot <- filter(df_simulation, type==ntype)
     df_plot$signal<- as.factor(as.character(df_plot$signal))
     
     {final <- ggplot(df_plot, aes(x=period, y=mean, group=signal)) +
