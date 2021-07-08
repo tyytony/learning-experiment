@@ -29,6 +29,7 @@ This repository includes all the coding done for the project, including Inputs, 
 
 "output" folder includes:
 - "dataframe" folder: dataframe outputted from R files
+- "latex" folder: tables for printing to LaTeX file "Output_prints.tex" 
 - outputs from simulations
 - outputs from analysis
 - outputs from regressions
