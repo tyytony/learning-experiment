@@ -1,0 +1,33 @@
+[1] "Fraction of guesses imitate leader against DeGroot prediction"
+
+\begin{table}
+\begin{center}
+\begin{tabular}{l c c}
+\toprule
+ & \multicolumn{2}{c}{Correctly follow leader} \\
+\cmidrule(lr){2-3}
+ & OLS (Bayesian predicts 1) & Logit \\
+\midrule
+(Intercept)     & $0.27^{***}$ & $-1.02^{**}$  \\
+                & $(0.08)$     & $(0.39)$      \\
+typesizeRF\_10  & $-0.24^{**}$ & $-2.50^{***}$ \\
+                & $(0.08)$     & $(0.55)$      \\
+typesizeRGG\_10 & $-0.18^{*}$  & $-1.34^{*}$   \\
+                & $(0.08)$     & $(0.53)$      \\
+typesizeSB\_10  & $-0.20^{*}$  & $-1.63^{***}$ \\
+                & $(0.08)$     & $(0.47)$      \\
+\midrule
+R$^2$           & $0.06$       & $$            \\
+Adj. R$^2$      & $0.06$       & $$            \\
+Num. obs.       & $1000$       & $1000$        \\
+AIC             & $$           & $506.39$      \\
+BIC             & $$           & $526.03$      \\
+Log Likelihood  & $$           & $-249.20$     \\
+Deviance        & $$           & $498.39$      \\
+\bottomrule
+\multicolumn{3}{l}{\scriptsize{$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$}}
+\end{tabular}
+\caption{Fraction of guesses imitate leader against DeGroot prediction}
+\label{table:match_imi_lead,n_10}
+\end{center}
+\end{table}

@@ -1,0 +1,33 @@
+[1] "Fraction of guesses against Bayesian and DeGroot prediction"
+
+\begin{table}
+\begin{center}
+\begin{tabular}{l c c}
+\toprule
+ & \multicolumn{2}{c}{Guess against majority in period 1,2} \\
+\cmidrule(lr){2-3}
+ & OLS (Bayesian, DeGroot predicts 0) & Logit \\
+\midrule
+(Intercept)     & $0.10^{***}$ & $-2.18^{***}$ \\
+                & $(0.01)$     & $(0.08)$      \\
+typesizeRF\_40  & $0.02$       & $0.18$        \\
+                & $(0.01)$     & $(0.13)$      \\
+typesizeRGG\_40 & $0.02$       & $0.18$        \\
+                & $(0.01)$     & $(0.13)$      \\
+typesizeSB\_40  & $0.03^{***}$ & $0.27^{**}$   \\
+                & $(0.01)$     & $(0.09)$      \\
+\midrule
+R$^2$           & $0.00$       & $$            \\
+Adj. R$^2$      & $0.00$       & $$            \\
+Num. obs.       & $7317$       & $7317$        \\
+AIC             & $$           & $5290.47$     \\
+BIC             & $$           & $5318.06$     \\
+Log Likelihood  & $$           & $-2641.23$    \\
+Deviance        & $$           & $5282.47$     \\
+\bottomrule
+\multicolumn{3}{l}{\scriptsize{$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$}}
+\end{tabular}
+\caption{Fraction of guesses against Bayesian and DeGroot prediction}
+\label{table:match_mistake,n_40}
+\end{center}
+\end{table}

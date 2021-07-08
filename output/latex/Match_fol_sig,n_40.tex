@@ -1,0 +1,33 @@
+[1] "Fraction of guesses following signal against DeGroot prediction"
+
+\begin{table}
+\begin{center}
+\begin{tabular}{l c c}
+\toprule
+ & \multicolumn{2}{c}{Always follow signal} \\
+\cmidrule(lr){2-3}
+ & OLS (Stubbornness predicts 1) & Logit \\
+\midrule
+(Intercept)     & $0.25^{***}$ & $-1.07^{***}$ \\
+                & $(0.01)$     & $(0.07)$      \\
+typesizeRF\_40  & $0.04$       & $0.21$        \\
+                & $(0.04)$     & $(0.21)$      \\
+typesizeRGG\_40 & $-0.01$      & $-0.03$       \\
+                & $(0.02)$     & $(0.09)$      \\
+typesizeSB\_40  & $0.04$       & $0.22$        \\
+                & $(0.02)$     & $(0.12)$      \\
+\midrule
+R$^2$           & $0.00$       & $$            \\
+Adj. R$^2$      & $0.00$       & $$            \\
+Num. obs.       & $12175$      & $12175$       \\
+AIC             & $$           & $14339.42$    \\
+BIC             & $$           & $14369.05$    \\
+Log Likelihood  & $$           & $-7165.71$    \\
+Deviance        & $$           & $14331.42$    \\
+\bottomrule
+\multicolumn{3}{l}{\scriptsize{$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$}}
+\end{tabular}
+\caption{Fraction of guesses following signal against DeGroot prediction}
+\label{table:fol_sig,n_40}
+\end{center}
+\end{table}

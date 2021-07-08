@@ -1,0 +1,29 @@
+[1] "Logistic regression of network size 40, indicator function of width = 0.2"
+
+\begin{table}
+\begin{center}
+\begin{tabular}{l c c c c}
+\toprule
+ & Consensus & Correct Consensus & Incorrect Consensus & Breakdown \\
+\midrule
+(Intercept)    & $0.48$       & $0.34$      & $-4.96^{***}$  & $-0.48$     \\
+               & $(0.29)$     & $(0.38)$    & $(0.89)$       & $(0.29)$    \\
+typeRF         & $0.65$       & $0.33$      & $2.65^{**}$    & $-0.65$     \\
+               & $(0.60)$     & $(0.62)$    & $(0.98)$       & $(0.60)$    \\
+typeRGG        & $0.31$       & $0.45$      & $-16.60^{***}$ & $-0.31$     \\
+               & $(0.45)$     & $(0.52)$    & $(1.02)$       & $(0.45)$    \\
+typeSB         & $-1.05^{**}$ & $-0.91^{*}$ & $-16.60^{***}$ & $1.05^{**}$ \\
+               & $(0.33)$     & $(0.42)$    & $(1.02)$       & $(0.33)$    \\
+\midrule
+AIC            & $726.48$     & $755.52$    & $107.25$       & $726.48$    \\
+BIC            & $743.91$     & $772.94$    & $124.67$       & $743.91$    \\
+Log Likelihood & $-359.24$    & $-373.76$   & $-49.62$       & $-359.24$   \\
+Deviance       & $718.48$     & $747.52$    & $99.25$        & $718.48$    \\
+Num. obs.      & $576$        & $576$       & $576$          & $576$       \\
+\bottomrule
+\multicolumn{5}{l}{\scriptsize{$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$}}
+\end{tabular}
+\caption{Logistic regression of network size 40, indicator function of width = 0.2}
+\label{table:coefficients}
+\end{center}
+\end{table}

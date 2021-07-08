@@ -1,0 +1,3457 @@
+"group","round","period","mean","type","good","initsig"
+1,1,1,0.4,"ER_10","Correct consensus",0.6
+1,1,2,0.4,"ER_10","Correct consensus",0.6
+1,1,3,0.5,"ER_10","Correct consensus",0.6
+1,1,4,0.5,"ER_10","Correct consensus",0.6
+1,1,5,0.4,"ER_10","Correct consensus",0.6
+1,1,6,0.3,"ER_10","Correct consensus",0.6
+1,1,7,0.6,"ER_10","Correct consensus",0.6
+1,1,8,0.8,"ER_10","Correct consensus",0.6
+1,1,9,0.7,"ER_10","Correct consensus",0.6
+1,1,10,0.7,"ER_10","Correct consensus",0.6
+1,1,11,0.5,"ER_10","Correct consensus",0.6
+1,1,12,0.3,"ER_10","Correct consensus",0.6
+1,2,1,0.9,"ER_10","Correct consensus",0.9
+1,2,2,1,"ER_10","Correct consensus",0.9
+1,2,3,0.9,"ER_10","Correct consensus",0.9
+1,2,4,0.8,"ER_10","Correct consensus",0.9
+1,2,5,0.9,"ER_10","Correct consensus",0.9
+1,2,6,0.9,"ER_10","Correct consensus",0.9
+1,2,7,1,"ER_10","Correct consensus",0.9
+1,2,8,0.9,"ER_10","Correct consensus",0.9
+1,2,9,0.8,"ER_10","Correct consensus",0.9
+1,2,10,0.9,"ER_10","Correct consensus",0.9
+1,2,11,1,"ER_10","Correct consensus",0.9
+1,2,12,0.9,"ER_10","Correct consensus",0.9
+1,3,1,0.5,"ER_10","Correct consensus",0.6
+1,3,2,0.6,"ER_10","Correct consensus",0.6
+1,3,3,0.3,"ER_10","Correct consensus",0.6
+1,3,4,0.2,"ER_10","Correct consensus",0.6
+1,3,5,0.1,"ER_10","Correct consensus",0.6
+1,3,6,0.2,"ER_10","Correct consensus",0.6
+1,3,7,0.3,"ER_10","Correct consensus",0.6
+1,3,8,0.3,"ER_10","Correct consensus",0.6
+1,3,9,0.2,"ER_10","Correct consensus",0.6
+1,3,10,0.2,"ER_10","Correct consensus",0.6
+1,3,11,0.5,"ER_10","Correct consensus",0.6
+1,3,12,0.4,"ER_10","Correct consensus",0.6
+1,4,1,0.6,"ER_10","Correct consensus",0.7
+1,4,2,0.7,"ER_10","Correct consensus",0.7
+1,4,3,0.8,"ER_10","Correct consensus",0.7
+1,4,4,0.9,"ER_10","Correct consensus",0.7
+1,4,5,0.7,"ER_10","Correct consensus",0.7
+1,4,6,0.8,"ER_10","Correct consensus",0.7
+1,4,7,0.7,"ER_10","Correct consensus",0.7
+1,4,8,0.8,"ER_10","Correct consensus",0.7
+1,4,9,0.8,"ER_10","Correct consensus",0.7
+1,4,10,0.9,"ER_10","Correct consensus",0.7
+1,4,11,0.9,"ER_10","Correct consensus",0.7
+1,4,12,0.8,"ER_10","Correct consensus",0.7
+1,5,1,0.9,"ER_10","Correct consensus",0.9
+1,5,2,1,"ER_10","Correct consensus",0.9
+1,5,3,1,"ER_10","Correct consensus",0.9
+1,5,4,0.9,"ER_10","Correct consensus",0.9
+1,5,5,0.9,"ER_10","Correct consensus",0.9
+1,5,6,0.8,"ER_10","Correct consensus",0.9
+1,5,7,0.9,"ER_10","Correct consensus",0.9
+1,5,8,1,"ER_10","Correct consensus",0.9
+1,5,9,1,"ER_10","Correct consensus",0.9
+1,5,10,1,"ER_10","Correct consensus",0.9
+1,5,11,0.9,"ER_10","Correct consensus",0.9
+1,5,12,0.8,"ER_10","Correct consensus",0.9
+1,6,1,0.5,"ER_10","Correct consensus",0.7
+1,6,2,0.4,"ER_10","Correct consensus",0.7
+1,6,3,0.4,"ER_10","Correct consensus",0.7
+1,6,4,0.4,"ER_10","Correct consensus",0.7
+1,6,5,0.4,"ER_10","Correct consensus",0.7
+1,6,6,0.3,"ER_10","Correct consensus",0.7
+1,6,7,0.4,"ER_10","Correct consensus",0.7
+1,6,8,0.4,"ER_10","Correct consensus",0.7
+1,6,9,0.4,"ER_10","Correct consensus",0.7
+1,6,10,0.4,"ER_10","Correct consensus",0.7
+1,6,11,0.4,"ER_10","Correct consensus",0.7
+1,6,12,0.4,"ER_10","Correct consensus",0.7
+2,1,1,0.5,"ER_10","Incorrect consensus",0.5
+2,1,2,0.3,"ER_10","Incorrect consensus",0.5
+2,1,3,0,"ER_10","Incorrect consensus",0.5
+2,1,4,0.1,"ER_10","Incorrect consensus",0.5
+2,1,5,0.2,"ER_10","Incorrect consensus",0.5
+2,1,6,0,"ER_10","Incorrect consensus",0.5
+2,1,7,0.1,"ER_10","Incorrect consensus",0.5
+2,1,8,0.1,"ER_10","Incorrect consensus",0.5
+2,1,9,0.2,"ER_10","Incorrect consensus",0.5
+2,1,10,0.2,"ER_10","Incorrect consensus",0.5
+2,1,11,0.1,"ER_10","Incorrect consensus",0.5
+2,1,12,0.2,"ER_10","Incorrect consensus",0.5
+2,2,1,0.9,"ER_10","Correct consensus",0.9
+2,2,2,1,"ER_10","Correct consensus",0.9
+2,2,3,0.9,"ER_10","Correct consensus",0.9
+2,2,4,0.9,"ER_10","Correct consensus",0.9
+2,2,5,1,"ER_10","Correct consensus",0.9
+2,2,6,0.9,"ER_10","Correct consensus",0.9
+2,2,7,1,"ER_10","Correct consensus",0.9
+2,2,8,1,"ER_10","Correct consensus",0.9
+2,2,9,0.9,"ER_10","Correct consensus",0.9
+2,2,10,1,"ER_10","Correct consensus",0.9
+2,2,11,1,"ER_10","Correct consensus",0.9
+2,2,12,0.9,"ER_10","Correct consensus",0.9
+2,3,1,0.6,"ER_10","Correct consensus",0.5
+2,3,2,0.8,"ER_10","Correct consensus",0.5
+2,3,3,0.8,"ER_10","Correct consensus",0.5
+2,3,4,0.9,"ER_10","Correct consensus",0.5
+2,3,5,0.7,"ER_10","Correct consensus",0.5
+2,3,6,0.8,"ER_10","Correct consensus",0.5
+2,3,7,0.8,"ER_10","Correct consensus",0.5
+2,3,8,0.8,"ER_10","Correct consensus",0.5
+2,3,9,0.7,"ER_10","Correct consensus",0.5
+2,3,10,0.8,"ER_10","Correct consensus",0.5
+2,3,11,0.8,"ER_10","Correct consensus",0.5
+2,3,12,0.8,"ER_10","Correct consensus",0.5
+2,4,1,0.8,"ER_10","Correct consensus",0.7
+2,4,2,0.9,"ER_10","Correct consensus",0.7
+2,4,3,0.8,"ER_10","Correct consensus",0.7
+2,4,4,0.7,"ER_10","Correct consensus",0.7
+2,4,5,0.8,"ER_10","Correct consensus",0.7
+2,4,6,1,"ER_10","Correct consensus",0.7
+2,4,7,0.9,"ER_10","Correct consensus",0.7
+2,4,8,0.9,"ER_10","Correct consensus",0.7
+2,4,9,1,"ER_10","Correct consensus",0.7
+2,4,10,1,"ER_10","Correct consensus",0.7
+2,4,11,0.9,"ER_10","Correct consensus",0.7
+2,4,12,0.9,"ER_10","Correct consensus",0.7
+2,5,1,0.8,"ER_10","Correct consensus",0.8
+2,5,2,1,"ER_10","Correct consensus",0.8
+2,5,3,1,"ER_10","Correct consensus",0.8
+2,5,4,1,"ER_10","Correct consensus",0.8
+2,5,5,1,"ER_10","Correct consensus",0.8
+2,5,6,1,"ER_10","Correct consensus",0.8
+2,5,7,0.9,"ER_10","Correct consensus",0.8
+2,5,8,0.9,"ER_10","Correct consensus",0.8
+2,5,9,0.9,"ER_10","Correct consensus",0.8
+2,5,10,0.9,"ER_10","Correct consensus",0.8
+2,5,11,0.9,"ER_10","Correct consensus",0.8
+2,5,12,0.9,"ER_10","Correct consensus",0.8
+2,6,1,0.6,"ER_10","Correct consensus",0.7
+2,6,2,0.5,"ER_10","Correct consensus",0.7
+2,6,3,0.5,"ER_10","Correct consensus",0.7
+2,6,4,0.7,"ER_10","Correct consensus",0.7
+2,6,5,0.7,"ER_10","Correct consensus",0.7
+2,6,6,0.8,"ER_10","Correct consensus",0.7
+2,6,7,0.9,"ER_10","Correct consensus",0.7
+2,6,8,1,"ER_10","Correct consensus",0.7
+2,6,9,0.8,"ER_10","Correct consensus",0.7
+2,6,10,0.9,"ER_10","Correct consensus",0.7
+2,6,11,0.9,"ER_10","Correct consensus",0.7
+2,6,12,0.8,"ER_10","Correct consensus",0.7
+3,1,1,0.7,"ER_10","Correct consensus",0.8
+3,1,2,0.7,"ER_10","Correct consensus",0.8
+3,1,3,0.7,"ER_10","Correct consensus",0.8
+3,1,4,0.7,"ER_10","Correct consensus",0.8
+3,1,5,0.7,"ER_10","Correct consensus",0.8
+3,1,6,0.8,"ER_10","Correct consensus",0.8
+3,1,7,0.7,"ER_10","Correct consensus",0.8
+3,1,8,0.7,"ER_10","Correct consensus",0.8
+3,1,9,0.8,"ER_10","Correct consensus",0.8
+3,1,10,0.9,"ER_10","Correct consensus",0.8
+3,1,11,0.7,"ER_10","Correct consensus",0.8
+3,1,12,0.7,"ER_10","Correct consensus",0.8
+3,2,1,0.8,"ER_10","Correct consensus",0.9
+3,2,2,0.9,"ER_10","Correct consensus",0.9
+3,2,3,0.9,"ER_10","Correct consensus",0.9
+3,2,4,1,"ER_10","Correct consensus",0.9
+3,2,5,0.9,"ER_10","Correct consensus",0.9
+3,2,6,0.9,"ER_10","Correct consensus",0.9
+3,2,7,0.9,"ER_10","Correct consensus",0.9
+3,2,8,0.9,"ER_10","Correct consensus",0.9
+3,2,9,1,"ER_10","Correct consensus",0.9
+3,2,10,1,"ER_10","Correct consensus",0.9
+3,2,11,1,"ER_10","Correct consensus",0.9
+3,2,12,1,"ER_10","Correct consensus",0.9
+3,3,1,0.8,"ER_10","Correct consensus",0.8
+3,3,2,0.8,"ER_10","Correct consensus",0.8
+3,3,3,0.8,"ER_10","Correct consensus",0.8
+3,3,4,0.9,"ER_10","Correct consensus",0.8
+3,3,5,0.9,"ER_10","Correct consensus",0.8
+3,3,6,0.8,"ER_10","Correct consensus",0.8
+3,3,7,0.7,"ER_10","Correct consensus",0.8
+3,3,8,0.7,"ER_10","Correct consensus",0.8
+3,3,9,0.8,"ER_10","Correct consensus",0.8
+3,3,10,0.7,"ER_10","Correct consensus",0.8
+3,3,11,0.8,"ER_10","Correct consensus",0.8
+3,3,12,0.7,"ER_10","Correct consensus",0.8
+3,4,1,0.8,"ER_10","Correct consensus",0.9
+3,4,2,0.8,"ER_10","Correct consensus",0.9
+3,4,3,0.7,"ER_10","Correct consensus",0.9
+3,4,4,0.9,"ER_10","Correct consensus",0.9
+3,4,5,0.8,"ER_10","Correct consensus",0.9
+3,4,6,0.7,"ER_10","Correct consensus",0.9
+3,4,7,0.7,"ER_10","Correct consensus",0.9
+3,4,8,0.8,"ER_10","Correct consensus",0.9
+3,4,9,0.9,"ER_10","Correct consensus",0.9
+3,4,10,0.8,"ER_10","Correct consensus",0.9
+3,4,11,0.7,"ER_10","Correct consensus",0.9
+3,4,12,0.8,"ER_10","Correct consensus",0.9
+3,5,1,0.8,"ER_10","Correct consensus",0.8
+3,5,2,0.8,"ER_10","Correct consensus",0.8
+3,5,3,0.8,"ER_10","Correct consensus",0.8
+3,5,4,0.8,"ER_10","Correct consensus",0.8
+3,5,5,0.9,"ER_10","Correct consensus",0.8
+3,5,6,0.8,"ER_10","Correct consensus",0.8
+3,5,7,0.8,"ER_10","Correct consensus",0.8
+3,5,8,0.8,"ER_10","Correct consensus",0.8
+3,5,9,0.8,"ER_10","Correct consensus",0.8
+3,5,10,0.9,"ER_10","Correct consensus",0.8
+3,5,11,0.8,"ER_10","Correct consensus",0.8
+3,5,12,0.8,"ER_10","Correct consensus",0.8
+3,6,1,0.6,"ER_10","Correct consensus",0.6
+3,6,2,0.8,"ER_10","Correct consensus",0.6
+3,6,3,1,"ER_10","Correct consensus",0.6
+3,6,4,0.9,"ER_10","Correct consensus",0.6
+3,6,5,1,"ER_10","Correct consensus",0.6
+3,6,6,0.8,"ER_10","Correct consensus",0.6
+3,6,7,0.8,"ER_10","Correct consensus",0.6
+3,6,8,0.9,"ER_10","Correct consensus",0.6
+3,6,9,0.9,"ER_10","Correct consensus",0.6
+3,6,10,0.9,"ER_10","Correct consensus",0.6
+3,6,11,1,"ER_10","Correct consensus",0.6
+3,6,12,0.9,"ER_10","Correct consensus",0.6
+4,1,1,0.9,"ER_10","Correct consensus",0.9
+4,1,2,1,"ER_10","Correct consensus",0.9
+4,1,3,1,"ER_10","Correct consensus",0.9
+4,1,4,0.9,"ER_10","Correct consensus",0.9
+4,1,5,0.7,"ER_10","Correct consensus",0.9
+4,1,6,0.8,"ER_10","Correct consensus",0.9
+4,1,7,0.9,"ER_10","Correct consensus",0.9
+4,1,8,1,"ER_10","Correct consensus",0.9
+4,1,9,0.8,"ER_10","Correct consensus",0.9
+4,1,10,0.7,"ER_10","Correct consensus",0.9
+4,1,11,0.9,"ER_10","Correct consensus",0.9
+4,1,12,0.9,"ER_10","Correct consensus",0.9
+4,2,1,0.5,"ER_10","Correct consensus",0.6
+4,2,2,0.5,"ER_10","Correct consensus",0.6
+4,2,3,0.7,"ER_10","Correct consensus",0.6
+4,2,4,0.8,"ER_10","Correct consensus",0.6
+4,2,5,0.8,"ER_10","Correct consensus",0.6
+4,2,6,0.8,"ER_10","Correct consensus",0.6
+4,2,7,0.9,"ER_10","Correct consensus",0.6
+4,2,8,0.9,"ER_10","Correct consensus",0.6
+4,2,9,0.9,"ER_10","Correct consensus",0.6
+4,2,10,1,"ER_10","Correct consensus",0.6
+4,2,11,0.9,"ER_10","Correct consensus",0.6
+4,2,12,0.8,"ER_10","Correct consensus",0.6
+4,3,1,0.6,"ER_10","Correct consensus",0.6
+4,3,2,0.8,"ER_10","Correct consensus",0.6
+4,3,3,1,"ER_10","Correct consensus",0.6
+4,3,4,0.9,"ER_10","Correct consensus",0.6
+4,3,5,0.9,"ER_10","Correct consensus",0.6
+4,3,6,0.7,"ER_10","Correct consensus",0.6
+4,3,7,0.7,"ER_10","Correct consensus",0.6
+4,3,8,0.7,"ER_10","Correct consensus",0.6
+4,3,9,0.9,"ER_10","Correct consensus",0.6
+4,3,10,1,"ER_10","Correct consensus",0.6
+4,3,11,1,"ER_10","Correct consensus",0.6
+4,3,12,0.9,"ER_10","Correct consensus",0.6
+4,4,1,0.8,"ER_10","Correct consensus",0.7
+4,4,2,0.9,"ER_10","Correct consensus",0.7
+4,4,3,0.8,"ER_10","Correct consensus",0.7
+4,4,4,0.8,"ER_10","Correct consensus",0.7
+4,4,5,1,"ER_10","Correct consensus",0.7
+4,4,6,1,"ER_10","Correct consensus",0.7
+4,4,7,0.7,"ER_10","Correct consensus",0.7
+4,4,8,0.7,"ER_10","Correct consensus",0.7
+4,4,9,0.8,"ER_10","Correct consensus",0.7
+4,4,10,0.8,"ER_10","Correct consensus",0.7
+4,4,11,0.8,"ER_10","Correct consensus",0.7
+4,4,12,0.9,"ER_10","Correct consensus",0.7
+4,5,1,0.5,"ER_10","Correct consensus",0.7
+4,5,2,0.5,"ER_10","Correct consensus",0.7
+4,5,3,0.6,"ER_10","Correct consensus",0.7
+4,5,4,0.5,"ER_10","Correct consensus",0.7
+4,5,5,0.6,"ER_10","Correct consensus",0.7
+4,5,6,0.7,"ER_10","Correct consensus",0.7
+4,5,7,0.6,"ER_10","Correct consensus",0.7
+4,5,8,0.5,"ER_10","Correct consensus",0.7
+4,5,9,0.6,"ER_10","Correct consensus",0.7
+4,5,10,0.6,"ER_10","Correct consensus",0.7
+4,5,11,0.7,"ER_10","Correct consensus",0.7
+4,5,12,0.6,"ER_10","Correct consensus",0.7
+4,6,1,0.6,"ER_10","Correct consensus",0.6
+4,6,2,0.9,"ER_10","Correct consensus",0.6
+4,6,3,0.9,"ER_10","Correct consensus",0.6
+4,6,4,0.9,"ER_10","Correct consensus",0.6
+4,6,5,0.9,"ER_10","Correct consensus",0.6
+4,6,6,1,"ER_10","Correct consensus",0.6
+4,6,7,0.9,"ER_10","Correct consensus",0.6
+4,6,8,1,"ER_10","Correct consensus",0.6
+4,6,9,1,"ER_10","Correct consensus",0.6
+4,6,10,1,"ER_10","Correct consensus",0.6
+4,6,11,0.9,"ER_10","Correct consensus",0.6
+4,6,12,1,"ER_10","Correct consensus",0.6
+1,1,1,0.6,"SB_10","Breakdown",0.6
+1,1,2,0.5,"SB_10","Breakdown",0.6
+1,1,3,0.5,"SB_10","Breakdown",0.6
+1,1,4,0.5,"SB_10","Breakdown",0.6
+1,1,5,0.5,"SB_10","Breakdown",0.6
+1,1,6,0.8,"SB_10","Breakdown",0.6
+1,1,7,0.7,"SB_10","Breakdown",0.6
+1,1,8,0.7,"SB_10","Breakdown",0.6
+1,1,9,0.7,"SB_10","Breakdown",0.6
+1,1,10,0.6,"SB_10","Breakdown",0.6
+1,1,11,0.7,"SB_10","Breakdown",0.6
+1,1,12,0.7,"SB_10","Breakdown",0.6
+1,2,1,0.9,"SB_10","Correct consensus",0.9
+1,2,2,0.9,"SB_10","Correct consensus",0.9
+1,2,3,0.8,"SB_10","Correct consensus",0.9
+1,2,4,0.9,"SB_10","Correct consensus",0.9
+1,2,5,0.9,"SB_10","Correct consensus",0.9
+1,2,6,0.9,"SB_10","Correct consensus",0.9
+1,2,7,0.9,"SB_10","Correct consensus",0.9
+1,2,8,0.8,"SB_10","Correct consensus",0.9
+1,2,9,0.9,"SB_10","Correct consensus",0.9
+1,2,10,0.8,"SB_10","Correct consensus",0.9
+1,2,11,0.9,"SB_10","Correct consensus",0.9
+1,2,12,0.9,"SB_10","Correct consensus",0.9
+1,3,1,0.6,"SB_10","Breakdown",0.6
+1,3,2,0.5,"SB_10","Breakdown",0.6
+1,3,3,0.5,"SB_10","Breakdown",0.6
+1,3,4,0.5,"SB_10","Breakdown",0.6
+1,3,5,0.5,"SB_10","Breakdown",0.6
+1,3,6,0.7,"SB_10","Breakdown",0.6
+1,3,7,0.9,"SB_10","Breakdown",0.6
+1,3,8,1,"SB_10","Breakdown",0.6
+1,3,9,0.9,"SB_10","Breakdown",0.6
+1,3,10,1,"SB_10","Breakdown",0.6
+1,3,11,1,"SB_10","Breakdown",0.6
+1,3,12,1,"SB_10","Breakdown",0.6
+1,4,1,0.5,"SB_10","Correct consensus",0.7
+1,4,2,0.7,"SB_10","Correct consensus",0.7
+1,4,3,0.6,"SB_10","Correct consensus",0.7
+1,4,4,0.9,"SB_10","Correct consensus",0.7
+1,4,5,1,"SB_10","Correct consensus",0.7
+1,4,6,0.9,"SB_10","Correct consensus",0.7
+1,4,7,1,"SB_10","Correct consensus",0.7
+1,4,8,1,"SB_10","Correct consensus",0.7
+1,4,9,0.9,"SB_10","Correct consensus",0.7
+1,4,10,0.9,"SB_10","Correct consensus",0.7
+1,4,11,1,"SB_10","Correct consensus",0.7
+1,4,12,0.9,"SB_10","Correct consensus",0.7
+1,5,1,0.8,"SB_10","Correct consensus",0.9
+1,5,2,1,"SB_10","Correct consensus",0.9
+1,5,3,1,"SB_10","Correct consensus",0.9
+1,5,4,1,"SB_10","Correct consensus",0.9
+1,5,5,1,"SB_10","Correct consensus",0.9
+1,5,6,1,"SB_10","Correct consensus",0.9
+1,5,7,0.9,"SB_10","Correct consensus",0.9
+1,5,8,1,"SB_10","Correct consensus",0.9
+1,5,9,0.9,"SB_10","Correct consensus",0.9
+1,5,10,1,"SB_10","Correct consensus",0.9
+1,5,11,1,"SB_10","Correct consensus",0.9
+1,5,12,1,"SB_10","Correct consensus",0.9
+1,6,1,0.6,"SB_10","Correct consensus",0.7
+1,6,2,0.6,"SB_10","Correct consensus",0.7
+1,6,3,0.6,"SB_10","Correct consensus",0.7
+1,6,4,0.9,"SB_10","Correct consensus",0.7
+1,6,5,0.9,"SB_10","Correct consensus",0.7
+1,6,6,0.8,"SB_10","Correct consensus",0.7
+1,6,7,0.8,"SB_10","Correct consensus",0.7
+1,6,8,1,"SB_10","Correct consensus",0.7
+1,6,9,1,"SB_10","Correct consensus",0.7
+1,6,10,0.9,"SB_10","Correct consensus",0.7
+1,6,11,0.8,"SB_10","Correct consensus",0.7
+1,6,12,1,"SB_10","Correct consensus",0.7
+2,1,1,0.5,"SB_10","Breakdown",0.5
+2,1,2,0.4,"SB_10","Breakdown",0.5
+2,1,3,0.5,"SB_10","Breakdown",0.5
+2,1,4,0.5,"SB_10","Breakdown",0.5
+2,1,5,0.4,"SB_10","Breakdown",0.5
+2,1,6,0.4,"SB_10","Breakdown",0.5
+2,1,7,0.4,"SB_10","Breakdown",0.5
+2,1,8,0.4,"SB_10","Breakdown",0.5
+2,1,9,0.5,"SB_10","Breakdown",0.5
+2,1,10,0.6,"SB_10","Breakdown",0.5
+2,1,11,0.5,"SB_10","Breakdown",0.5
+2,1,12,0.4,"SB_10","Breakdown",0.5
+2,2,1,0.7,"SB_10","Correct consensus",0.9
+2,2,2,0.9,"SB_10","Correct consensus",0.9
+2,2,3,0.8,"SB_10","Correct consensus",0.9
+2,2,4,0.7,"SB_10","Correct consensus",0.9
+2,2,5,0.8,"SB_10","Correct consensus",0.9
+2,2,6,0.8,"SB_10","Correct consensus",0.9
+2,2,7,0.8,"SB_10","Correct consensus",0.9
+2,2,8,0.8,"SB_10","Correct consensus",0.9
+2,2,9,0.7,"SB_10","Correct consensus",0.9
+2,2,10,0.7,"SB_10","Correct consensus",0.9
+2,2,11,0.8,"SB_10","Correct consensus",0.9
+2,2,12,0.8,"SB_10","Correct consensus",0.9
+2,3,1,0.4,"SB_10","Breakdown",0.5
+2,3,2,0.5,"SB_10","Breakdown",0.5
+2,3,3,0.7,"SB_10","Breakdown",0.5
+2,3,4,0.9,"SB_10","Breakdown",0.5
+2,3,5,0.8,"SB_10","Breakdown",0.5
+2,3,6,0.8,"SB_10","Breakdown",0.5
+2,3,7,0.8,"SB_10","Breakdown",0.5
+2,3,8,0.8,"SB_10","Breakdown",0.5
+2,3,9,0.7,"SB_10","Breakdown",0.5
+2,3,10,0.6,"SB_10","Breakdown",0.5
+2,3,11,0.7,"SB_10","Breakdown",0.5
+2,3,12,0.5,"SB_10","Breakdown",0.5
+2,4,1,0.5,"SB_10","Breakdown",0.7
+2,4,2,0.4,"SB_10","Breakdown",0.7
+2,4,3,0.3,"SB_10","Breakdown",0.7
+2,4,4,0.3,"SB_10","Breakdown",0.7
+2,4,5,0.4,"SB_10","Breakdown",0.7
+2,4,6,0.5,"SB_10","Breakdown",0.7
+2,4,7,0.7,"SB_10","Breakdown",0.7
+2,4,8,0.7,"SB_10","Breakdown",0.7
+2,4,9,0.6,"SB_10","Breakdown",0.7
+2,4,10,0.6,"SB_10","Breakdown",0.7
+2,4,11,0.5,"SB_10","Breakdown",0.7
+2,4,12,0.6,"SB_10","Breakdown",0.7
+2,5,1,0.7,"SB_10","Correct consensus",0.8
+2,5,2,0.7,"SB_10","Correct consensus",0.8
+2,5,3,0.6,"SB_10","Correct consensus",0.8
+2,5,4,0.6,"SB_10","Correct consensus",0.8
+2,5,5,0.6,"SB_10","Correct consensus",0.8
+2,5,6,0.7,"SB_10","Correct consensus",0.8
+2,5,7,0.8,"SB_10","Correct consensus",0.8
+2,5,8,0.8,"SB_10","Correct consensus",0.8
+2,5,9,0.7,"SB_10","Correct consensus",0.8
+2,5,10,0.7,"SB_10","Correct consensus",0.8
+2,5,11,0.7,"SB_10","Correct consensus",0.8
+2,5,12,0.7,"SB_10","Correct consensus",0.8
+2,6,1,0.6,"SB_10","Breakdown",0.7
+2,6,2,0.5,"SB_10","Breakdown",0.7
+2,6,3,0.5,"SB_10","Breakdown",0.7
+2,6,4,0.5,"SB_10","Breakdown",0.7
+2,6,5,0.4,"SB_10","Breakdown",0.7
+2,6,6,0.5,"SB_10","Breakdown",0.7
+2,6,7,0.5,"SB_10","Breakdown",0.7
+2,6,8,0.6,"SB_10","Breakdown",0.7
+2,6,9,0.6,"SB_10","Breakdown",0.7
+2,6,10,0.5,"SB_10","Breakdown",0.7
+2,6,11,0.6,"SB_10","Breakdown",0.7
+2,6,12,0.6,"SB_10","Breakdown",0.7
+3,1,1,0.9,"SB_10","Correct consensus",0.8
+3,1,2,0.8,"SB_10","Correct consensus",0.8
+3,1,3,1,"SB_10","Correct consensus",0.8
+3,1,4,0.8,"SB_10","Correct consensus",0.8
+3,1,5,0.8,"SB_10","Correct consensus",0.8
+3,1,6,0.9,"SB_10","Correct consensus",0.8
+3,1,7,0.9,"SB_10","Correct consensus",0.8
+3,1,8,1,"SB_10","Correct consensus",0.8
+3,1,9,0.9,"SB_10","Correct consensus",0.8
+3,1,10,0.8,"SB_10","Correct consensus",0.8
+3,1,11,0.8,"SB_10","Correct consensus",0.8
+3,1,12,1,"SB_10","Correct consensus",0.8
+3,2,1,0.9,"SB_10","Correct consensus",0.9
+3,2,2,0.9,"SB_10","Correct consensus",0.9
+3,2,3,0.8,"SB_10","Correct consensus",0.9
+3,2,4,0.8,"SB_10","Correct consensus",0.9
+3,2,5,0.9,"SB_10","Correct consensus",0.9
+3,2,6,1,"SB_10","Correct consensus",0.9
+3,2,7,0.9,"SB_10","Correct consensus",0.9
+3,2,8,0.8,"SB_10","Correct consensus",0.9
+3,2,9,0.8,"SB_10","Correct consensus",0.9
+3,2,10,1,"SB_10","Correct consensus",0.9
+3,2,11,1,"SB_10","Correct consensus",0.9
+3,2,12,1,"SB_10","Correct consensus",0.9
+3,3,1,0.7,"SB_10","Correct consensus",0.8
+3,3,2,0.8,"SB_10","Correct consensus",0.8
+3,3,3,1,"SB_10","Correct consensus",0.8
+3,3,4,0.8,"SB_10","Correct consensus",0.8
+3,3,5,0.8,"SB_10","Correct consensus",0.8
+3,3,6,0.9,"SB_10","Correct consensus",0.8
+3,3,7,0.9,"SB_10","Correct consensus",0.8
+3,3,8,0.9,"SB_10","Correct consensus",0.8
+3,3,9,0.9,"SB_10","Correct consensus",0.8
+3,3,10,1,"SB_10","Correct consensus",0.8
+3,3,11,1,"SB_10","Correct consensus",0.8
+3,3,12,1,"SB_10","Correct consensus",0.8
+3,4,1,0.9,"SB_10","Correct consensus",0.9
+3,4,2,1,"SB_10","Correct consensus",0.9
+3,4,3,1,"SB_10","Correct consensus",0.9
+3,4,4,1,"SB_10","Correct consensus",0.9
+3,4,5,0.9,"SB_10","Correct consensus",0.9
+3,4,6,1,"SB_10","Correct consensus",0.9
+3,4,7,1,"SB_10","Correct consensus",0.9
+3,4,8,1,"SB_10","Correct consensus",0.9
+3,4,9,1,"SB_10","Correct consensus",0.9
+3,4,10,1,"SB_10","Correct consensus",0.9
+3,4,11,1,"SB_10","Correct consensus",0.9
+3,4,12,1,"SB_10","Correct consensus",0.9
+3,5,1,0.7,"SB_10","Correct consensus",0.8
+3,5,2,0.5,"SB_10","Correct consensus",0.8
+3,5,3,0.5,"SB_10","Correct consensus",0.8
+3,5,4,0.5,"SB_10","Correct consensus",0.8
+3,5,5,0.6,"SB_10","Correct consensus",0.8
+3,5,6,0.6,"SB_10","Correct consensus",0.8
+3,5,7,0.7,"SB_10","Correct consensus",0.8
+3,5,8,0.8,"SB_10","Correct consensus",0.8
+3,5,9,0.7,"SB_10","Correct consensus",0.8
+3,5,10,0.6,"SB_10","Correct consensus",0.8
+3,5,11,0.6,"SB_10","Correct consensus",0.8
+3,5,12,0.6,"SB_10","Correct consensus",0.8
+3,6,1,0.6,"SB_10","Correct consensus",0.6
+3,6,2,0.7,"SB_10","Correct consensus",0.6
+3,6,3,1,"SB_10","Correct consensus",0.6
+3,6,4,1,"SB_10","Correct consensus",0.6
+3,6,5,0.9,"SB_10","Correct consensus",0.6
+3,6,6,1,"SB_10","Correct consensus",0.6
+3,6,7,1,"SB_10","Correct consensus",0.6
+3,6,8,1,"SB_10","Correct consensus",0.6
+3,6,9,0.9,"SB_10","Correct consensus",0.6
+3,6,10,1,"SB_10","Correct consensus",0.6
+3,6,11,1,"SB_10","Correct consensus",0.6
+3,6,12,1,"SB_10","Correct consensus",0.6
+4,1,1,0.8,"SB_10","Correct consensus",0.9
+4,1,2,0.9,"SB_10","Correct consensus",0.9
+4,1,3,0.8,"SB_10","Correct consensus",0.9
+4,1,4,0.8,"SB_10","Correct consensus",0.9
+4,1,5,0.8,"SB_10","Correct consensus",0.9
+4,1,6,0.8,"SB_10","Correct consensus",0.9
+4,1,7,0.8,"SB_10","Correct consensus",0.9
+4,1,8,0.8,"SB_10","Correct consensus",0.9
+4,1,9,0.8,"SB_10","Correct consensus",0.9
+4,1,10,0.8,"SB_10","Correct consensus",0.9
+4,1,11,0.9,"SB_10","Correct consensus",0.9
+4,1,12,0.9,"SB_10","Correct consensus",0.9
+4,2,1,0.5,"SB_10","Breakdown",0.6
+4,2,2,0.6,"SB_10","Breakdown",0.6
+4,2,3,0.6,"SB_10","Breakdown",0.6
+4,2,4,0.6,"SB_10","Breakdown",0.6
+4,2,5,0.5,"SB_10","Breakdown",0.6
+4,2,6,0.5,"SB_10","Breakdown",0.6
+4,2,7,0.5,"SB_10","Breakdown",0.6
+4,2,8,0.5,"SB_10","Breakdown",0.6
+4,2,9,0.6,"SB_10","Breakdown",0.6
+4,2,10,0.5,"SB_10","Breakdown",0.6
+4,2,11,0.5,"SB_10","Breakdown",0.6
+4,2,12,0.5,"SB_10","Breakdown",0.6
+4,3,1,0.5,"SB_10","Correct consensus",0.6
+4,3,2,0.5,"SB_10","Correct consensus",0.6
+4,3,3,0.7,"SB_10","Correct consensus",0.6
+4,3,4,0.7,"SB_10","Correct consensus",0.6
+4,3,5,0.7,"SB_10","Correct consensus",0.6
+4,3,6,0.8,"SB_10","Correct consensus",0.6
+4,3,7,0.9,"SB_10","Correct consensus",0.6
+4,3,8,0.9,"SB_10","Correct consensus",0.6
+4,3,9,0.7,"SB_10","Correct consensus",0.6
+4,3,10,0.7,"SB_10","Correct consensus",0.6
+4,3,11,0.7,"SB_10","Correct consensus",0.6
+4,3,12,0.7,"SB_10","Correct consensus",0.6
+4,4,1,0.7,"SB_10","Breakdown",0.7
+4,4,2,0.7,"SB_10","Breakdown",0.7
+4,4,3,0.8,"SB_10","Breakdown",0.7
+4,4,4,0.9,"SB_10","Breakdown",0.7
+4,4,5,0.9,"SB_10","Breakdown",0.7
+4,4,6,0.9,"SB_10","Breakdown",0.7
+4,4,7,0.9,"SB_10","Breakdown",0.7
+4,4,8,0.9,"SB_10","Breakdown",0.7
+4,4,9,0.9,"SB_10","Breakdown",0.7
+4,4,10,0.9,"SB_10","Breakdown",0.7
+4,4,11,0.9,"SB_10","Breakdown",0.7
+4,4,12,0.9,"SB_10","Breakdown",0.7
+4,5,1,0.5,"SB_10","Breakdown",0.7
+4,5,2,0.5,"SB_10","Breakdown",0.7
+4,5,3,0.3,"SB_10","Breakdown",0.7
+4,5,4,0.3,"SB_10","Breakdown",0.7
+4,5,5,0.4,"SB_10","Breakdown",0.7
+4,5,6,0.4,"SB_10","Breakdown",0.7
+4,5,7,0.3,"SB_10","Breakdown",0.7
+4,5,8,0.3,"SB_10","Breakdown",0.7
+4,5,9,0.4,"SB_10","Breakdown",0.7
+4,5,10,0.4,"SB_10","Breakdown",0.7
+4,5,11,0.3,"SB_10","Breakdown",0.7
+4,5,12,0.3,"SB_10","Breakdown",0.7
+4,6,1,0.5,"SB_10","Correct consensus",0.6
+4,6,2,0.5,"SB_10","Correct consensus",0.6
+4,6,3,0.3,"SB_10","Correct consensus",0.6
+4,6,4,0.2,"SB_10","Correct consensus",0.6
+4,6,5,0.1,"SB_10","Correct consensus",0.6
+4,6,6,0.1,"SB_10","Correct consensus",0.6
+4,6,7,0.1,"SB_10","Correct consensus",0.6
+4,6,8,0.1,"SB_10","Correct consensus",0.6
+4,6,9,0.1,"SB_10","Correct consensus",0.6
+4,6,10,0.1,"SB_10","Correct consensus",0.6
+4,6,11,0.1,"SB_10","Correct consensus",0.6
+4,6,12,0.1,"SB_10","Correct consensus",0.6
+1,1,1,0.7,"RF_10","Incorrect consensus",0.6
+1,1,2,0.6,"RF_10","Incorrect consensus",0.6
+1,1,3,0.3,"RF_10","Incorrect consensus",0.6
+1,1,4,0.3,"RF_10","Incorrect consensus",0.6
+1,1,5,0.4,"RF_10","Incorrect consensus",0.6
+1,1,6,0.4,"RF_10","Incorrect consensus",0.6
+1,1,7,0.5,"RF_10","Incorrect consensus",0.6
+1,1,8,0.3,"RF_10","Incorrect consensus",0.6
+1,1,9,0.3,"RF_10","Incorrect consensus",0.6
+1,1,10,0.2,"RF_10","Incorrect consensus",0.6
+1,1,11,0.3,"RF_10","Incorrect consensus",0.6
+1,1,12,0.3,"RF_10","Incorrect consensus",0.6
+1,2,1,0.9,"RF_10","Correct consensus",0.9
+1,2,2,1,"RF_10","Correct consensus",0.9
+1,2,3,0.7,"RF_10","Correct consensus",0.9
+1,2,4,0.9,"RF_10","Correct consensus",0.9
+1,2,5,1,"RF_10","Correct consensus",0.9
+1,2,6,0.9,"RF_10","Correct consensus",0.9
+1,2,7,1,"RF_10","Correct consensus",0.9
+1,2,8,0.8,"RF_10","Correct consensus",0.9
+1,2,9,0.8,"RF_10","Correct consensus",0.9
+1,2,10,0.9,"RF_10","Correct consensus",0.9
+1,2,11,0.9,"RF_10","Correct consensus",0.9
+1,2,12,0.9,"RF_10","Correct consensus",0.9
+1,3,1,0.5,"RF_10","Incorrect consensus",0.6
+1,3,2,0.4,"RF_10","Incorrect consensus",0.6
+1,3,3,0,"RF_10","Incorrect consensus",0.6
+1,3,4,0.2,"RF_10","Incorrect consensus",0.6
+1,3,5,0.2,"RF_10","Incorrect consensus",0.6
+1,3,6,0.1,"RF_10","Incorrect consensus",0.6
+1,3,7,0.2,"RF_10","Incorrect consensus",0.6
+1,3,8,0.1,"RF_10","Incorrect consensus",0.6
+1,3,9,0.2,"RF_10","Incorrect consensus",0.6
+1,3,10,0.2,"RF_10","Incorrect consensus",0.6
+1,3,11,0.4,"RF_10","Incorrect consensus",0.6
+1,3,12,0.3,"RF_10","Incorrect consensus",0.6
+1,4,1,0.7,"RF_10","Correct consensus",0.7
+1,4,2,0.8,"RF_10","Correct consensus",0.7
+1,4,3,0.9,"RF_10","Correct consensus",0.7
+1,4,4,1,"RF_10","Correct consensus",0.7
+1,4,5,0.9,"RF_10","Correct consensus",0.7
+1,4,6,1,"RF_10","Correct consensus",0.7
+1,4,7,1,"RF_10","Correct consensus",0.7
+1,4,8,1,"RF_10","Correct consensus",0.7
+1,4,9,0.9,"RF_10","Correct consensus",0.7
+1,4,10,0.9,"RF_10","Correct consensus",0.7
+1,4,11,1,"RF_10","Correct consensus",0.7
+1,4,12,0.8,"RF_10","Correct consensus",0.7
+1,5,1,0.9,"RF_10","Correct consensus",0.9
+1,5,2,1,"RF_10","Correct consensus",0.9
+1,5,3,1,"RF_10","Correct consensus",0.9
+1,5,4,0.9,"RF_10","Correct consensus",0.9
+1,5,5,1,"RF_10","Correct consensus",0.9
+1,5,6,1,"RF_10","Correct consensus",0.9
+1,5,7,1,"RF_10","Correct consensus",0.9
+1,5,8,1,"RF_10","Correct consensus",0.9
+1,5,9,1,"RF_10","Correct consensus",0.9
+1,5,10,1,"RF_10","Correct consensus",0.9
+1,5,11,0.9,"RF_10","Correct consensus",0.9
+1,5,12,1,"RF_10","Correct consensus",0.9
+1,6,1,0.7,"RF_10","Correct consensus",0.7
+1,6,2,0.9,"RF_10","Correct consensus",0.7
+1,6,3,0.9,"RF_10","Correct consensus",0.7
+1,6,4,0.9,"RF_10","Correct consensus",0.7
+1,6,5,1,"RF_10","Correct consensus",0.7
+1,6,6,0.9,"RF_10","Correct consensus",0.7
+1,6,7,0.8,"RF_10","Correct consensus",0.7
+1,6,8,0.9,"RF_10","Correct consensus",0.7
+1,6,9,0.9,"RF_10","Correct consensus",0.7
+1,6,10,0.8,"RF_10","Correct consensus",0.7
+1,6,11,0.8,"RF_10","Correct consensus",0.7
+1,6,12,0.8,"RF_10","Correct consensus",0.7
+2,1,1,0.6,"RF_10","Incorrect consensus",0.5
+2,1,2,0.8,"RF_10","Incorrect consensus",0.5
+2,1,3,0.9,"RF_10","Incorrect consensus",0.5
+2,1,4,0.9,"RF_10","Incorrect consensus",0.5
+2,1,5,0.9,"RF_10","Incorrect consensus",0.5
+2,1,6,0.9,"RF_10","Incorrect consensus",0.5
+2,1,7,0.9,"RF_10","Incorrect consensus",0.5
+2,1,8,0.9,"RF_10","Incorrect consensus",0.5
+2,1,9,1,"RF_10","Incorrect consensus",0.5
+2,1,10,1,"RF_10","Incorrect consensus",0.5
+2,1,11,1,"RF_10","Incorrect consensus",0.5
+2,1,12,1,"RF_10","Incorrect consensus",0.5
+2,2,1,0.7,"RF_10","Correct consensus",0.9
+2,2,2,0.7,"RF_10","Correct consensus",0.9
+2,2,3,0.7,"RF_10","Correct consensus",0.9
+2,2,4,0.8,"RF_10","Correct consensus",0.9
+2,2,5,0.8,"RF_10","Correct consensus",0.9
+2,2,6,0.8,"RF_10","Correct consensus",0.9
+2,2,7,0.8,"RF_10","Correct consensus",0.9
+2,2,8,0.8,"RF_10","Correct consensus",0.9
+2,2,9,0.7,"RF_10","Correct consensus",0.9
+2,2,10,0.7,"RF_10","Correct consensus",0.9
+2,2,11,0.7,"RF_10","Correct consensus",0.9
+2,2,12,0.6,"RF_10","Correct consensus",0.9
+2,3,1,0.3,"RF_10","Incorrect consensus",0.5
+2,3,2,0.4,"RF_10","Incorrect consensus",0.5
+2,3,3,0.6,"RF_10","Incorrect consensus",0.5
+2,3,4,0.5,"RF_10","Incorrect consensus",0.5
+2,3,5,0.5,"RF_10","Incorrect consensus",0.5
+2,3,6,0.4,"RF_10","Incorrect consensus",0.5
+2,3,7,0.3,"RF_10","Incorrect consensus",0.5
+2,3,8,0.2,"RF_10","Incorrect consensus",0.5
+2,3,9,0.2,"RF_10","Incorrect consensus",0.5
+2,3,10,0.2,"RF_10","Incorrect consensus",0.5
+2,3,11,0,"RF_10","Incorrect consensus",0.5
+2,3,12,0.2,"RF_10","Incorrect consensus",0.5
+2,4,1,0.7,"RF_10","Incorrect consensus",0.7
+2,4,2,0.5,"RF_10","Incorrect consensus",0.7
+2,4,3,0.3,"RF_10","Incorrect consensus",0.7
+2,4,4,0.2,"RF_10","Incorrect consensus",0.7
+2,4,5,0,"RF_10","Incorrect consensus",0.7
+2,4,6,0,"RF_10","Incorrect consensus",0.7
+2,4,7,0,"RF_10","Incorrect consensus",0.7
+2,4,8,0,"RF_10","Incorrect consensus",0.7
+2,4,9,0,"RF_10","Incorrect consensus",0.7
+2,4,10,0,"RF_10","Incorrect consensus",0.7
+2,4,11,0,"RF_10","Incorrect consensus",0.7
+2,4,12,0,"RF_10","Incorrect consensus",0.7
+2,5,1,0.8,"RF_10","Incorrect consensus",0.8
+2,5,2,0.7,"RF_10","Incorrect consensus",0.8
+2,5,3,0.4,"RF_10","Incorrect consensus",0.8
+2,5,4,0.5,"RF_10","Incorrect consensus",0.8
+2,5,5,0.4,"RF_10","Incorrect consensus",0.8
+2,5,6,0.7,"RF_10","Incorrect consensus",0.8
+2,5,7,0.6,"RF_10","Incorrect consensus",0.8
+2,5,8,0.5,"RF_10","Incorrect consensus",0.8
+2,5,9,0.5,"RF_10","Incorrect consensus",0.8
+2,5,10,0.5,"RF_10","Incorrect consensus",0.8
+2,5,11,0.5,"RF_10","Incorrect consensus",0.8
+2,5,12,0.5,"RF_10","Incorrect consensus",0.8
+2,6,1,0.6,"RF_10","Incorrect consensus",0.7
+2,6,2,0.4,"RF_10","Incorrect consensus",0.7
+2,6,3,0.3,"RF_10","Incorrect consensus",0.7
+2,6,4,0.2,"RF_10","Incorrect consensus",0.7
+2,6,5,0.2,"RF_10","Incorrect consensus",0.7
+2,6,6,0.3,"RF_10","Incorrect consensus",0.7
+2,6,7,0.2,"RF_10","Incorrect consensus",0.7
+2,6,8,0.3,"RF_10","Incorrect consensus",0.7
+2,6,9,0.4,"RF_10","Incorrect consensus",0.7
+2,6,10,0.4,"RF_10","Incorrect consensus",0.7
+2,6,11,0.4,"RF_10","Incorrect consensus",0.7
+2,6,12,0.4,"RF_10","Incorrect consensus",0.7
+3,1,1,0.8,"RF_10","Incorrect consensus",0.8
+3,1,2,0.8,"RF_10","Incorrect consensus",0.8
+3,1,3,0.8,"RF_10","Incorrect consensus",0.8
+3,1,4,0.7,"RF_10","Incorrect consensus",0.8
+3,1,5,0.3,"RF_10","Incorrect consensus",0.8
+3,1,6,0.4,"RF_10","Incorrect consensus",0.8
+3,1,7,0.4,"RF_10","Incorrect consensus",0.8
+3,1,8,0.4,"RF_10","Incorrect consensus",0.8
+3,1,9,0.3,"RF_10","Incorrect consensus",0.8
+3,1,10,0.3,"RF_10","Incorrect consensus",0.8
+3,1,11,0.1,"RF_10","Incorrect consensus",0.8
+3,1,12,0.2,"RF_10","Incorrect consensus",0.8
+3,2,1,0.8,"RF_10","Correct consensus",0.9
+3,2,2,0.9,"RF_10","Correct consensus",0.9
+3,2,3,0.9,"RF_10","Correct consensus",0.9
+3,2,4,1,"RF_10","Correct consensus",0.9
+3,2,5,1,"RF_10","Correct consensus",0.9
+3,2,6,1,"RF_10","Correct consensus",0.9
+3,2,7,0.9,"RF_10","Correct consensus",0.9
+3,2,8,0.9,"RF_10","Correct consensus",0.9
+3,2,9,1,"RF_10","Correct consensus",0.9
+3,2,10,1,"RF_10","Correct consensus",0.9
+3,2,11,0.9,"RF_10","Correct consensus",0.9
+3,2,12,1,"RF_10","Correct consensus",0.9
+3,3,1,0.9,"RF_10","Incorrect consensus",0.8
+3,3,2,0.9,"RF_10","Incorrect consensus",0.8
+3,3,3,1,"RF_10","Incorrect consensus",0.8
+3,3,4,1,"RF_10","Incorrect consensus",0.8
+3,3,5,0.9,"RF_10","Incorrect consensus",0.8
+3,3,6,0.9,"RF_10","Incorrect consensus",0.8
+3,3,7,0.8,"RF_10","Incorrect consensus",0.8
+3,3,8,0.9,"RF_10","Incorrect consensus",0.8
+3,3,9,0.9,"RF_10","Incorrect consensus",0.8
+3,3,10,0.9,"RF_10","Incorrect consensus",0.8
+3,3,11,1,"RF_10","Incorrect consensus",0.8
+3,3,12,1,"RF_10","Incorrect consensus",0.8
+3,4,1,0.9,"RF_10","Correct consensus",0.9
+3,4,2,1,"RF_10","Correct consensus",0.9
+3,4,3,1,"RF_10","Correct consensus",0.9
+3,4,4,1,"RF_10","Correct consensus",0.9
+3,4,5,1,"RF_10","Correct consensus",0.9
+3,4,6,1,"RF_10","Correct consensus",0.9
+3,4,7,0.9,"RF_10","Correct consensus",0.9
+3,4,8,1,"RF_10","Correct consensus",0.9
+3,4,9,1,"RF_10","Correct consensus",0.9
+3,4,10,1,"RF_10","Correct consensus",0.9
+3,4,11,1,"RF_10","Correct consensus",0.9
+3,4,12,1,"RF_10","Correct consensus",0.9
+3,5,1,0.8,"RF_10","Correct consensus",0.8
+3,5,2,0.9,"RF_10","Correct consensus",0.8
+3,5,3,1,"RF_10","Correct consensus",0.8
+3,5,4,1,"RF_10","Correct consensus",0.8
+3,5,5,1,"RF_10","Correct consensus",0.8
+3,5,6,1,"RF_10","Correct consensus",0.8
+3,5,7,1,"RF_10","Correct consensus",0.8
+3,5,8,1,"RF_10","Correct consensus",0.8
+3,5,9,1,"RF_10","Correct consensus",0.8
+3,5,10,1,"RF_10","Correct consensus",0.8
+3,5,11,1,"RF_10","Correct consensus",0.8
+3,5,12,1,"RF_10","Correct consensus",0.8
+3,6,1,0.6,"RF_10","Correct consensus",0.6
+3,6,2,0.8,"RF_10","Correct consensus",0.6
+3,6,3,1,"RF_10","Correct consensus",0.6
+3,6,4,1,"RF_10","Correct consensus",0.6
+3,6,5,1,"RF_10","Correct consensus",0.6
+3,6,6,1,"RF_10","Correct consensus",0.6
+3,6,7,1,"RF_10","Correct consensus",0.6
+3,6,8,1,"RF_10","Correct consensus",0.6
+3,6,9,1,"RF_10","Correct consensus",0.6
+3,6,10,1,"RF_10","Correct consensus",0.6
+3,6,11,1,"RF_10","Correct consensus",0.6
+3,6,12,1,"RF_10","Correct consensus",0.6
+4,1,1,0.9,"RF_10","Correct consensus",0.9
+4,1,2,1,"RF_10","Correct consensus",0.9
+4,1,3,0.9,"RF_10","Correct consensus",0.9
+4,1,4,0.9,"RF_10","Correct consensus",0.9
+4,1,5,1,"RF_10","Correct consensus",0.9
+4,1,6,0.9,"RF_10","Correct consensus",0.9
+4,1,7,1,"RF_10","Correct consensus",0.9
+4,1,8,0.9,"RF_10","Correct consensus",0.9
+4,1,9,0.7,"RF_10","Correct consensus",0.9
+4,1,10,0.8,"RF_10","Correct consensus",0.9
+4,1,11,0.9,"RF_10","Correct consensus",0.9
+4,1,12,0.9,"RF_10","Correct consensus",0.9
+4,2,1,0.7,"RF_10","Correct consensus",0.6
+4,2,2,0.9,"RF_10","Correct consensus",0.6
+4,2,3,0.8,"RF_10","Correct consensus",0.6
+4,2,4,0.9,"RF_10","Correct consensus",0.6
+4,2,5,0.9,"RF_10","Correct consensus",0.6
+4,2,6,0.8,"RF_10","Correct consensus",0.6
+4,2,7,0.9,"RF_10","Correct consensus",0.6
+4,2,8,0.9,"RF_10","Correct consensus",0.6
+4,2,9,0.8,"RF_10","Correct consensus",0.6
+4,2,10,0.9,"RF_10","Correct consensus",0.6
+4,2,11,0.9,"RF_10","Correct consensus",0.6
+4,2,12,0.8,"RF_10","Correct consensus",0.6
+4,3,1,0.6,"RF_10","Correct consensus",0.6
+4,3,2,0.8,"RF_10","Correct consensus",0.6
+4,3,3,0.8,"RF_10","Correct consensus",0.6
+4,3,4,0.8,"RF_10","Correct consensus",0.6
+4,3,5,0.9,"RF_10","Correct consensus",0.6
+4,3,6,0.9,"RF_10","Correct consensus",0.6
+4,3,7,0.9,"RF_10","Correct consensus",0.6
+4,3,8,0.8,"RF_10","Correct consensus",0.6
+4,3,9,0.9,"RF_10","Correct consensus",0.6
+4,3,10,0.9,"RF_10","Correct consensus",0.6
+4,3,11,0.9,"RF_10","Correct consensus",0.6
+4,3,12,0.8,"RF_10","Correct consensus",0.6
+4,4,1,0.6,"RF_10","Correct consensus",0.7
+4,4,2,0.7,"RF_10","Correct consensus",0.7
+4,4,3,0.7,"RF_10","Correct consensus",0.7
+4,4,4,0.8,"RF_10","Correct consensus",0.7
+4,4,5,1,"RF_10","Correct consensus",0.7
+4,4,6,0.9,"RF_10","Correct consensus",0.7
+4,4,7,0.9,"RF_10","Correct consensus",0.7
+4,4,8,0.8,"RF_10","Correct consensus",0.7
+4,4,9,0.9,"RF_10","Correct consensus",0.7
+4,4,10,0.9,"RF_10","Correct consensus",0.7
+4,4,11,1,"RF_10","Correct consensus",0.7
+4,4,12,0.9,"RF_10","Correct consensus",0.7
+4,5,1,0.6,"RF_10","Correct consensus",0.7
+4,5,2,0.7,"RF_10","Correct consensus",0.7
+4,5,3,0.8,"RF_10","Correct consensus",0.7
+4,5,4,0.9,"RF_10","Correct consensus",0.7
+4,5,5,0.9,"RF_10","Correct consensus",0.7
+4,5,6,0.9,"RF_10","Correct consensus",0.7
+4,5,7,0.9,"RF_10","Correct consensus",0.7
+4,5,8,0.9,"RF_10","Correct consensus",0.7
+4,5,9,0.9,"RF_10","Correct consensus",0.7
+4,5,10,0.9,"RF_10","Correct consensus",0.7
+4,5,11,0.9,"RF_10","Correct consensus",0.7
+4,5,12,0.9,"RF_10","Correct consensus",0.7
+4,6,1,0.7,"RF_10","Correct consensus",0.6
+4,6,2,0.8,"RF_10","Correct consensus",0.6
+4,6,3,0.7,"RF_10","Correct consensus",0.6
+4,6,4,0.9,"RF_10","Correct consensus",0.6
+4,6,5,1,"RF_10","Correct consensus",0.6
+4,6,6,1,"RF_10","Correct consensus",0.6
+4,6,7,1,"RF_10","Correct consensus",0.6
+4,6,8,1,"RF_10","Correct consensus",0.6
+4,6,9,0.9,"RF_10","Correct consensus",0.6
+4,6,10,1,"RF_10","Correct consensus",0.6
+4,6,11,1,"RF_10","Correct consensus",0.6
+4,6,12,1,"RF_10","Correct consensus",0.6
+1,1,1,0.5,"RGG_10","Correct consensus",0.6
+1,1,2,0.4,"RGG_10","Correct consensus",0.6
+1,1,3,0.3,"RGG_10","Correct consensus",0.6
+1,1,4,0.2,"RGG_10","Correct consensus",0.6
+1,1,5,0.2,"RGG_10","Correct consensus",0.6
+1,1,6,0.2,"RGG_10","Correct consensus",0.6
+1,1,7,0.2,"RGG_10","Correct consensus",0.6
+1,1,8,0.3,"RGG_10","Correct consensus",0.6
+1,1,9,0.2,"RGG_10","Correct consensus",0.6
+1,1,10,0.2,"RGG_10","Correct consensus",0.6
+1,1,11,0.1,"RGG_10","Correct consensus",0.6
+1,1,12,0.1,"RGG_10","Correct consensus",0.6
+1,2,1,0.9,"RGG_10","Correct consensus",0.9
+1,2,2,0.9,"RGG_10","Correct consensus",0.9
+1,2,3,1,"RGG_10","Correct consensus",0.9
+1,2,4,1,"RGG_10","Correct consensus",0.9
+1,2,5,1,"RGG_10","Correct consensus",0.9
+1,2,6,1,"RGG_10","Correct consensus",0.9
+1,2,7,1,"RGG_10","Correct consensus",0.9
+1,2,8,1,"RGG_10","Correct consensus",0.9
+1,2,9,1,"RGG_10","Correct consensus",0.9
+1,2,10,1,"RGG_10","Correct consensus",0.9
+1,2,11,1,"RGG_10","Correct consensus",0.9
+1,2,12,0.9,"RGG_10","Correct consensus",0.9
+1,3,1,0.6,"RGG_10","Correct consensus",0.6
+1,3,2,0.7,"RGG_10","Correct consensus",0.6
+1,3,3,0.7,"RGG_10","Correct consensus",0.6
+1,3,4,0.8,"RGG_10","Correct consensus",0.6
+1,3,5,0.9,"RGG_10","Correct consensus",0.6
+1,3,6,0.9,"RGG_10","Correct consensus",0.6
+1,3,7,0.9,"RGG_10","Correct consensus",0.6
+1,3,8,0.9,"RGG_10","Correct consensus",0.6
+1,3,9,0.9,"RGG_10","Correct consensus",0.6
+1,3,10,0.8,"RGG_10","Correct consensus",0.6
+1,3,11,0.7,"RGG_10","Correct consensus",0.6
+1,3,12,0.8,"RGG_10","Correct consensus",0.6
+1,4,1,0.7,"RGG_10","Correct consensus",0.7
+1,4,2,0.7,"RGG_10","Correct consensus",0.7
+1,4,3,0.6,"RGG_10","Correct consensus",0.7
+1,4,4,0.7,"RGG_10","Correct consensus",0.7
+1,4,5,0.8,"RGG_10","Correct consensus",0.7
+1,4,6,0.9,"RGG_10","Correct consensus",0.7
+1,4,7,0.9,"RGG_10","Correct consensus",0.7
+1,4,8,0.8,"RGG_10","Correct consensus",0.7
+1,4,9,0.8,"RGG_10","Correct consensus",0.7
+1,4,10,0.8,"RGG_10","Correct consensus",0.7
+1,4,11,0.9,"RGG_10","Correct consensus",0.7
+1,4,12,0.8,"RGG_10","Correct consensus",0.7
+1,5,1,0.8,"RGG_10","Correct consensus",0.9
+1,5,2,0.8,"RGG_10","Correct consensus",0.9
+1,5,3,0.7,"RGG_10","Correct consensus",0.9
+1,5,4,0.7,"RGG_10","Correct consensus",0.9
+1,5,5,0.7,"RGG_10","Correct consensus",0.9
+1,5,6,0.7,"RGG_10","Correct consensus",0.9
+1,5,7,0.8,"RGG_10","Correct consensus",0.9
+1,5,8,0.9,"RGG_10","Correct consensus",0.9
+1,5,9,0.9,"RGG_10","Correct consensus",0.9
+1,5,10,0.8,"RGG_10","Correct consensus",0.9
+1,5,11,0.8,"RGG_10","Correct consensus",0.9
+1,5,12,0.8,"RGG_10","Correct consensus",0.9
+1,6,1,0.5,"RGG_10","Correct consensus",0.7
+1,6,2,0.5,"RGG_10","Correct consensus",0.7
+1,6,3,0.5,"RGG_10","Correct consensus",0.7
+1,6,4,0.5,"RGG_10","Correct consensus",0.7
+1,6,5,0.3,"RGG_10","Correct consensus",0.7
+1,6,6,0.2,"RGG_10","Correct consensus",0.7
+1,6,7,0.3,"RGG_10","Correct consensus",0.7
+1,6,8,0.3,"RGG_10","Correct consensus",0.7
+1,6,9,0.2,"RGG_10","Correct consensus",0.7
+1,6,10,0.2,"RGG_10","Correct consensus",0.7
+1,6,11,0.2,"RGG_10","Correct consensus",0.7
+1,6,12,0.2,"RGG_10","Correct consensus",0.7
+2,1,1,0.5,"RGG_10","Breakdown",0.5
+2,1,2,0.4,"RGG_10","Breakdown",0.5
+2,1,3,0.3,"RGG_10","Breakdown",0.5
+2,1,4,0.2,"RGG_10","Breakdown",0.5
+2,1,5,0.4,"RGG_10","Breakdown",0.5
+2,1,6,0.4,"RGG_10","Breakdown",0.5
+2,1,7,0.3,"RGG_10","Breakdown",0.5
+2,1,8,0.2,"RGG_10","Breakdown",0.5
+2,1,9,0.2,"RGG_10","Breakdown",0.5
+2,1,10,0.2,"RGG_10","Breakdown",0.5
+2,1,11,0.1,"RGG_10","Breakdown",0.5
+2,1,12,0.1,"RGG_10","Breakdown",0.5
+2,2,1,0.9,"RGG_10","Correct consensus",0.9
+2,2,2,0.9,"RGG_10","Correct consensus",0.9
+2,2,3,1,"RGG_10","Correct consensus",0.9
+2,2,4,1,"RGG_10","Correct consensus",0.9
+2,2,5,1,"RGG_10","Correct consensus",0.9
+2,2,6,0.9,"RGG_10","Correct consensus",0.9
+2,2,7,1,"RGG_10","Correct consensus",0.9
+2,2,8,0.9,"RGG_10","Correct consensus",0.9
+2,2,9,0.9,"RGG_10","Correct consensus",0.9
+2,2,10,0.9,"RGG_10","Correct consensus",0.9
+2,2,11,1,"RGG_10","Correct consensus",0.9
+2,2,12,1,"RGG_10","Correct consensus",0.9
+2,3,1,0.5,"RGG_10","Correct consensus",0.5
+2,3,2,0.5,"RGG_10","Correct consensus",0.5
+2,3,3,0.4,"RGG_10","Correct consensus",0.5
+2,3,4,0.4,"RGG_10","Correct consensus",0.5
+2,3,5,0.3,"RGG_10","Correct consensus",0.5
+2,3,6,0.3,"RGG_10","Correct consensus",0.5
+2,3,7,0.3,"RGG_10","Correct consensus",0.5
+2,3,8,0.3,"RGG_10","Correct consensus",0.5
+2,3,9,0.3,"RGG_10","Correct consensus",0.5
+2,3,10,0.3,"RGG_10","Correct consensus",0.5
+2,3,11,0.3,"RGG_10","Correct consensus",0.5
+2,3,12,0.3,"RGG_10","Correct consensus",0.5
+2,4,1,0.7,"RGG_10","Correct consensus",0.7
+2,4,2,0.9,"RGG_10","Correct consensus",0.7
+2,4,3,0.9,"RGG_10","Correct consensus",0.7
+2,4,4,0.9,"RGG_10","Correct consensus",0.7
+2,4,5,0.9,"RGG_10","Correct consensus",0.7
+2,4,6,0.9,"RGG_10","Correct consensus",0.7
+2,4,7,0.9,"RGG_10","Correct consensus",0.7
+2,4,8,0.9,"RGG_10","Correct consensus",0.7
+2,4,9,0.9,"RGG_10","Correct consensus",0.7
+2,4,10,0.9,"RGG_10","Correct consensus",0.7
+2,4,11,0.9,"RGG_10","Correct consensus",0.7
+2,4,12,0.9,"RGG_10","Correct consensus",0.7
+2,5,1,0.8,"RGG_10","Correct consensus",0.8
+2,5,2,0.9,"RGG_10","Correct consensus",0.8
+2,5,3,0.9,"RGG_10","Correct consensus",0.8
+2,5,4,0.9,"RGG_10","Correct consensus",0.8
+2,5,5,0.9,"RGG_10","Correct consensus",0.8
+2,5,6,0.9,"RGG_10","Correct consensus",0.8
+2,5,7,0.9,"RGG_10","Correct consensus",0.8
+2,5,8,0.9,"RGG_10","Correct consensus",0.8
+2,5,9,0.9,"RGG_10","Correct consensus",0.8
+2,5,10,0.9,"RGG_10","Correct consensus",0.8
+2,5,11,0.9,"RGG_10","Correct consensus",0.8
+2,5,12,0.9,"RGG_10","Correct consensus",0.8
+2,6,1,0.6,"RGG_10","Breakdown",0.7
+2,6,2,0.8,"RGG_10","Breakdown",0.7
+2,6,3,0.8,"RGG_10","Breakdown",0.7
+2,6,4,0.8,"RGG_10","Breakdown",0.7
+2,6,5,0.9,"RGG_10","Breakdown",0.7
+2,6,6,1,"RGG_10","Breakdown",0.7
+2,6,7,1,"RGG_10","Breakdown",0.7
+2,6,8,1,"RGG_10","Breakdown",0.7
+2,6,9,1,"RGG_10","Breakdown",0.7
+2,6,10,1,"RGG_10","Breakdown",0.7
+2,6,11,1,"RGG_10","Breakdown",0.7
+2,6,12,1,"RGG_10","Breakdown",0.7
+3,1,1,0.7,"RGG_10","Correct consensus",0.8
+3,1,2,0.9,"RGG_10","Correct consensus",0.8
+3,1,3,0.9,"RGG_10","Correct consensus",0.8
+3,1,4,0.9,"RGG_10","Correct consensus",0.8
+3,1,5,0.9,"RGG_10","Correct consensus",0.8
+3,1,6,1,"RGG_10","Correct consensus",0.8
+3,1,7,0.9,"RGG_10","Correct consensus",0.8
+3,1,8,0.9,"RGG_10","Correct consensus",0.8
+3,1,9,0.9,"RGG_10","Correct consensus",0.8
+3,1,10,1,"RGG_10","Correct consensus",0.8
+3,1,11,1,"RGG_10","Correct consensus",0.8
+3,1,12,1,"RGG_10","Correct consensus",0.8
+3,2,1,0.9,"RGG_10","Correct consensus",0.9
+3,2,2,1,"RGG_10","Correct consensus",0.9
+3,2,3,1,"RGG_10","Correct consensus",0.9
+3,2,4,1,"RGG_10","Correct consensus",0.9
+3,2,5,1,"RGG_10","Correct consensus",0.9
+3,2,6,1,"RGG_10","Correct consensus",0.9
+3,2,7,1,"RGG_10","Correct consensus",0.9
+3,2,8,1,"RGG_10","Correct consensus",0.9
+3,2,9,1,"RGG_10","Correct consensus",0.9
+3,2,10,1,"RGG_10","Correct consensus",0.9
+3,2,11,1,"RGG_10","Correct consensus",0.9
+3,2,12,1,"RGG_10","Correct consensus",0.9
+3,3,1,0.8,"RGG_10","Correct consensus",0.8
+3,3,2,1,"RGG_10","Correct consensus",0.8
+3,3,3,1,"RGG_10","Correct consensus",0.8
+3,3,4,1,"RGG_10","Correct consensus",0.8
+3,3,5,0.9,"RGG_10","Correct consensus",0.8
+3,3,6,0.9,"RGG_10","Correct consensus",0.8
+3,3,7,0.9,"RGG_10","Correct consensus",0.8
+3,3,8,0.9,"RGG_10","Correct consensus",0.8
+3,3,9,1,"RGG_10","Correct consensus",0.8
+3,3,10,1,"RGG_10","Correct consensus",0.8
+3,3,11,1,"RGG_10","Correct consensus",0.8
+3,3,12,1,"RGG_10","Correct consensus",0.8
+3,4,1,1,"RGG_10","Correct consensus",0.9
+3,4,2,1,"RGG_10","Correct consensus",0.9
+3,4,3,1,"RGG_10","Correct consensus",0.9
+3,4,4,1,"RGG_10","Correct consensus",0.9
+3,4,5,1,"RGG_10","Correct consensus",0.9
+3,4,6,1,"RGG_10","Correct consensus",0.9
+3,4,7,1,"RGG_10","Correct consensus",0.9
+3,4,8,1,"RGG_10","Correct consensus",0.9
+3,4,9,1,"RGG_10","Correct consensus",0.9
+3,4,10,1,"RGG_10","Correct consensus",0.9
+3,4,11,1,"RGG_10","Correct consensus",0.9
+3,4,12,1,"RGG_10","Correct consensus",0.9
+3,5,1,0.8,"RGG_10","Correct consensus",0.8
+3,5,2,0.9,"RGG_10","Correct consensus",0.8
+3,5,3,0.8,"RGG_10","Correct consensus",0.8
+3,5,4,0.8,"RGG_10","Correct consensus",0.8
+3,5,5,0.9,"RGG_10","Correct consensus",0.8
+3,5,6,0.9,"RGG_10","Correct consensus",0.8
+3,5,7,0.8,"RGG_10","Correct consensus",0.8
+3,5,8,0.9,"RGG_10","Correct consensus",0.8
+3,5,9,0.9,"RGG_10","Correct consensus",0.8
+3,5,10,0.9,"RGG_10","Correct consensus",0.8
+3,5,11,0.9,"RGG_10","Correct consensus",0.8
+3,5,12,0.9,"RGG_10","Correct consensus",0.8
+3,6,1,0.6,"RGG_10","Correct consensus",0.6
+3,6,2,0.8,"RGG_10","Correct consensus",0.6
+3,6,3,0.8,"RGG_10","Correct consensus",0.6
+3,6,4,0.8,"RGG_10","Correct consensus",0.6
+3,6,5,0.9,"RGG_10","Correct consensus",0.6
+3,6,6,0.9,"RGG_10","Correct consensus",0.6
+3,6,7,0.9,"RGG_10","Correct consensus",0.6
+3,6,8,1,"RGG_10","Correct consensus",0.6
+3,6,9,0.9,"RGG_10","Correct consensus",0.6
+3,6,10,0.9,"RGG_10","Correct consensus",0.6
+3,6,11,0.9,"RGG_10","Correct consensus",0.6
+3,6,12,0.9,"RGG_10","Correct consensus",0.6
+4,1,1,0.9,"RGG_10","Correct consensus",0.9
+4,1,2,0.9,"RGG_10","Correct consensus",0.9
+4,1,3,0.9,"RGG_10","Correct consensus",0.9
+4,1,4,0.9,"RGG_10","Correct consensus",0.9
+4,1,5,0.9,"RGG_10","Correct consensus",0.9
+4,1,6,1,"RGG_10","Correct consensus",0.9
+4,1,7,1,"RGG_10","Correct consensus",0.9
+4,1,8,1,"RGG_10","Correct consensus",0.9
+4,1,9,1,"RGG_10","Correct consensus",0.9
+4,1,10,1,"RGG_10","Correct consensus",0.9
+4,1,11,1,"RGG_10","Correct consensus",0.9
+4,1,12,0.9,"RGG_10","Correct consensus",0.9
+4,2,1,0.6,"RGG_10","Breakdown",0.6
+4,2,2,0.6,"RGG_10","Breakdown",0.6
+4,2,3,0.3,"RGG_10","Breakdown",0.6
+4,2,4,0.4,"RGG_10","Breakdown",0.6
+4,2,5,0.4,"RGG_10","Breakdown",0.6
+4,2,6,0.4,"RGG_10","Breakdown",0.6
+4,2,7,0.3,"RGG_10","Breakdown",0.6
+4,2,8,0.4,"RGG_10","Breakdown",0.6
+4,2,9,0.3,"RGG_10","Breakdown",0.6
+4,2,10,0.3,"RGG_10","Breakdown",0.6
+4,2,11,0.3,"RGG_10","Breakdown",0.6
+4,2,12,0.4,"RGG_10","Breakdown",0.6
+4,3,1,0.6,"RGG_10","Breakdown",0.6
+4,3,2,0.7,"RGG_10","Breakdown",0.6
+4,3,3,0.8,"RGG_10","Breakdown",0.6
+4,3,4,0.9,"RGG_10","Breakdown",0.6
+4,3,5,0.8,"RGG_10","Breakdown",0.6
+4,3,6,0.7,"RGG_10","Breakdown",0.6
+4,3,7,0.9,"RGG_10","Breakdown",0.6
+4,3,8,0.9,"RGG_10","Breakdown",0.6
+4,3,9,0.8,"RGG_10","Breakdown",0.6
+4,3,10,0.9,"RGG_10","Breakdown",0.6
+4,3,11,0.9,"RGG_10","Breakdown",0.6
+4,3,12,0.8,"RGG_10","Breakdown",0.6
+4,4,1,0.7,"RGG_10","Correct consensus",0.7
+4,4,2,0.8,"RGG_10","Correct consensus",0.7
+4,4,3,0.9,"RGG_10","Correct consensus",0.7
+4,4,4,0.9,"RGG_10","Correct consensus",0.7
+4,4,5,0.9,"RGG_10","Correct consensus",0.7
+4,4,6,0.9,"RGG_10","Correct consensus",0.7
+4,4,7,0.9,"RGG_10","Correct consensus",0.7
+4,4,8,0.8,"RGG_10","Correct consensus",0.7
+4,4,9,0.8,"RGG_10","Correct consensus",0.7
+4,4,10,0.7,"RGG_10","Correct consensus",0.7
+4,4,11,0.7,"RGG_10","Correct consensus",0.7
+4,4,12,0.9,"RGG_10","Correct consensus",0.7
+4,5,1,0.7,"RGG_10","Correct consensus",0.7
+4,5,2,0.7,"RGG_10","Correct consensus",0.7
+4,5,3,0.8,"RGG_10","Correct consensus",0.7
+4,5,4,0.8,"RGG_10","Correct consensus",0.7
+4,5,5,0.8,"RGG_10","Correct consensus",0.7
+4,5,6,0.8,"RGG_10","Correct consensus",0.7
+4,5,7,0.9,"RGG_10","Correct consensus",0.7
+4,5,8,0.9,"RGG_10","Correct consensus",0.7
+4,5,9,0.9,"RGG_10","Correct consensus",0.7
+4,5,10,0.9,"RGG_10","Correct consensus",0.7
+4,5,11,0.9,"RGG_10","Correct consensus",0.7
+4,5,12,0.9,"RGG_10","Correct consensus",0.7
+4,6,1,0.6,"RGG_10","Correct consensus",0.6
+4,6,2,0.6,"RGG_10","Correct consensus",0.6
+4,6,3,0.6,"RGG_10","Correct consensus",0.6
+4,6,4,0.6,"RGG_10","Correct consensus",0.6
+4,6,5,0.6,"RGG_10","Correct consensus",0.6
+4,6,6,0.6,"RGG_10","Correct consensus",0.6
+4,6,7,0.7,"RGG_10","Correct consensus",0.6
+4,6,8,0.6,"RGG_10","Correct consensus",0.6
+4,6,9,0.6,"RGG_10","Correct consensus",0.6
+4,6,10,0.7,"RGG_10","Correct consensus",0.6
+4,6,11,0.7,"RGG_10","Correct consensus",0.6
+4,6,12,0.5,"RGG_10","Correct consensus",0.6
+1,1,1,0.8,"ER_partial","Correct consensus",0.833333333333333
+1,1,2,0.9,"ER_partial","Correct consensus",0.833333333333333
+1,1,3,1,"ER_partial","Correct consensus",0.833333333333333
+1,1,4,0.9,"ER_partial","Correct consensus",0.833333333333333
+1,1,5,0.9,"ER_partial","Correct consensus",0.833333333333333
+1,1,6,0.8,"ER_partial","Correct consensus",0.833333333333333
+1,1,7,0.9,"ER_partial","Correct consensus",0.833333333333333
+1,1,8,0.9,"ER_partial","Correct consensus",0.833333333333333
+1,1,9,0.9,"ER_partial","Correct consensus",0.833333333333333
+1,1,10,0.9,"ER_partial","Correct consensus",0.833333333333333
+1,1,11,0.9,"ER_partial","Correct consensus",0.833333333333333
+1,1,12,0.7,"ER_partial","Correct consensus",0.833333333333333
+1,2,1,0.5,"ER_partial","Correct consensus",0.625
+1,2,2,0.4,"ER_partial","Correct consensus",0.625
+1,2,3,0.5,"ER_partial","Correct consensus",0.625
+1,2,4,0.6,"ER_partial","Correct consensus",0.625
+1,2,5,0.7,"ER_partial","Correct consensus",0.625
+1,2,6,0.8,"ER_partial","Correct consensus",0.625
+1,2,7,0.7,"ER_partial","Correct consensus",0.625
+1,2,8,0.8,"ER_partial","Correct consensus",0.625
+1,2,9,0.8,"ER_partial","Correct consensus",0.625
+1,2,10,0.9,"ER_partial","Correct consensus",0.625
+1,2,11,0.9,"ER_partial","Correct consensus",0.625
+1,2,12,0.9,"ER_partial","Correct consensus",0.625
+1,3,1,0.6,"ER_partial","Correct consensus",0.777777777777778
+1,3,2,0.7,"ER_partial","Correct consensus",0.777777777777778
+1,3,3,0.6,"ER_partial","Correct consensus",0.777777777777778
+1,3,4,0.7,"ER_partial","Correct consensus",0.777777777777778
+1,3,5,0.6,"ER_partial","Correct consensus",0.777777777777778
+1,3,6,0.6,"ER_partial","Correct consensus",0.777777777777778
+1,3,7,0.6,"ER_partial","Correct consensus",0.777777777777778
+1,3,8,0.5,"ER_partial","Correct consensus",0.777777777777778
+1,3,9,0.4,"ER_partial","Correct consensus",0.777777777777778
+1,3,10,0.4,"ER_partial","Correct consensus",0.777777777777778
+1,3,11,0.4,"ER_partial","Correct consensus",0.777777777777778
+1,3,12,0.5,"ER_partial","Correct consensus",0.777777777777778
+1,4,1,1,"ER_partial","Correct consensus",0.6
+1,4,2,0.9,"ER_partial","Correct consensus",0.6
+1,4,3,0.9,"ER_partial","Correct consensus",0.6
+1,4,4,1,"ER_partial","Correct consensus",0.6
+1,4,5,0.9,"ER_partial","Correct consensus",0.6
+1,4,6,0.8,"ER_partial","Correct consensus",0.6
+1,4,7,0.9,"ER_partial","Correct consensus",0.6
+1,4,8,0.9,"ER_partial","Correct consensus",0.6
+1,4,9,1,"ER_partial","Correct consensus",0.6
+1,4,10,1,"ER_partial","Correct consensus",0.6
+1,4,11,0.9,"ER_partial","Correct consensus",0.6
+1,4,12,0.8,"ER_partial","Correct consensus",0.6
+1,5,1,0.8,"ER_partial","Correct consensus",0.75
+1,5,2,1,"ER_partial","Correct consensus",0.75
+1,5,3,0.9,"ER_partial","Correct consensus",0.75
+1,5,4,1,"ER_partial","Correct consensus",0.75
+1,5,5,1,"ER_partial","Correct consensus",0.75
+1,5,6,1,"ER_partial","Correct consensus",0.75
+1,5,7,0.9,"ER_partial","Correct consensus",0.75
+1,5,8,0.9,"ER_partial","Correct consensus",0.75
+1,5,9,0.9,"ER_partial","Correct consensus",0.75
+1,5,10,0.9,"ER_partial","Correct consensus",0.75
+1,5,11,1,"ER_partial","Correct consensus",0.75
+1,5,12,1,"ER_partial","Correct consensus",0.75
+1,6,1,0.2,"ER_partial","Correct consensus",0.666666666666667
+1,6,2,0.1,"ER_partial","Correct consensus",0.666666666666667
+1,6,3,0.1,"ER_partial","Correct consensus",0.666666666666667
+1,6,4,0.2,"ER_partial","Correct consensus",0.666666666666667
+1,6,5,0.2,"ER_partial","Correct consensus",0.666666666666667
+1,6,6,0.2,"ER_partial","Correct consensus",0.666666666666667
+1,6,7,0.1,"ER_partial","Correct consensus",0.666666666666667
+1,6,8,0.2,"ER_partial","Correct consensus",0.666666666666667
+1,6,9,0.2,"ER_partial","Correct consensus",0.666666666666667
+1,6,10,0.1,"ER_partial","Correct consensus",0.666666666666667
+1,6,11,0,"ER_partial","Correct consensus",0.666666666666667
+1,6,12,0,"ER_partial","Correct consensus",0.666666666666667
+2,1,1,0.6,"ER_partial","Correct consensus",0.777777777777778
+2,1,2,0.6,"ER_partial","Correct consensus",0.777777777777778
+2,1,3,0.6,"ER_partial","Correct consensus",0.777777777777778
+2,1,4,0.5,"ER_partial","Correct consensus",0.777777777777778
+2,1,5,0.5,"ER_partial","Correct consensus",0.777777777777778
+2,1,6,0.4,"ER_partial","Correct consensus",0.777777777777778
+2,1,7,0.5,"ER_partial","Correct consensus",0.777777777777778
+2,1,8,0.6,"ER_partial","Correct consensus",0.777777777777778
+2,1,9,0.7,"ER_partial","Correct consensus",0.777777777777778
+2,1,10,0.8,"ER_partial","Correct consensus",0.777777777777778
+2,1,11,0.7,"ER_partial","Correct consensus",0.777777777777778
+2,1,12,0.7,"ER_partial","Correct consensus",0.777777777777778
+2,2,1,0.7,"ER_partial","Correct consensus",0.714285714285714
+2,2,2,0.9,"ER_partial","Correct consensus",0.714285714285714
+2,2,3,0.8,"ER_partial","Correct consensus",0.714285714285714
+2,2,4,0.7,"ER_partial","Correct consensus",0.714285714285714
+2,2,5,0.9,"ER_partial","Correct consensus",0.714285714285714
+2,2,6,1,"ER_partial","Correct consensus",0.714285714285714
+2,2,7,1,"ER_partial","Correct consensus",0.714285714285714
+2,2,8,1,"ER_partial","Correct consensus",0.714285714285714
+2,2,9,1,"ER_partial","Correct consensus",0.714285714285714
+2,2,10,0.9,"ER_partial","Correct consensus",0.714285714285714
+2,2,11,0.9,"ER_partial","Correct consensus",0.714285714285714
+2,2,12,1,"ER_partial","Correct consensus",0.714285714285714
+2,3,1,0.9,"ER_partial","Correct consensus",1
+2,3,2,1,"ER_partial","Correct consensus",1
+2,3,3,0.9,"ER_partial","Correct consensus",1
+2,3,4,1,"ER_partial","Correct consensus",1
+2,3,5,1,"ER_partial","Correct consensus",1
+2,3,6,1,"ER_partial","Correct consensus",1
+2,3,7,1,"ER_partial","Correct consensus",1
+2,3,8,0.9,"ER_partial","Correct consensus",1
+2,3,9,0.9,"ER_partial","Correct consensus",1
+2,3,10,1,"ER_partial","Correct consensus",1
+2,3,11,1,"ER_partial","Correct consensus",1
+2,3,12,0.9,"ER_partial","Correct consensus",1
+2,4,1,0.7,"ER_partial","Correct consensus",0.7
+2,4,2,0.7,"ER_partial","Correct consensus",0.7
+2,4,3,0.8,"ER_partial","Correct consensus",0.7
+2,4,4,0.9,"ER_partial","Correct consensus",0.7
+2,4,5,1,"ER_partial","Correct consensus",0.7
+2,4,6,1,"ER_partial","Correct consensus",0.7
+2,4,7,1,"ER_partial","Correct consensus",0.7
+2,4,8,1,"ER_partial","Correct consensus",0.7
+2,4,9,1,"ER_partial","Correct consensus",0.7
+2,4,10,1,"ER_partial","Correct consensus",0.7
+2,4,11,1,"ER_partial","Correct consensus",0.7
+2,4,12,0.9,"ER_partial","Correct consensus",0.7
+2,5,1,0.8,"ER_partial","Correct consensus",0.875
+2,5,2,0.9,"ER_partial","Correct consensus",0.875
+2,5,3,0.9,"ER_partial","Correct consensus",0.875
+2,5,4,0.9,"ER_partial","Correct consensus",0.875
+2,5,5,0.9,"ER_partial","Correct consensus",0.875
+2,5,6,0.9,"ER_partial","Correct consensus",0.875
+2,5,7,0.8,"ER_partial","Correct consensus",0.875
+2,5,8,0.8,"ER_partial","Correct consensus",0.875
+2,5,9,0.9,"ER_partial","Correct consensus",0.875
+2,5,10,0.9,"ER_partial","Correct consensus",0.875
+2,5,11,0.9,"ER_partial","Correct consensus",0.875
+2,5,12,0.9,"ER_partial","Correct consensus",0.875
+2,6,1,0.4,"ER_partial","Correct consensus",0.6
+2,6,2,0.3,"ER_partial","Correct consensus",0.6
+2,6,3,0.2,"ER_partial","Correct consensus",0.6
+2,6,4,0.1,"ER_partial","Correct consensus",0.6
+2,6,5,0.1,"ER_partial","Correct consensus",0.6
+2,6,6,0,"ER_partial","Correct consensus",0.6
+2,6,7,0.1,"ER_partial","Correct consensus",0.6
+2,6,8,0,"ER_partial","Correct consensus",0.6
+2,6,9,0,"ER_partial","Correct consensus",0.6
+2,6,10,0,"ER_partial","Correct consensus",0.6
+2,6,11,0.1,"ER_partial","Correct consensus",0.6
+2,6,12,0,"ER_partial","Correct consensus",0.6
+3,1,1,0.6,"ER_partial","Correct consensus",0.6
+3,1,2,0.8,"ER_partial","Correct consensus",0.6
+3,1,3,0.8,"ER_partial","Correct consensus",0.6
+3,1,4,0.8,"ER_partial","Correct consensus",0.6
+3,1,5,0.9,"ER_partial","Correct consensus",0.6
+3,1,6,0.8,"ER_partial","Correct consensus",0.6
+3,1,7,0.6,"ER_partial","Correct consensus",0.6
+3,1,8,0.5,"ER_partial","Correct consensus",0.6
+3,1,9,0.7,"ER_partial","Correct consensus",0.6
+3,1,10,1,"ER_partial","Correct consensus",0.6
+3,1,11,0.9,"ER_partial","Correct consensus",0.6
+3,1,12,1,"ER_partial","Correct consensus",0.6
+3,2,1,0.6,"ER_partial","Correct consensus",0.857142857142857
+3,2,2,0.5,"ER_partial","Correct consensus",0.857142857142857
+3,2,3,0.5,"ER_partial","Correct consensus",0.857142857142857
+3,2,4,0.7,"ER_partial","Correct consensus",0.857142857142857
+3,2,5,0.5,"ER_partial","Correct consensus",0.857142857142857
+3,2,6,0.6,"ER_partial","Correct consensus",0.857142857142857
+3,2,7,0.7,"ER_partial","Correct consensus",0.857142857142857
+3,2,8,0.7,"ER_partial","Correct consensus",0.857142857142857
+3,2,9,0.5,"ER_partial","Correct consensus",0.857142857142857
+3,2,10,0.6,"ER_partial","Correct consensus",0.857142857142857
+3,2,11,0.6,"ER_partial","Correct consensus",0.857142857142857
+3,2,12,0.6,"ER_partial","Correct consensus",0.857142857142857
+3,3,1,0.7,"ER_partial","Incorrect consensus",0.571428571428571
+3,3,2,0.9,"ER_partial","Incorrect consensus",0.571428571428571
+3,3,3,0.7,"ER_partial","Incorrect consensus",0.571428571428571
+3,3,4,0.7,"ER_partial","Incorrect consensus",0.571428571428571
+3,3,5,0.8,"ER_partial","Incorrect consensus",0.571428571428571
+3,3,6,0.6,"ER_partial","Incorrect consensus",0.571428571428571
+3,3,7,0.8,"ER_partial","Incorrect consensus",0.571428571428571
+3,3,8,0.9,"ER_partial","Incorrect consensus",0.571428571428571
+3,3,9,0.9,"ER_partial","Incorrect consensus",0.571428571428571
+3,3,10,0.8,"ER_partial","Incorrect consensus",0.571428571428571
+3,3,11,0.8,"ER_partial","Incorrect consensus",0.571428571428571
+3,3,12,0.8,"ER_partial","Incorrect consensus",0.571428571428571
+3,4,1,0.8,"ER_partial","Correct consensus",1
+3,4,2,0.8,"ER_partial","Correct consensus",1
+3,4,3,1,"ER_partial","Correct consensus",1
+3,4,4,1,"ER_partial","Correct consensus",1
+3,4,5,0.9,"ER_partial","Correct consensus",1
+3,4,6,1,"ER_partial","Correct consensus",1
+3,4,7,1,"ER_partial","Correct consensus",1
+3,4,8,1,"ER_partial","Correct consensus",1
+3,4,9,1,"ER_partial","Correct consensus",1
+3,4,10,1,"ER_partial","Correct consensus",1
+3,4,11,1,"ER_partial","Correct consensus",1
+3,4,12,1,"ER_partial","Correct consensus",1
+3,5,1,0.2,"ER_partial","Incorrect consensus",0.666666666666667
+3,5,2,0.1,"ER_partial","Incorrect consensus",0.666666666666667
+3,5,3,0,"ER_partial","Incorrect consensus",0.666666666666667
+3,5,4,0.1,"ER_partial","Incorrect consensus",0.666666666666667
+3,5,5,0.1,"ER_partial","Incorrect consensus",0.666666666666667
+3,5,6,0,"ER_partial","Incorrect consensus",0.666666666666667
+3,5,7,0,"ER_partial","Incorrect consensus",0.666666666666667
+3,5,8,0,"ER_partial","Incorrect consensus",0.666666666666667
+3,5,9,0.1,"ER_partial","Incorrect consensus",0.666666666666667
+3,5,10,0,"ER_partial","Incorrect consensus",0.666666666666667
+3,5,11,0,"ER_partial","Incorrect consensus",0.666666666666667
+3,5,12,0,"ER_partial","Incorrect consensus",0.666666666666667
+3,6,1,0.5,"ER_partial","Correct consensus",0.833333333333333
+3,6,2,0.5,"ER_partial","Correct consensus",0.833333333333333
+3,6,3,0.4,"ER_partial","Correct consensus",0.833333333333333
+3,6,4,0.5,"ER_partial","Correct consensus",0.833333333333333
+3,6,5,0.5,"ER_partial","Correct consensus",0.833333333333333
+3,6,6,0.6,"ER_partial","Correct consensus",0.833333333333333
+3,6,7,0.4,"ER_partial","Correct consensus",0.833333333333333
+3,6,8,0.5,"ER_partial","Correct consensus",0.833333333333333
+3,6,9,0.5,"ER_partial","Correct consensus",0.833333333333333
+3,6,10,0.4,"ER_partial","Correct consensus",0.833333333333333
+3,6,11,0.4,"ER_partial","Correct consensus",0.833333333333333
+3,6,12,0.4,"ER_partial","Correct consensus",0.833333333333333
+4,1,1,0.6,"ER_partial","Correct consensus",0.714285714285714
+4,1,2,0.7,"ER_partial","Correct consensus",0.714285714285714
+4,1,3,0.7,"ER_partial","Correct consensus",0.714285714285714
+4,1,4,0.4,"ER_partial","Correct consensus",0.714285714285714
+4,1,5,0.5,"ER_partial","Correct consensus",0.714285714285714
+4,1,6,0.4,"ER_partial","Correct consensus",0.714285714285714
+4,1,7,0.3,"ER_partial","Correct consensus",0.714285714285714
+4,1,8,0.3,"ER_partial","Correct consensus",0.714285714285714
+4,1,9,0.3,"ER_partial","Correct consensus",0.714285714285714
+4,1,10,0.4,"ER_partial","Correct consensus",0.714285714285714
+4,1,11,0.6,"ER_partial","Correct consensus",0.714285714285714
+4,1,12,0.7,"ER_partial","Correct consensus",0.714285714285714
+4,2,1,0.5,"ER_partial","Correct consensus",0.5
+4,2,2,0.5,"ER_partial","Correct consensus",0.5
+4,2,3,0.6,"ER_partial","Correct consensus",0.5
+4,2,4,0.6,"ER_partial","Correct consensus",0.5
+4,2,5,0.7,"ER_partial","Correct consensus",0.5
+4,2,6,0.6,"ER_partial","Correct consensus",0.5
+4,2,7,0.8,"ER_partial","Correct consensus",0.5
+4,2,8,0.9,"ER_partial","Correct consensus",0.5
+4,2,9,1,"ER_partial","Correct consensus",0.5
+4,2,10,1,"ER_partial","Correct consensus",0.5
+4,2,11,0.9,"ER_partial","Correct consensus",0.5
+4,2,12,0.8,"ER_partial","Correct consensus",0.5
+4,3,1,0.7,"ER_partial","Correct consensus",0.875
+4,3,2,0.8,"ER_partial","Correct consensus",0.875
+4,3,3,1,"ER_partial","Correct consensus",0.875
+4,3,4,1,"ER_partial","Correct consensus",0.875
+4,3,5,1,"ER_partial","Correct consensus",0.875
+4,3,6,0.9,"ER_partial","Correct consensus",0.875
+4,3,7,0.9,"ER_partial","Correct consensus",0.875
+4,3,8,0.9,"ER_partial","Correct consensus",0.875
+4,3,9,1,"ER_partial","Correct consensus",0.875
+4,3,10,1,"ER_partial","Correct consensus",0.875
+4,3,11,1,"ER_partial","Correct consensus",0.875
+4,3,12,1,"ER_partial","Correct consensus",0.875
+4,4,1,0.6,"ER_partial","Correct consensus",0.714285714285714
+4,4,2,0.6,"ER_partial","Correct consensus",0.714285714285714
+4,4,3,0.9,"ER_partial","Correct consensus",0.714285714285714
+4,4,4,0.9,"ER_partial","Correct consensus",0.714285714285714
+4,4,5,1,"ER_partial","Correct consensus",0.714285714285714
+4,4,6,1,"ER_partial","Correct consensus",0.714285714285714
+4,4,7,1,"ER_partial","Correct consensus",0.714285714285714
+4,4,8,0.9,"ER_partial","Correct consensus",0.714285714285714
+4,4,9,0.9,"ER_partial","Correct consensus",0.714285714285714
+4,4,10,1,"ER_partial","Correct consensus",0.714285714285714
+4,4,11,1,"ER_partial","Correct consensus",0.714285714285714
+4,4,12,1,"ER_partial","Correct consensus",0.714285714285714
+4,5,1,0.4,"ER_partial","Correct consensus",0.833333333333333
+4,5,2,0.2,"ER_partial","Correct consensus",0.833333333333333
+4,5,3,0.1,"ER_partial","Correct consensus",0.833333333333333
+4,5,4,0,"ER_partial","Correct consensus",0.833333333333333
+4,5,5,0,"ER_partial","Correct consensus",0.833333333333333
+4,5,6,0,"ER_partial","Correct consensus",0.833333333333333
+4,5,7,0,"ER_partial","Correct consensus",0.833333333333333
+4,5,8,0.1,"ER_partial","Correct consensus",0.833333333333333
+4,5,9,0.1,"ER_partial","Correct consensus",0.833333333333333
+4,5,10,0.1,"ER_partial","Correct consensus",0.833333333333333
+4,5,11,0.1,"ER_partial","Correct consensus",0.833333333333333
+4,5,12,0.1,"ER_partial","Correct consensus",0.833333333333333
+4,6,1,0.5,"ER_partial","Correct consensus",0.75
+4,6,2,0.5,"ER_partial","Correct consensus",0.75
+4,6,3,0.4,"ER_partial","Correct consensus",0.75
+4,6,4,0.2,"ER_partial","Correct consensus",0.75
+4,6,5,0.1,"ER_partial","Correct consensus",0.75
+4,6,6,0.2,"ER_partial","Correct consensus",0.75
+4,6,7,0.3,"ER_partial","Correct consensus",0.75
+4,6,8,0.1,"ER_partial","Correct consensus",0.75
+4,6,9,0.1,"ER_partial","Correct consensus",0.75
+4,6,10,0,"ER_partial","Correct consensus",0.75
+4,6,11,0,"ER_partial","Correct consensus",0.75
+4,6,12,0.1,"ER_partial","Correct consensus",0.75
+1,1,1,0.9,"SB_partial","Correct consensus",0.833333333333333
+1,1,2,0.9,"SB_partial","Correct consensus",0.833333333333333
+1,1,3,0.8,"SB_partial","Correct consensus",0.833333333333333
+1,1,4,0.7,"SB_partial","Correct consensus",0.833333333333333
+1,1,5,0.9,"SB_partial","Correct consensus",0.833333333333333
+1,1,6,1,"SB_partial","Correct consensus",0.833333333333333
+1,1,7,0.8,"SB_partial","Correct consensus",0.833333333333333
+1,1,8,0.7,"SB_partial","Correct consensus",0.833333333333333
+1,1,9,0.7,"SB_partial","Correct consensus",0.833333333333333
+1,1,10,1,"SB_partial","Correct consensus",0.833333333333333
+1,1,11,0.9,"SB_partial","Correct consensus",0.833333333333333
+1,1,12,0.8,"SB_partial","Correct consensus",0.833333333333333
+1,2,1,0.5,"SB_partial","Breakdown",0.625
+1,2,2,0.5,"SB_partial","Breakdown",0.625
+1,2,3,0.5,"SB_partial","Breakdown",0.625
+1,2,4,0.4,"SB_partial","Breakdown",0.625
+1,2,5,0.4,"SB_partial","Breakdown",0.625
+1,2,6,0.5,"SB_partial","Breakdown",0.625
+1,2,7,0.5,"SB_partial","Breakdown",0.625
+1,2,8,0.5,"SB_partial","Breakdown",0.625
+1,2,9,0.5,"SB_partial","Breakdown",0.625
+1,2,10,0.4,"SB_partial","Breakdown",0.625
+1,2,11,0.6,"SB_partial","Breakdown",0.625
+1,2,12,0.5,"SB_partial","Breakdown",0.625
+1,3,1,0.8,"SB_partial","Breakdown",0.777777777777778
+1,3,2,0.8,"SB_partial","Breakdown",0.777777777777778
+1,3,3,0.8,"SB_partial","Breakdown",0.777777777777778
+1,3,4,1,"SB_partial","Breakdown",0.777777777777778
+1,3,5,1,"SB_partial","Breakdown",0.777777777777778
+1,3,6,1,"SB_partial","Breakdown",0.777777777777778
+1,3,7,0.9,"SB_partial","Breakdown",0.777777777777778
+1,3,8,1,"SB_partial","Breakdown",0.777777777777778
+1,3,9,1,"SB_partial","Breakdown",0.777777777777778
+1,3,10,0.9,"SB_partial","Breakdown",0.777777777777778
+1,3,11,1,"SB_partial","Breakdown",0.777777777777778
+1,3,12,1,"SB_partial","Breakdown",0.777777777777778
+1,4,1,0.7,"SB_partial","Correct consensus",0.6
+1,4,2,0.7,"SB_partial","Correct consensus",0.6
+1,4,3,0.7,"SB_partial","Correct consensus",0.6
+1,4,4,0.4,"SB_partial","Correct consensus",0.6
+1,4,5,0.5,"SB_partial","Correct consensus",0.6
+1,4,6,0.2,"SB_partial","Correct consensus",0.6
+1,4,7,0.3,"SB_partial","Correct consensus",0.6
+1,4,8,0.2,"SB_partial","Correct consensus",0.6
+1,4,9,0.3,"SB_partial","Correct consensus",0.6
+1,4,10,0.1,"SB_partial","Correct consensus",0.6
+1,4,11,0.2,"SB_partial","Correct consensus",0.6
+1,4,12,0.2,"SB_partial","Correct consensus",0.6
+1,5,1,0.7,"SB_partial","Correct consensus",0.75
+1,5,2,0.9,"SB_partial","Correct consensus",0.75
+1,5,3,0.9,"SB_partial","Correct consensus",0.75
+1,5,4,0.9,"SB_partial","Correct consensus",0.75
+1,5,5,1,"SB_partial","Correct consensus",0.75
+1,5,6,1,"SB_partial","Correct consensus",0.75
+1,5,7,1,"SB_partial","Correct consensus",0.75
+1,5,8,1,"SB_partial","Correct consensus",0.75
+1,5,9,1,"SB_partial","Correct consensus",0.75
+1,5,10,1,"SB_partial","Correct consensus",0.75
+1,5,11,0.9,"SB_partial","Correct consensus",0.75
+1,5,12,1,"SB_partial","Correct consensus",0.75
+1,6,1,0.5,"SB_partial","Breakdown",0.666666666666667
+1,6,2,0.5,"SB_partial","Breakdown",0.666666666666667
+1,6,3,0.5,"SB_partial","Breakdown",0.666666666666667
+1,6,4,0.4,"SB_partial","Breakdown",0.666666666666667
+1,6,5,0.3,"SB_partial","Breakdown",0.666666666666667
+1,6,6,0.4,"SB_partial","Breakdown",0.666666666666667
+1,6,7,0.4,"SB_partial","Breakdown",0.666666666666667
+1,6,8,0.4,"SB_partial","Breakdown",0.666666666666667
+1,6,9,0.4,"SB_partial","Breakdown",0.666666666666667
+1,6,10,0.4,"SB_partial","Breakdown",0.666666666666667
+1,6,11,0.4,"SB_partial","Breakdown",0.666666666666667
+1,6,12,0.4,"SB_partial","Breakdown",0.666666666666667
+2,1,1,0.9,"SB_partial","Breakdown",0.777777777777778
+2,1,2,1,"SB_partial","Breakdown",0.777777777777778
+2,1,3,1,"SB_partial","Breakdown",0.777777777777778
+2,1,4,1,"SB_partial","Breakdown",0.777777777777778
+2,1,5,1,"SB_partial","Breakdown",0.777777777777778
+2,1,6,1,"SB_partial","Breakdown",0.777777777777778
+2,1,7,1,"SB_partial","Breakdown",0.777777777777778
+2,1,8,1,"SB_partial","Breakdown",0.777777777777778
+2,1,9,1,"SB_partial","Breakdown",0.777777777777778
+2,1,10,0.9,"SB_partial","Breakdown",0.777777777777778
+2,1,11,1,"SB_partial","Breakdown",0.777777777777778
+2,1,12,1,"SB_partial","Breakdown",0.777777777777778
+2,2,1,0.6,"SB_partial","Correct consensus",0.714285714285714
+2,2,2,0.7,"SB_partial","Correct consensus",0.714285714285714
+2,2,3,0.8,"SB_partial","Correct consensus",0.714285714285714
+2,2,4,0.9,"SB_partial","Correct consensus",0.714285714285714
+2,2,5,1,"SB_partial","Correct consensus",0.714285714285714
+2,2,6,0.9,"SB_partial","Correct consensus",0.714285714285714
+2,2,7,1,"SB_partial","Correct consensus",0.714285714285714
+2,2,8,1,"SB_partial","Correct consensus",0.714285714285714
+2,2,9,1,"SB_partial","Correct consensus",0.714285714285714
+2,2,10,1,"SB_partial","Correct consensus",0.714285714285714
+2,2,11,1,"SB_partial","Correct consensus",0.714285714285714
+2,2,12,1,"SB_partial","Correct consensus",0.714285714285714
+2,3,1,0.9,"SB_partial","Correct consensus",1
+2,3,2,1,"SB_partial","Correct consensus",1
+2,3,3,1,"SB_partial","Correct consensus",1
+2,3,4,1,"SB_partial","Correct consensus",1
+2,3,5,1,"SB_partial","Correct consensus",1
+2,3,6,1,"SB_partial","Correct consensus",1
+2,3,7,1,"SB_partial","Correct consensus",1
+2,3,8,1,"SB_partial","Correct consensus",1
+2,3,9,1,"SB_partial","Correct consensus",1
+2,3,10,1,"SB_partial","Correct consensus",1
+2,3,11,1,"SB_partial","Correct consensus",1
+2,3,12,1,"SB_partial","Correct consensus",1
+2,4,1,0.6,"SB_partial","Correct consensus",0.7
+2,4,2,0.6,"SB_partial","Correct consensus",0.7
+2,4,3,0.4,"SB_partial","Correct consensus",0.7
+2,4,4,0.4,"SB_partial","Correct consensus",0.7
+2,4,5,0.5,"SB_partial","Correct consensus",0.7
+2,4,6,0.5,"SB_partial","Correct consensus",0.7
+2,4,7,0.5,"SB_partial","Correct consensus",0.7
+2,4,8,0.5,"SB_partial","Correct consensus",0.7
+2,4,9,0.6,"SB_partial","Correct consensus",0.7
+2,4,10,0.6,"SB_partial","Correct consensus",0.7
+2,4,11,0.6,"SB_partial","Correct consensus",0.7
+2,4,12,0.6,"SB_partial","Correct consensus",0.7
+2,5,1,0.7,"SB_partial","Correct consensus",0.875
+2,5,2,0.9,"SB_partial","Correct consensus",0.875
+2,5,3,1,"SB_partial","Correct consensus",0.875
+2,5,4,1,"SB_partial","Correct consensus",0.875
+2,5,5,1,"SB_partial","Correct consensus",0.875
+2,5,6,1,"SB_partial","Correct consensus",0.875
+2,5,7,1,"SB_partial","Correct consensus",0.875
+2,5,8,1,"SB_partial","Correct consensus",0.875
+2,5,9,1,"SB_partial","Correct consensus",0.875
+2,5,10,1,"SB_partial","Correct consensus",0.875
+2,5,11,1,"SB_partial","Correct consensus",0.875
+2,5,12,1,"SB_partial","Correct consensus",0.875
+2,6,1,0.4,"SB_partial","Breakdown",0.6
+2,6,2,0.5,"SB_partial","Breakdown",0.6
+2,6,3,0.5,"SB_partial","Breakdown",0.6
+2,6,4,0.4,"SB_partial","Breakdown",0.6
+2,6,5,0.4,"SB_partial","Breakdown",0.6
+2,6,6,0.2,"SB_partial","Breakdown",0.6
+2,6,7,0.2,"SB_partial","Breakdown",0.6
+2,6,8,0.2,"SB_partial","Breakdown",0.6
+2,6,9,0.2,"SB_partial","Breakdown",0.6
+2,6,10,0.2,"SB_partial","Breakdown",0.6
+2,6,11,0.2,"SB_partial","Breakdown",0.6
+2,6,12,0.2,"SB_partial","Breakdown",0.6
+3,1,1,0.7,"SB_partial","Correct consensus",0.6
+3,1,2,1,"SB_partial","Correct consensus",0.6
+3,1,3,1,"SB_partial","Correct consensus",0.6
+3,1,4,1,"SB_partial","Correct consensus",0.6
+3,1,5,0.9,"SB_partial","Correct consensus",0.6
+3,1,6,0.8,"SB_partial","Correct consensus",0.6
+3,1,7,0.9,"SB_partial","Correct consensus",0.6
+3,1,8,0.8,"SB_partial","Correct consensus",0.6
+3,1,9,0.9,"SB_partial","Correct consensus",0.6
+3,1,10,0.9,"SB_partial","Correct consensus",0.6
+3,1,11,0.9,"SB_partial","Correct consensus",0.6
+3,1,12,1,"SB_partial","Correct consensus",0.6
+3,2,1,0.5,"SB_partial","Correct consensus",0.857142857142857
+3,2,2,0.7,"SB_partial","Correct consensus",0.857142857142857
+3,2,3,0.8,"SB_partial","Correct consensus",0.857142857142857
+3,2,4,0.9,"SB_partial","Correct consensus",0.857142857142857
+3,2,5,1,"SB_partial","Correct consensus",0.857142857142857
+3,2,6,0.9,"SB_partial","Correct consensus",0.857142857142857
+3,2,7,0.9,"SB_partial","Correct consensus",0.857142857142857
+3,2,8,0.9,"SB_partial","Correct consensus",0.857142857142857
+3,2,9,0.9,"SB_partial","Correct consensus",0.857142857142857
+3,2,10,1,"SB_partial","Correct consensus",0.857142857142857
+3,2,11,1,"SB_partial","Correct consensus",0.857142857142857
+3,2,12,0.9,"SB_partial","Correct consensus",0.857142857142857
+3,3,1,0.5,"SB_partial","Correct consensus",0.571428571428571
+3,3,2,0.7,"SB_partial","Correct consensus",0.571428571428571
+3,3,3,0.8,"SB_partial","Correct consensus",0.571428571428571
+3,3,4,0.8,"SB_partial","Correct consensus",0.571428571428571
+3,3,5,0.6,"SB_partial","Correct consensus",0.571428571428571
+3,3,6,0.6,"SB_partial","Correct consensus",0.571428571428571
+3,3,7,0.7,"SB_partial","Correct consensus",0.571428571428571
+3,3,8,0.7,"SB_partial","Correct consensus",0.571428571428571
+3,3,9,0.7,"SB_partial","Correct consensus",0.571428571428571
+3,3,10,0.7,"SB_partial","Correct consensus",0.571428571428571
+3,3,11,0.7,"SB_partial","Correct consensus",0.571428571428571
+3,3,12,0.7,"SB_partial","Correct consensus",0.571428571428571
+3,4,1,0.7,"SB_partial","Correct consensus",1
+3,4,2,0.8,"SB_partial","Correct consensus",1
+3,4,3,0.6,"SB_partial","Correct consensus",1
+3,4,4,0.3,"SB_partial","Correct consensus",1
+3,4,5,0.4,"SB_partial","Correct consensus",1
+3,4,6,0.2,"SB_partial","Correct consensus",1
+3,4,7,0.3,"SB_partial","Correct consensus",1
+3,4,8,0.2,"SB_partial","Correct consensus",1
+3,4,9,0.1,"SB_partial","Correct consensus",1
+3,4,10,0.2,"SB_partial","Correct consensus",1
+3,4,11,0.1,"SB_partial","Correct consensus",1
+3,4,12,0.2,"SB_partial","Correct consensus",1
+3,5,1,0.7,"SB_partial","Correct consensus",0.666666666666667
+3,5,2,0.7,"SB_partial","Correct consensus",0.666666666666667
+3,5,3,0.6,"SB_partial","Correct consensus",0.666666666666667
+3,5,4,0.3,"SB_partial","Correct consensus",0.666666666666667
+3,5,5,0.5,"SB_partial","Correct consensus",0.666666666666667
+3,5,6,0.7,"SB_partial","Correct consensus",0.666666666666667
+3,5,7,0.6,"SB_partial","Correct consensus",0.666666666666667
+3,5,8,0.4,"SB_partial","Correct consensus",0.666666666666667
+3,5,9,0.5,"SB_partial","Correct consensus",0.666666666666667
+3,5,10,0.6,"SB_partial","Correct consensus",0.666666666666667
+3,5,11,0.6,"SB_partial","Correct consensus",0.666666666666667
+3,5,12,0.6,"SB_partial","Correct consensus",0.666666666666667
+3,6,1,0.7,"SB_partial","Correct consensus",0.833333333333333
+3,6,2,0.7,"SB_partial","Correct consensus",0.833333333333333
+3,6,3,0.7,"SB_partial","Correct consensus",0.833333333333333
+3,6,4,0.7,"SB_partial","Correct consensus",0.833333333333333
+3,6,5,0.7,"SB_partial","Correct consensus",0.833333333333333
+3,6,6,0.6,"SB_partial","Correct consensus",0.833333333333333
+3,6,7,0.6,"SB_partial","Correct consensus",0.833333333333333
+3,6,8,0.6,"SB_partial","Correct consensus",0.833333333333333
+3,6,9,0.6,"SB_partial","Correct consensus",0.833333333333333
+3,6,10,0.6,"SB_partial","Correct consensus",0.833333333333333
+3,6,11,0.6,"SB_partial","Correct consensus",0.833333333333333
+3,6,12,0.6,"SB_partial","Correct consensus",0.833333333333333
+4,1,1,0.7,"SB_partial","Correct consensus",0.714285714285714
+4,1,2,0.9,"SB_partial","Correct consensus",0.714285714285714
+4,1,3,0.8,"SB_partial","Correct consensus",0.714285714285714
+4,1,4,1,"SB_partial","Correct consensus",0.714285714285714
+4,1,5,0.9,"SB_partial","Correct consensus",0.714285714285714
+4,1,6,0.8,"SB_partial","Correct consensus",0.714285714285714
+4,1,7,1,"SB_partial","Correct consensus",0.714285714285714
+4,1,8,0.9,"SB_partial","Correct consensus",0.714285714285714
+4,1,9,0.9,"SB_partial","Correct consensus",0.714285714285714
+4,1,10,0.9,"SB_partial","Correct consensus",0.714285714285714
+4,1,11,0.9,"SB_partial","Correct consensus",0.714285714285714
+4,1,12,1,"SB_partial","Correct consensus",0.714285714285714
+4,2,1,0.7,"SB_partial","Breakdown",0.5
+4,2,2,0.6,"SB_partial","Breakdown",0.5
+4,2,3,0.5,"SB_partial","Breakdown",0.5
+4,2,4,0.4,"SB_partial","Breakdown",0.5
+4,2,5,0.4,"SB_partial","Breakdown",0.5
+4,2,6,0.4,"SB_partial","Breakdown",0.5
+4,2,7,0.4,"SB_partial","Breakdown",0.5
+4,2,8,0.4,"SB_partial","Breakdown",0.5
+4,2,9,0.5,"SB_partial","Breakdown",0.5
+4,2,10,0.6,"SB_partial","Breakdown",0.5
+4,2,11,0.4,"SB_partial","Breakdown",0.5
+4,2,12,0.4,"SB_partial","Breakdown",0.5
+4,3,1,0.6,"SB_partial","Correct consensus",0.875
+4,3,2,0.5,"SB_partial","Correct consensus",0.875
+4,3,3,0.4,"SB_partial","Correct consensus",0.875
+4,3,4,0.2,"SB_partial","Correct consensus",0.875
+4,3,5,0.3,"SB_partial","Correct consensus",0.875
+4,3,6,0.6,"SB_partial","Correct consensus",0.875
+4,3,7,0.9,"SB_partial","Correct consensus",0.875
+4,3,8,0.9,"SB_partial","Correct consensus",0.875
+4,3,9,0.7,"SB_partial","Correct consensus",0.875
+4,3,10,0.3,"SB_partial","Correct consensus",0.875
+4,3,11,0.6,"SB_partial","Correct consensus",0.875
+4,3,12,0.8,"SB_partial","Correct consensus",0.875
+4,4,1,0.6,"SB_partial","Breakdown",0.714285714285714
+4,4,2,0.6,"SB_partial","Breakdown",0.714285714285714
+4,4,3,0.5,"SB_partial","Breakdown",0.714285714285714
+4,4,4,0.5,"SB_partial","Breakdown",0.714285714285714
+4,4,5,0.5,"SB_partial","Breakdown",0.714285714285714
+4,4,6,0.5,"SB_partial","Breakdown",0.714285714285714
+4,4,7,0.5,"SB_partial","Breakdown",0.714285714285714
+4,4,8,0.4,"SB_partial","Breakdown",0.714285714285714
+4,4,9,0.3,"SB_partial","Breakdown",0.714285714285714
+4,4,10,0.3,"SB_partial","Breakdown",0.714285714285714
+4,4,11,0.3,"SB_partial","Breakdown",0.714285714285714
+4,4,12,0.3,"SB_partial","Breakdown",0.714285714285714
+4,5,1,0.7,"SB_partial","Correct consensus",0.833333333333333
+4,5,2,0.6,"SB_partial","Correct consensus",0.833333333333333
+4,5,3,0.6,"SB_partial","Correct consensus",0.833333333333333
+4,5,4,0.7,"SB_partial","Correct consensus",0.833333333333333
+4,5,5,0.7,"SB_partial","Correct consensus",0.833333333333333
+4,5,6,0.8,"SB_partial","Correct consensus",0.833333333333333
+4,5,7,0.6,"SB_partial","Correct consensus",0.833333333333333
+4,5,8,0.7,"SB_partial","Correct consensus",0.833333333333333
+4,5,9,0.6,"SB_partial","Correct consensus",0.833333333333333
+4,5,10,0.6,"SB_partial","Correct consensus",0.833333333333333
+4,5,11,0.7,"SB_partial","Correct consensus",0.833333333333333
+4,5,12,0.7,"SB_partial","Correct consensus",0.833333333333333
+4,6,1,0.5,"SB_partial","Correct consensus",0.75
+4,6,2,0.6,"SB_partial","Correct consensus",0.75
+4,6,3,0.6,"SB_partial","Correct consensus",0.75
+4,6,4,0.3,"SB_partial","Correct consensus",0.75
+4,6,5,0.3,"SB_partial","Correct consensus",0.75
+4,6,6,0.3,"SB_partial","Correct consensus",0.75
+4,6,7,0.5,"SB_partial","Correct consensus",0.75
+4,6,8,0.3,"SB_partial","Correct consensus",0.75
+4,6,9,0.3,"SB_partial","Correct consensus",0.75
+4,6,10,0.3,"SB_partial","Correct consensus",0.75
+4,6,11,0.4,"SB_partial","Correct consensus",0.75
+4,6,12,0.5,"SB_partial","Correct consensus",0.75
+1,1,1,0.7,"RF_partial","Correct consensus",0.833333333333333
+1,1,2,0.4,"RF_partial","Correct consensus",0.833333333333333
+1,1,3,0.1,"RF_partial","Correct consensus",0.833333333333333
+1,1,4,0.1,"RF_partial","Correct consensus",0.833333333333333
+1,1,5,0.2,"RF_partial","Correct consensus",0.833333333333333
+1,1,6,0.4,"RF_partial","Correct consensus",0.833333333333333
+1,1,7,0.3,"RF_partial","Correct consensus",0.833333333333333
+1,1,8,0.3,"RF_partial","Correct consensus",0.833333333333333
+1,1,9,0.2,"RF_partial","Correct consensus",0.833333333333333
+1,1,10,0.2,"RF_partial","Correct consensus",0.833333333333333
+1,1,11,0.3,"RF_partial","Correct consensus",0.833333333333333
+1,1,12,0.1,"RF_partial","Correct consensus",0.833333333333333
+1,2,1,0.7,"RF_partial","Incorrect consensus",0.625
+1,2,2,0.5,"RF_partial","Incorrect consensus",0.625
+1,2,3,0.4,"RF_partial","Incorrect consensus",0.625
+1,2,4,0.5,"RF_partial","Incorrect consensus",0.625
+1,2,5,0.6,"RF_partial","Incorrect consensus",0.625
+1,2,6,0.5,"RF_partial","Incorrect consensus",0.625
+1,2,7,0.4,"RF_partial","Incorrect consensus",0.625
+1,2,8,0.6,"RF_partial","Incorrect consensus",0.625
+1,2,9,0.7,"RF_partial","Incorrect consensus",0.625
+1,2,10,0.8,"RF_partial","Incorrect consensus",0.625
+1,2,11,0.5,"RF_partial","Incorrect consensus",0.625
+1,2,12,0.8,"RF_partial","Incorrect consensus",0.625
+1,3,1,0.6,"RF_partial","Correct consensus",0.777777777777778
+1,3,2,0.8,"RF_partial","Correct consensus",0.777777777777778
+1,3,3,0.9,"RF_partial","Correct consensus",0.777777777777778
+1,3,4,1,"RF_partial","Correct consensus",0.777777777777778
+1,3,5,0.8,"RF_partial","Correct consensus",0.777777777777778
+1,3,6,0.9,"RF_partial","Correct consensus",0.777777777777778
+1,3,7,0.9,"RF_partial","Correct consensus",0.777777777777778
+1,3,8,1,"RF_partial","Correct consensus",0.777777777777778
+1,3,9,0.9,"RF_partial","Correct consensus",0.777777777777778
+1,3,10,0.9,"RF_partial","Correct consensus",0.777777777777778
+1,3,11,0.9,"RF_partial","Correct consensus",0.777777777777778
+1,3,12,0.9,"RF_partial","Correct consensus",0.777777777777778
+1,4,1,0.7,"RF_partial","Incorrect consensus",0.6
+1,4,2,0.7,"RF_partial","Incorrect consensus",0.6
+1,4,3,0.8,"RF_partial","Incorrect consensus",0.6
+1,4,4,0.9,"RF_partial","Incorrect consensus",0.6
+1,4,5,0.9,"RF_partial","Incorrect consensus",0.6
+1,4,6,0.9,"RF_partial","Incorrect consensus",0.6
+1,4,7,0.9,"RF_partial","Incorrect consensus",0.6
+1,4,8,0.8,"RF_partial","Incorrect consensus",0.6
+1,4,9,0.9,"RF_partial","Incorrect consensus",0.6
+1,4,10,0.9,"RF_partial","Incorrect consensus",0.6
+1,4,11,0.9,"RF_partial","Incorrect consensus",0.6
+1,4,12,0.9,"RF_partial","Incorrect consensus",0.6
+1,5,1,0.7,"RF_partial","Correct consensus",0.75
+1,5,2,0.8,"RF_partial","Correct consensus",0.75
+1,5,3,0.9,"RF_partial","Correct consensus",0.75
+1,5,4,0.9,"RF_partial","Correct consensus",0.75
+1,5,5,0.9,"RF_partial","Correct consensus",0.75
+1,5,6,0.9,"RF_partial","Correct consensus",0.75
+1,5,7,1,"RF_partial","Correct consensus",0.75
+1,5,8,1,"RF_partial","Correct consensus",0.75
+1,5,9,1,"RF_partial","Correct consensus",0.75
+1,5,10,1,"RF_partial","Correct consensus",0.75
+1,5,11,1,"RF_partial","Correct consensus",0.75
+1,5,12,1,"RF_partial","Correct consensus",0.75
+1,6,1,0.5,"RF_partial","Correct consensus",0.666666666666667
+1,6,2,0.3,"RF_partial","Correct consensus",0.666666666666667
+1,6,3,0.1,"RF_partial","Correct consensus",0.666666666666667
+1,6,4,0.2,"RF_partial","Correct consensus",0.666666666666667
+1,6,5,0.2,"RF_partial","Correct consensus",0.666666666666667
+1,6,6,0.1,"RF_partial","Correct consensus",0.666666666666667
+1,6,7,0.1,"RF_partial","Correct consensus",0.666666666666667
+1,6,8,0.2,"RF_partial","Correct consensus",0.666666666666667
+1,6,9,0.2,"RF_partial","Correct consensus",0.666666666666667
+1,6,10,0.2,"RF_partial","Correct consensus",0.666666666666667
+1,6,11,0.2,"RF_partial","Correct consensus",0.666666666666667
+1,6,12,0.1,"RF_partial","Correct consensus",0.666666666666667
+2,1,1,0.8,"RF_partial","Incorrect consensus",0.777777777777778
+2,1,2,0.9,"RF_partial","Incorrect consensus",0.777777777777778
+2,1,3,0.9,"RF_partial","Incorrect consensus",0.777777777777778
+2,1,4,0.9,"RF_partial","Incorrect consensus",0.777777777777778
+2,1,5,0.8,"RF_partial","Incorrect consensus",0.777777777777778
+2,1,6,0.5,"RF_partial","Incorrect consensus",0.777777777777778
+2,1,7,0.4,"RF_partial","Incorrect consensus",0.777777777777778
+2,1,8,0.7,"RF_partial","Incorrect consensus",0.777777777777778
+2,1,9,0.7,"RF_partial","Incorrect consensus",0.777777777777778
+2,1,10,0.7,"RF_partial","Incorrect consensus",0.777777777777778
+2,1,11,0.8,"RF_partial","Incorrect consensus",0.777777777777778
+2,1,12,0.8,"RF_partial","Incorrect consensus",0.777777777777778
+2,2,1,0.7,"RF_partial","Correct consensus",0.714285714285714
+2,2,2,0.9,"RF_partial","Correct consensus",0.714285714285714
+2,2,3,0.8,"RF_partial","Correct consensus",0.714285714285714
+2,2,4,0.8,"RF_partial","Correct consensus",0.714285714285714
+2,2,5,0.9,"RF_partial","Correct consensus",0.714285714285714
+2,2,6,0.9,"RF_partial","Correct consensus",0.714285714285714
+2,2,7,0.9,"RF_partial","Correct consensus",0.714285714285714
+2,2,8,0.9,"RF_partial","Correct consensus",0.714285714285714
+2,2,9,0.9,"RF_partial","Correct consensus",0.714285714285714
+2,2,10,0.8,"RF_partial","Correct consensus",0.714285714285714
+2,2,11,0.8,"RF_partial","Correct consensus",0.714285714285714
+2,2,12,0.8,"RF_partial","Correct consensus",0.714285714285714
+2,3,1,0.8,"RF_partial","Correct consensus",1
+2,3,2,1,"RF_partial","Correct consensus",1
+2,3,3,1,"RF_partial","Correct consensus",1
+2,3,4,0.9,"RF_partial","Correct consensus",1
+2,3,5,0.9,"RF_partial","Correct consensus",1
+2,3,6,0.9,"RF_partial","Correct consensus",1
+2,3,7,0.8,"RF_partial","Correct consensus",1
+2,3,8,0.7,"RF_partial","Correct consensus",1
+2,3,9,0.7,"RF_partial","Correct consensus",1
+2,3,10,0.7,"RF_partial","Correct consensus",1
+2,3,11,0.7,"RF_partial","Correct consensus",1
+2,3,12,0.6,"RF_partial","Correct consensus",1
+2,4,1,0.6,"RF_partial","Correct consensus",0.7
+2,4,2,0.5,"RF_partial","Correct consensus",0.7
+2,4,3,0.4,"RF_partial","Correct consensus",0.7
+2,4,4,0.3,"RF_partial","Correct consensus",0.7
+2,4,5,0.3,"RF_partial","Correct consensus",0.7
+2,4,6,0.2,"RF_partial","Correct consensus",0.7
+2,4,7,0.3,"RF_partial","Correct consensus",0.7
+2,4,8,0.4,"RF_partial","Correct consensus",0.7
+2,4,9,0.7,"RF_partial","Correct consensus",0.7
+2,4,10,0.9,"RF_partial","Correct consensus",0.7
+2,4,11,0.9,"RF_partial","Correct consensus",0.7
+2,4,12,0.9,"RF_partial","Correct consensus",0.7
+2,5,1,0.7,"RF_partial","Correct consensus",0.875
+2,5,2,0.9,"RF_partial","Correct consensus",0.875
+2,5,3,0.9,"RF_partial","Correct consensus",0.875
+2,5,4,0.9,"RF_partial","Correct consensus",0.875
+2,5,5,0.8,"RF_partial","Correct consensus",0.875
+2,5,6,0.7,"RF_partial","Correct consensus",0.875
+2,5,7,0.8,"RF_partial","Correct consensus",0.875
+2,5,8,0.8,"RF_partial","Correct consensus",0.875
+2,5,9,0.8,"RF_partial","Correct consensus",0.875
+2,5,10,0.7,"RF_partial","Correct consensus",0.875
+2,5,11,0.8,"RF_partial","Correct consensus",0.875
+2,5,12,0.7,"RF_partial","Correct consensus",0.875
+2,6,1,0.5,"RF_partial","Correct consensus",0.6
+2,6,2,0.5,"RF_partial","Correct consensus",0.6
+2,6,3,0.4,"RF_partial","Correct consensus",0.6
+2,6,4,0.2,"RF_partial","Correct consensus",0.6
+2,6,5,0.2,"RF_partial","Correct consensus",0.6
+2,6,6,0.2,"RF_partial","Correct consensus",0.6
+2,6,7,0.1,"RF_partial","Correct consensus",0.6
+2,6,8,0.1,"RF_partial","Correct consensus",0.6
+2,6,9,0.1,"RF_partial","Correct consensus",0.6
+2,6,10,0.1,"RF_partial","Correct consensus",0.6
+2,6,11,0.1,"RF_partial","Correct consensus",0.6
+2,6,12,0.1,"RF_partial","Correct consensus",0.6
+3,1,1,0.5,"RF_partial","Correct consensus",0.6
+3,1,2,0.8,"RF_partial","Correct consensus",0.6
+3,1,3,0.9,"RF_partial","Correct consensus",0.6
+3,1,4,0.9,"RF_partial","Correct consensus",0.6
+3,1,5,1,"RF_partial","Correct consensus",0.6
+3,1,6,0.9,"RF_partial","Correct consensus",0.6
+3,1,7,0.9,"RF_partial","Correct consensus",0.6
+3,1,8,0.9,"RF_partial","Correct consensus",0.6
+3,1,9,0.8,"RF_partial","Correct consensus",0.6
+3,1,10,0.9,"RF_partial","Correct consensus",0.6
+3,1,11,0.8,"RF_partial","Correct consensus",0.6
+3,1,12,0.9,"RF_partial","Correct consensus",0.6
+3,2,1,0.7,"RF_partial","Correct consensus",0.857142857142857
+3,2,2,0.5,"RF_partial","Correct consensus",0.857142857142857
+3,2,3,0.6,"RF_partial","Correct consensus",0.857142857142857
+3,2,4,0.8,"RF_partial","Correct consensus",0.857142857142857
+3,2,5,0.9,"RF_partial","Correct consensus",0.857142857142857
+3,2,6,1,"RF_partial","Correct consensus",0.857142857142857
+3,2,7,0.9,"RF_partial","Correct consensus",0.857142857142857
+3,2,8,0.9,"RF_partial","Correct consensus",0.857142857142857
+3,2,9,0.8,"RF_partial","Correct consensus",0.857142857142857
+3,2,10,0.9,"RF_partial","Correct consensus",0.857142857142857
+3,2,11,0.9,"RF_partial","Correct consensus",0.857142857142857
+3,2,12,0.9,"RF_partial","Correct consensus",0.857142857142857
+3,3,1,0.4,"RF_partial","Incorrect consensus",0.571428571428571
+3,3,2,0.3,"RF_partial","Incorrect consensus",0.571428571428571
+3,3,3,0.6,"RF_partial","Incorrect consensus",0.571428571428571
+3,3,4,0.5,"RF_partial","Incorrect consensus",0.571428571428571
+3,3,5,0.4,"RF_partial","Incorrect consensus",0.571428571428571
+3,3,6,0.6,"RF_partial","Incorrect consensus",0.571428571428571
+3,3,7,0.6,"RF_partial","Incorrect consensus",0.571428571428571
+3,3,8,0.5,"RF_partial","Incorrect consensus",0.571428571428571
+3,3,9,0.6,"RF_partial","Incorrect consensus",0.571428571428571
+3,3,10,0.7,"RF_partial","Incorrect consensus",0.571428571428571
+3,3,11,0.6,"RF_partial","Incorrect consensus",0.571428571428571
+3,3,12,0.6,"RF_partial","Incorrect consensus",0.571428571428571
+3,4,1,0.8,"RF_partial","Correct consensus",1
+3,4,2,0.9,"RF_partial","Correct consensus",1
+3,4,3,1,"RF_partial","Correct consensus",1
+3,4,4,0.9,"RF_partial","Correct consensus",1
+3,4,5,0.9,"RF_partial","Correct consensus",1
+3,4,6,0.9,"RF_partial","Correct consensus",1
+3,4,7,1,"RF_partial","Correct consensus",1
+3,4,8,1,"RF_partial","Correct consensus",1
+3,4,9,0.9,"RF_partial","Correct consensus",1
+3,4,10,0.9,"RF_partial","Correct consensus",1
+3,4,11,1,"RF_partial","Correct consensus",1
+3,4,12,1,"RF_partial","Correct consensus",1
+3,5,1,0.5,"RF_partial","Correct consensus",0.666666666666667
+3,5,2,0.6,"RF_partial","Correct consensus",0.666666666666667
+3,5,3,0.9,"RF_partial","Correct consensus",0.666666666666667
+3,5,4,0.8,"RF_partial","Correct consensus",0.666666666666667
+3,5,5,0.8,"RF_partial","Correct consensus",0.666666666666667
+3,5,6,0.8,"RF_partial","Correct consensus",0.666666666666667
+3,5,7,0.9,"RF_partial","Correct consensus",0.666666666666667
+3,5,8,0.9,"RF_partial","Correct consensus",0.666666666666667
+3,5,9,0.8,"RF_partial","Correct consensus",0.666666666666667
+3,5,10,0.8,"RF_partial","Correct consensus",0.666666666666667
+3,5,11,0.9,"RF_partial","Correct consensus",0.666666666666667
+3,5,12,0.8,"RF_partial","Correct consensus",0.666666666666667
+3,6,1,0.8,"RF_partial","Correct consensus",0.833333333333333
+3,6,2,1,"RF_partial","Correct consensus",0.833333333333333
+3,6,3,1,"RF_partial","Correct consensus",0.833333333333333
+3,6,4,1,"RF_partial","Correct consensus",0.833333333333333
+3,6,5,1,"RF_partial","Correct consensus",0.833333333333333
+3,6,6,1,"RF_partial","Correct consensus",0.833333333333333
+3,6,7,1,"RF_partial","Correct consensus",0.833333333333333
+3,6,8,1,"RF_partial","Correct consensus",0.833333333333333
+3,6,9,1,"RF_partial","Correct consensus",0.833333333333333
+3,6,10,1,"RF_partial","Correct consensus",0.833333333333333
+3,6,11,1,"RF_partial","Correct consensus",0.833333333333333
+3,6,12,1,"RF_partial","Correct consensus",0.833333333333333
+4,1,1,0.5,"RF_partial","Correct consensus",0.714285714285714
+4,1,2,0.4,"RF_partial","Correct consensus",0.714285714285714
+4,1,3,0.1,"RF_partial","Correct consensus",0.714285714285714
+4,1,4,0.2,"RF_partial","Correct consensus",0.714285714285714
+4,1,5,0.4,"RF_partial","Correct consensus",0.714285714285714
+4,1,6,0.5,"RF_partial","Correct consensus",0.714285714285714
+4,1,7,0.7,"RF_partial","Correct consensus",0.714285714285714
+4,1,8,0.8,"RF_partial","Correct consensus",0.714285714285714
+4,1,9,0.7,"RF_partial","Correct consensus",0.714285714285714
+4,1,10,0.8,"RF_partial","Correct consensus",0.714285714285714
+4,1,11,0.9,"RF_partial","Correct consensus",0.714285714285714
+4,1,12,0.8,"RF_partial","Correct consensus",0.714285714285714
+4,2,1,0.4,"RF_partial","Incorrect consensus",0.5
+4,2,2,0.3,"RF_partial","Incorrect consensus",0.5
+4,2,3,0.3,"RF_partial","Incorrect consensus",0.5
+4,2,4,0.2,"RF_partial","Incorrect consensus",0.5
+4,2,5,0,"RF_partial","Incorrect consensus",0.5
+4,2,6,0.3,"RF_partial","Incorrect consensus",0.5
+4,2,7,0.1,"RF_partial","Incorrect consensus",0.5
+4,2,8,0.1,"RF_partial","Incorrect consensus",0.5
+4,2,9,0.1,"RF_partial","Incorrect consensus",0.5
+4,2,10,0,"RF_partial","Incorrect consensus",0.5
+4,2,11,0.1,"RF_partial","Incorrect consensus",0.5
+4,2,12,0,"RF_partial","Incorrect consensus",0.5
+4,3,1,0.8,"RF_partial","Correct consensus",0.875
+4,3,2,0.7,"RF_partial","Correct consensus",0.875
+4,3,3,0.6,"RF_partial","Correct consensus",0.875
+4,3,4,0.9,"RF_partial","Correct consensus",0.875
+4,3,5,0.9,"RF_partial","Correct consensus",0.875
+4,3,6,0.8,"RF_partial","Correct consensus",0.875
+4,3,7,1,"RF_partial","Correct consensus",0.875
+4,3,8,0.9,"RF_partial","Correct consensus",0.875
+4,3,9,0.8,"RF_partial","Correct consensus",0.875
+4,3,10,1,"RF_partial","Correct consensus",0.875
+4,3,11,0.9,"RF_partial","Correct consensus",0.875
+4,3,12,0.8,"RF_partial","Correct consensus",0.875
+4,4,1,0.6,"RF_partial","Correct consensus",0.714285714285714
+4,4,2,0.6,"RF_partial","Correct consensus",0.714285714285714
+4,4,3,0.6,"RF_partial","Correct consensus",0.714285714285714
+4,4,4,0.5,"RF_partial","Correct consensus",0.714285714285714
+4,4,5,0.5,"RF_partial","Correct consensus",0.714285714285714
+4,4,6,0.4,"RF_partial","Correct consensus",0.714285714285714
+4,4,7,0.4,"RF_partial","Correct consensus",0.714285714285714
+4,4,8,0.5,"RF_partial","Correct consensus",0.714285714285714
+4,4,9,0.3,"RF_partial","Correct consensus",0.714285714285714
+4,4,10,0.5,"RF_partial","Correct consensus",0.714285714285714
+4,4,11,0.7,"RF_partial","Correct consensus",0.714285714285714
+4,4,12,0.6,"RF_partial","Correct consensus",0.714285714285714
+4,5,1,0.7,"RF_partial","Correct consensus",0.833333333333333
+4,5,2,0.9,"RF_partial","Correct consensus",0.833333333333333
+4,5,3,0.8,"RF_partial","Correct consensus",0.833333333333333
+4,5,4,0.8,"RF_partial","Correct consensus",0.833333333333333
+4,5,5,0.7,"RF_partial","Correct consensus",0.833333333333333
+4,5,6,0.5,"RF_partial","Correct consensus",0.833333333333333
+4,5,7,0.5,"RF_partial","Correct consensus",0.833333333333333
+4,5,8,0.5,"RF_partial","Correct consensus",0.833333333333333
+4,5,9,0.4,"RF_partial","Correct consensus",0.833333333333333
+4,5,10,0.4,"RF_partial","Correct consensus",0.833333333333333
+4,5,11,0.6,"RF_partial","Correct consensus",0.833333333333333
+4,5,12,0.8,"RF_partial","Correct consensus",0.833333333333333
+4,6,1,0.7,"RF_partial","Incorrect consensus",0.75
+4,6,2,0.7,"RF_partial","Incorrect consensus",0.75
+4,6,3,0.7,"RF_partial","Incorrect consensus",0.75
+4,6,4,0.7,"RF_partial","Incorrect consensus",0.75
+4,6,5,0.7,"RF_partial","Incorrect consensus",0.75
+4,6,6,0.8,"RF_partial","Incorrect consensus",0.75
+4,6,7,0.8,"RF_partial","Incorrect consensus",0.75
+4,6,8,0.7,"RF_partial","Incorrect consensus",0.75
+4,6,9,0.8,"RF_partial","Incorrect consensus",0.75
+4,6,10,0.7,"RF_partial","Incorrect consensus",0.75
+4,6,11,0.6,"RF_partial","Incorrect consensus",0.75
+4,6,12,0.6,"RF_partial","Incorrect consensus",0.75
+1,1,1,0.6,"RGG_partial","Correct consensus",0.833333333333333
+1,1,2,0.8,"RGG_partial","Correct consensus",0.833333333333333
+1,1,3,0.8,"RGG_partial","Correct consensus",0.833333333333333
+1,1,4,0.7,"RGG_partial","Correct consensus",0.833333333333333
+1,1,5,0.9,"RGG_partial","Correct consensus",0.833333333333333
+1,1,6,1,"RGG_partial","Correct consensus",0.833333333333333
+1,1,7,0.9,"RGG_partial","Correct consensus",0.833333333333333
+1,1,8,0.7,"RGG_partial","Correct consensus",0.833333333333333
+1,1,9,0.7,"RGG_partial","Correct consensus",0.833333333333333
+1,1,10,0.6,"RGG_partial","Correct consensus",0.833333333333333
+1,1,11,0.7,"RGG_partial","Correct consensus",0.833333333333333
+1,1,12,0.7,"RGG_partial","Correct consensus",0.833333333333333
+1,2,1,0.7,"RGG_partial","Correct consensus",0.625
+1,2,2,0.8,"RGG_partial","Correct consensus",0.625
+1,2,3,0.9,"RGG_partial","Correct consensus",0.625
+1,2,4,0.9,"RGG_partial","Correct consensus",0.625
+1,2,5,0.9,"RGG_partial","Correct consensus",0.625
+1,2,6,0.9,"RGG_partial","Correct consensus",0.625
+1,2,7,0.9,"RGG_partial","Correct consensus",0.625
+1,2,8,0.9,"RGG_partial","Correct consensus",0.625
+1,2,9,0.9,"RGG_partial","Correct consensus",0.625
+1,2,10,0.9,"RGG_partial","Correct consensus",0.625
+1,2,11,0.9,"RGG_partial","Correct consensus",0.625
+1,2,12,0.8,"RGG_partial","Correct consensus",0.625
+1,3,1,0.7,"RGG_partial","Correct consensus",0.777777777777778
+1,3,2,0.8,"RGG_partial","Correct consensus",0.777777777777778
+1,3,3,0.7,"RGG_partial","Correct consensus",0.777777777777778
+1,3,4,0.9,"RGG_partial","Correct consensus",0.777777777777778
+1,3,5,1,"RGG_partial","Correct consensus",0.777777777777778
+1,3,6,1,"RGG_partial","Correct consensus",0.777777777777778
+1,3,7,1,"RGG_partial","Correct consensus",0.777777777777778
+1,3,8,1,"RGG_partial","Correct consensus",0.777777777777778
+1,3,9,1,"RGG_partial","Correct consensus",0.777777777777778
+1,3,10,1,"RGG_partial","Correct consensus",0.777777777777778
+1,3,11,1,"RGG_partial","Correct consensus",0.777777777777778
+1,3,12,1,"RGG_partial","Correct consensus",0.777777777777778
+1,4,1,0.4,"RGG_partial","Breakdown",0.6
+1,4,2,0.1,"RGG_partial","Breakdown",0.6
+1,4,3,0,"RGG_partial","Breakdown",0.6
+1,4,4,0,"RGG_partial","Breakdown",0.6
+1,4,5,0,"RGG_partial","Breakdown",0.6
+1,4,6,0,"RGG_partial","Breakdown",0.6
+1,4,7,0,"RGG_partial","Breakdown",0.6
+1,4,8,0,"RGG_partial","Breakdown",0.6
+1,4,9,0,"RGG_partial","Breakdown",0.6
+1,4,10,0,"RGG_partial","Breakdown",0.6
+1,4,11,0,"RGG_partial","Breakdown",0.6
+1,4,12,0,"RGG_partial","Breakdown",0.6
+1,5,1,0.6,"RGG_partial","Correct consensus",0.75
+1,5,2,0.8,"RGG_partial","Correct consensus",0.75
+1,5,3,0.9,"RGG_partial","Correct consensus",0.75
+1,5,4,0.9,"RGG_partial","Correct consensus",0.75
+1,5,5,0.9,"RGG_partial","Correct consensus",0.75
+1,5,6,0.9,"RGG_partial","Correct consensus",0.75
+1,5,7,0.9,"RGG_partial","Correct consensus",0.75
+1,5,8,0.9,"RGG_partial","Correct consensus",0.75
+1,5,9,0.9,"RGG_partial","Correct consensus",0.75
+1,5,10,0.9,"RGG_partial","Correct consensus",0.75
+1,5,11,0.9,"RGG_partial","Correct consensus",0.75
+1,5,12,0.9,"RGG_partial","Correct consensus",0.75
+1,6,1,0.4,"RGG_partial","Correct consensus",0.666666666666667
+1,6,2,0.5,"RGG_partial","Correct consensus",0.666666666666667
+1,6,3,0.6,"RGG_partial","Correct consensus",0.666666666666667
+1,6,4,0.5,"RGG_partial","Correct consensus",0.666666666666667
+1,6,5,0.4,"RGG_partial","Correct consensus",0.666666666666667
+1,6,6,0.5,"RGG_partial","Correct consensus",0.666666666666667
+1,6,7,0.5,"RGG_partial","Correct consensus",0.666666666666667
+1,6,8,0.5,"RGG_partial","Correct consensus",0.666666666666667
+1,6,9,0.5,"RGG_partial","Correct consensus",0.666666666666667
+1,6,10,0.4,"RGG_partial","Correct consensus",0.666666666666667
+1,6,11,0.5,"RGG_partial","Correct consensus",0.666666666666667
+1,6,12,0.5,"RGG_partial","Correct consensus",0.666666666666667
+2,1,1,0.6,"RGG_partial","Correct consensus",0.777777777777778
+2,1,2,0.8,"RGG_partial","Correct consensus",0.777777777777778
+2,1,3,0.8,"RGG_partial","Correct consensus",0.777777777777778
+2,1,4,0.7,"RGG_partial","Correct consensus",0.777777777777778
+2,1,5,0.7,"RGG_partial","Correct consensus",0.777777777777778
+2,1,6,0.7,"RGG_partial","Correct consensus",0.777777777777778
+2,1,7,0.8,"RGG_partial","Correct consensus",0.777777777777778
+2,1,8,0.8,"RGG_partial","Correct consensus",0.777777777777778
+2,1,9,0.9,"RGG_partial","Correct consensus",0.777777777777778
+2,1,10,1,"RGG_partial","Correct consensus",0.777777777777778
+2,1,11,1,"RGG_partial","Correct consensus",0.777777777777778
+2,1,12,1,"RGG_partial","Correct consensus",0.777777777777778
+2,2,1,0.6,"RGG_partial","Correct consensus",0.714285714285714
+2,2,2,0.4,"RGG_partial","Correct consensus",0.714285714285714
+2,2,3,0,"RGG_partial","Correct consensus",0.714285714285714
+2,2,4,0,"RGG_partial","Correct consensus",0.714285714285714
+2,2,5,0,"RGG_partial","Correct consensus",0.714285714285714
+2,2,6,0,"RGG_partial","Correct consensus",0.714285714285714
+2,2,7,0,"RGG_partial","Correct consensus",0.714285714285714
+2,2,8,0,"RGG_partial","Correct consensus",0.714285714285714
+2,2,9,0.1,"RGG_partial","Correct consensus",0.714285714285714
+2,2,10,0.2,"RGG_partial","Correct consensus",0.714285714285714
+2,2,11,0.3,"RGG_partial","Correct consensus",0.714285714285714
+2,2,12,0.2,"RGG_partial","Correct consensus",0.714285714285714
+2,3,1,0.8,"RGG_partial","Correct consensus",1
+2,3,2,0.8,"RGG_partial","Correct consensus",1
+2,3,3,0.7,"RGG_partial","Correct consensus",1
+2,3,4,0.7,"RGG_partial","Correct consensus",1
+2,3,5,0.7,"RGG_partial","Correct consensus",1
+2,3,6,0.7,"RGG_partial","Correct consensus",1
+2,3,7,0.7,"RGG_partial","Correct consensus",1
+2,3,8,0.7,"RGG_partial","Correct consensus",1
+2,3,9,0.7,"RGG_partial","Correct consensus",1
+2,3,10,0.7,"RGG_partial","Correct consensus",1
+2,3,11,0.7,"RGG_partial","Correct consensus",1
+2,3,12,0.7,"RGG_partial","Correct consensus",1
+2,4,1,0.8,"RGG_partial","Correct consensus",0.7
+2,4,2,1,"RGG_partial","Correct consensus",0.7
+2,4,3,1,"RGG_partial","Correct consensus",0.7
+2,4,4,1,"RGG_partial","Correct consensus",0.7
+2,4,5,0.9,"RGG_partial","Correct consensus",0.7
+2,4,6,1,"RGG_partial","Correct consensus",0.7
+2,4,7,1,"RGG_partial","Correct consensus",0.7
+2,4,8,1,"RGG_partial","Correct consensus",0.7
+2,4,9,1,"RGG_partial","Correct consensus",0.7
+2,4,10,1,"RGG_partial","Correct consensus",0.7
+2,4,11,1,"RGG_partial","Correct consensus",0.7
+2,4,12,1,"RGG_partial","Correct consensus",0.7
+2,5,1,0.9,"RGG_partial","Correct consensus",0.875
+2,5,2,1,"RGG_partial","Correct consensus",0.875
+2,5,3,0.9,"RGG_partial","Correct consensus",0.875
+2,5,4,1,"RGG_partial","Correct consensus",0.875
+2,5,5,1,"RGG_partial","Correct consensus",0.875
+2,5,6,1,"RGG_partial","Correct consensus",0.875
+2,5,7,1,"RGG_partial","Correct consensus",0.875
+2,5,8,0.9,"RGG_partial","Correct consensus",0.875
+2,5,9,1,"RGG_partial","Correct consensus",0.875
+2,5,10,1,"RGG_partial","Correct consensus",0.875
+2,5,11,1,"RGG_partial","Correct consensus",0.875
+2,5,12,1,"RGG_partial","Correct consensus",0.875
+2,6,1,0.5,"RGG_partial","Breakdown",0.6
+2,6,2,0.3,"RGG_partial","Breakdown",0.6
+2,6,3,0.2,"RGG_partial","Breakdown",0.6
+2,6,4,0.3,"RGG_partial","Breakdown",0.6
+2,6,5,0.3,"RGG_partial","Breakdown",0.6
+2,6,6,0.2,"RGG_partial","Breakdown",0.6
+2,6,7,0.3,"RGG_partial","Breakdown",0.6
+2,6,8,0.3,"RGG_partial","Breakdown",0.6
+2,6,9,0.3,"RGG_partial","Breakdown",0.6
+2,6,10,0.3,"RGG_partial","Breakdown",0.6
+2,6,11,0.3,"RGG_partial","Breakdown",0.6
+2,6,12,0.3,"RGG_partial","Breakdown",0.6
+3,1,1,0.7,"RGG_partial","Correct consensus",0.6
+3,1,2,0.8,"RGG_partial","Correct consensus",0.6
+3,1,3,0.7,"RGG_partial","Correct consensus",0.6
+3,1,4,0.8,"RGG_partial","Correct consensus",0.6
+3,1,5,1,"RGG_partial","Correct consensus",0.6
+3,1,6,0.9,"RGG_partial","Correct consensus",0.6
+3,1,7,0.7,"RGG_partial","Correct consensus",0.6
+3,1,8,0.7,"RGG_partial","Correct consensus",0.6
+3,1,9,0.8,"RGG_partial","Correct consensus",0.6
+3,1,10,0.9,"RGG_partial","Correct consensus",0.6
+3,1,11,1,"RGG_partial","Correct consensus",0.6
+3,1,12,0.9,"RGG_partial","Correct consensus",0.6
+3,2,1,0.7,"RGG_partial","Correct consensus",0.857142857142857
+3,2,2,0.8,"RGG_partial","Correct consensus",0.857142857142857
+3,2,3,0.9,"RGG_partial","Correct consensus",0.857142857142857
+3,2,4,0.9,"RGG_partial","Correct consensus",0.857142857142857
+3,2,5,0.9,"RGG_partial","Correct consensus",0.857142857142857
+3,2,6,0.7,"RGG_partial","Correct consensus",0.857142857142857
+3,2,7,0.9,"RGG_partial","Correct consensus",0.857142857142857
+3,2,8,0.9,"RGG_partial","Correct consensus",0.857142857142857
+3,2,9,1,"RGG_partial","Correct consensus",0.857142857142857
+3,2,10,0.8,"RGG_partial","Correct consensus",0.857142857142857
+3,2,11,1,"RGG_partial","Correct consensus",0.857142857142857
+3,2,12,0.9,"RGG_partial","Correct consensus",0.857142857142857
+3,3,1,0.6,"RGG_partial","Breakdown",0.571428571428571
+3,3,2,0.9,"RGG_partial","Breakdown",0.571428571428571
+3,3,3,1,"RGG_partial","Breakdown",0.571428571428571
+3,3,4,1,"RGG_partial","Breakdown",0.571428571428571
+3,3,5,0.8,"RGG_partial","Breakdown",0.571428571428571
+3,3,6,0.8,"RGG_partial","Breakdown",0.571428571428571
+3,3,7,0.8,"RGG_partial","Breakdown",0.571428571428571
+3,3,8,0.9,"RGG_partial","Breakdown",0.571428571428571
+3,3,9,1,"RGG_partial","Breakdown",0.571428571428571
+3,3,10,1,"RGG_partial","Breakdown",0.571428571428571
+3,3,11,1,"RGG_partial","Breakdown",0.571428571428571
+3,3,12,0.9,"RGG_partial","Breakdown",0.571428571428571
+3,4,1,0.8,"RGG_partial","Correct consensus",1
+3,4,2,0.8,"RGG_partial","Correct consensus",1
+3,4,3,0.9,"RGG_partial","Correct consensus",1
+3,4,4,1,"RGG_partial","Correct consensus",1
+3,4,5,1,"RGG_partial","Correct consensus",1
+3,4,6,0.9,"RGG_partial","Correct consensus",1
+3,4,7,0.9,"RGG_partial","Correct consensus",1
+3,4,8,0.9,"RGG_partial","Correct consensus",1
+3,4,9,1,"RGG_partial","Correct consensus",1
+3,4,10,0.9,"RGG_partial","Correct consensus",1
+3,4,11,1,"RGG_partial","Correct consensus",1
+3,4,12,0.9,"RGG_partial","Correct consensus",1
+3,5,1,0.4,"RGG_partial","Breakdown",0.666666666666667
+3,5,2,0.2,"RGG_partial","Breakdown",0.666666666666667
+3,5,3,0,"RGG_partial","Breakdown",0.666666666666667
+3,5,4,0,"RGG_partial","Breakdown",0.666666666666667
+3,5,5,0.1,"RGG_partial","Breakdown",0.666666666666667
+3,5,6,0.1,"RGG_partial","Breakdown",0.666666666666667
+3,5,7,0,"RGG_partial","Breakdown",0.666666666666667
+3,5,8,0,"RGG_partial","Breakdown",0.666666666666667
+3,5,9,0,"RGG_partial","Breakdown",0.666666666666667
+3,5,10,0,"RGG_partial","Breakdown",0.666666666666667
+3,5,11,0.1,"RGG_partial","Breakdown",0.666666666666667
+3,5,12,0,"RGG_partial","Breakdown",0.666666666666667
+3,6,1,0.7,"RGG_partial","Correct consensus",0.833333333333333
+3,6,2,0.8,"RGG_partial","Correct consensus",0.833333333333333
+3,6,3,1,"RGG_partial","Correct consensus",0.833333333333333
+3,6,4,1,"RGG_partial","Correct consensus",0.833333333333333
+3,6,5,0.9,"RGG_partial","Correct consensus",0.833333333333333
+3,6,6,0.8,"RGG_partial","Correct consensus",0.833333333333333
+3,6,7,0.8,"RGG_partial","Correct consensus",0.833333333333333
+3,6,8,0.9,"RGG_partial","Correct consensus",0.833333333333333
+3,6,9,1,"RGG_partial","Correct consensus",0.833333333333333
+3,6,10,1,"RGG_partial","Correct consensus",0.833333333333333
+3,6,11,1,"RGG_partial","Correct consensus",0.833333333333333
+3,6,12,0.9,"RGG_partial","Correct consensus",0.833333333333333
+4,1,1,0.7,"RGG_partial","Correct consensus",0.714285714285714
+4,1,2,0.9,"RGG_partial","Correct consensus",0.714285714285714
+4,1,3,0.8,"RGG_partial","Correct consensus",0.714285714285714
+4,1,4,0.7,"RGG_partial","Correct consensus",0.714285714285714
+4,1,5,0.6,"RGG_partial","Correct consensus",0.714285714285714
+4,1,6,0.8,"RGG_partial","Correct consensus",0.714285714285714
+4,1,7,0.9,"RGG_partial","Correct consensus",0.714285714285714
+4,1,8,0.8,"RGG_partial","Correct consensus",0.714285714285714
+4,1,9,0.9,"RGG_partial","Correct consensus",0.714285714285714
+4,1,10,0.9,"RGG_partial","Correct consensus",0.714285714285714
+4,1,11,0.9,"RGG_partial","Correct consensus",0.714285714285714
+4,1,12,0.9,"RGG_partial","Correct consensus",0.714285714285714
+4,2,1,0.7,"RGG_partial","Correct consensus",0.5
+4,2,2,0.6,"RGG_partial","Correct consensus",0.5
+4,2,3,0.7,"RGG_partial","Correct consensus",0.5
+4,2,4,0.5,"RGG_partial","Correct consensus",0.5
+4,2,5,0.5,"RGG_partial","Correct consensus",0.5
+4,2,6,0.7,"RGG_partial","Correct consensus",0.5
+4,2,7,0.7,"RGG_partial","Correct consensus",0.5
+4,2,8,0.7,"RGG_partial","Correct consensus",0.5
+4,2,9,0.9,"RGG_partial","Correct consensus",0.5
+4,2,10,0.8,"RGG_partial","Correct consensus",0.5
+4,2,11,0.6,"RGG_partial","Correct consensus",0.5
+4,2,12,0.5,"RGG_partial","Correct consensus",0.5
+4,3,1,0.8,"RGG_partial","Correct consensus",0.875
+4,3,2,0.9,"RGG_partial","Correct consensus",0.875
+4,3,3,0.9,"RGG_partial","Correct consensus",0.875
+4,3,4,0.9,"RGG_partial","Correct consensus",0.875
+4,3,5,0.9,"RGG_partial","Correct consensus",0.875
+4,3,6,0.8,"RGG_partial","Correct consensus",0.875
+4,3,7,1,"RGG_partial","Correct consensus",0.875
+4,3,8,1,"RGG_partial","Correct consensus",0.875
+4,3,9,0.8,"RGG_partial","Correct consensus",0.875
+4,3,10,0.9,"RGG_partial","Correct consensus",0.875
+4,3,11,0.8,"RGG_partial","Correct consensus",0.875
+4,3,12,0.9,"RGG_partial","Correct consensus",0.875
+4,4,1,0.6,"RGG_partial","Breakdown",0.714285714285714
+4,4,2,0.7,"RGG_partial","Breakdown",0.714285714285714
+4,4,3,0.8,"RGG_partial","Breakdown",0.714285714285714
+4,4,4,0.7,"RGG_partial","Breakdown",0.714285714285714
+4,4,5,0.7,"RGG_partial","Breakdown",0.714285714285714
+4,4,6,0.8,"RGG_partial","Breakdown",0.714285714285714
+4,4,7,0.7,"RGG_partial","Breakdown",0.714285714285714
+4,4,8,0.6,"RGG_partial","Breakdown",0.714285714285714
+4,4,9,0.6,"RGG_partial","Breakdown",0.714285714285714
+4,4,10,0.7,"RGG_partial","Breakdown",0.714285714285714
+4,4,11,0.8,"RGG_partial","Breakdown",0.714285714285714
+4,4,12,0.7,"RGG_partial","Breakdown",0.714285714285714
+4,5,1,0.5,"RGG_partial","Correct consensus",0.833333333333333
+4,5,2,0.8,"RGG_partial","Correct consensus",0.833333333333333
+4,5,3,0.7,"RGG_partial","Correct consensus",0.833333333333333
+4,5,4,0.8,"RGG_partial","Correct consensus",0.833333333333333
+4,5,5,0.7,"RGG_partial","Correct consensus",0.833333333333333
+4,5,6,0.9,"RGG_partial","Correct consensus",0.833333333333333
+4,5,7,0.8,"RGG_partial","Correct consensus",0.833333333333333
+4,5,8,0.9,"RGG_partial","Correct consensus",0.833333333333333
+4,5,9,0.8,"RGG_partial","Correct consensus",0.833333333333333
+4,5,10,0.9,"RGG_partial","Correct consensus",0.833333333333333
+4,5,11,0.7,"RGG_partial","Correct consensus",0.833333333333333
+4,5,12,0.9,"RGG_partial","Correct consensus",0.833333333333333
+4,6,1,0.5,"RGG_partial","Correct consensus",0.75
+4,6,2,0.7,"RGG_partial","Correct consensus",0.75
+4,6,3,0.7,"RGG_partial","Correct consensus",0.75
+4,6,4,1,"RGG_partial","Correct consensus",0.75
+4,6,5,1,"RGG_partial","Correct consensus",0.75
+4,6,6,0.9,"RGG_partial","Correct consensus",0.75
+4,6,7,1,"RGG_partial","Correct consensus",0.75
+4,6,8,0.9,"RGG_partial","Correct consensus",0.75
+4,6,9,1,"RGG_partial","Correct consensus",0.75
+4,6,10,1,"RGG_partial","Correct consensus",0.75
+4,6,11,0.9,"RGG_partial","Correct consensus",0.75
+4,6,12,0.9,"RGG_partial","Correct consensus",0.75
+1,1,1,0.775,"ER_40","Correct consensus",0.7
+1,1,2,0.875,"ER_40","Correct consensus",0.7
+1,1,3,0.8,"ER_40","Correct consensus",0.7
+1,1,4,0.75,"ER_40","Correct consensus",0.7
+1,1,5,0.7,"ER_40","Correct consensus",0.7
+1,1,6,0.775,"ER_40","Correct consensus",0.7
+1,1,7,0.875,"ER_40","Correct consensus",0.7
+1,1,8,0.9,"ER_40","Correct consensus",0.7
+1,1,9,0.8,"ER_40","Correct consensus",0.7
+1,1,10,0.825,"ER_40","Correct consensus",0.7
+1,1,11,0.85,"ER_40","Correct consensus",0.7
+1,1,12,0.775,"ER_40","Correct consensus",0.7
+1,2,1,0.675,"ER_40","Correct consensus",0.675
+1,2,2,0.775,"ER_40","Correct consensus",0.675
+1,2,3,0.85,"ER_40","Correct consensus",0.675
+1,2,4,0.775,"ER_40","Correct consensus",0.675
+1,2,5,0.725,"ER_40","Correct consensus",0.675
+1,2,6,0.625,"ER_40","Correct consensus",0.675
+1,2,7,0.7,"ER_40","Correct consensus",0.675
+1,2,8,0.725,"ER_40","Correct consensus",0.675
+1,2,9,0.675,"ER_40","Correct consensus",0.675
+1,2,10,0.8,"ER_40","Correct consensus",0.675
+1,2,11,0.775,"ER_40","Correct consensus",0.675
+1,2,12,0.825,"ER_40","Correct consensus",0.675
+1,3,1,0.6,"ER_40","Correct consensus",0.7
+1,3,2,0.75,"ER_40","Correct consensus",0.7
+1,3,3,0.875,"ER_40","Correct consensus",0.7
+1,3,4,0.8,"ER_40","Correct consensus",0.7
+1,3,5,0.8,"ER_40","Correct consensus",0.7
+1,3,6,0.8,"ER_40","Correct consensus",0.7
+1,3,7,0.8,"ER_40","Correct consensus",0.7
+1,3,8,0.725,"ER_40","Correct consensus",0.7
+1,3,9,0.825,"ER_40","Correct consensus",0.7
+1,3,10,0.825,"ER_40","Correct consensus",0.7
+1,3,11,0.825,"ER_40","Correct consensus",0.7
+1,3,12,0.85,"ER_40","Correct consensus",0.7
+1,4,1,0.725,"ER_40","Correct consensus",0.725
+1,4,2,0.9,"ER_40","Correct consensus",0.725
+1,4,3,0.85,"ER_40","Correct consensus",0.725
+1,4,4,0.875,"ER_40","Correct consensus",0.725
+1,4,5,0.825,"ER_40","Correct consensus",0.725
+1,4,6,0.8,"ER_40","Correct consensus",0.725
+1,4,7,0.8,"ER_40","Correct consensus",0.725
+1,4,8,0.875,"ER_40","Correct consensus",0.725
+1,4,9,0.825,"ER_40","Correct consensus",0.725
+1,4,10,0.85,"ER_40","Correct consensus",0.725
+1,4,11,0.85,"ER_40","Correct consensus",0.725
+1,4,12,0.85,"ER_40","Correct consensus",0.725
+1,5,1,0.65,"ER_40","Correct consensus",0.75
+1,5,2,0.75,"ER_40","Correct consensus",0.75
+1,5,3,0.875,"ER_40","Correct consensus",0.75
+1,5,4,0.85,"ER_40","Correct consensus",0.75
+1,5,5,0.95,"ER_40","Correct consensus",0.75
+1,5,6,0.95,"ER_40","Correct consensus",0.75
+1,5,7,0.975,"ER_40","Correct consensus",0.75
+1,5,8,0.925,"ER_40","Correct consensus",0.75
+1,5,9,0.925,"ER_40","Correct consensus",0.75
+1,5,10,0.9,"ER_40","Correct consensus",0.75
+1,5,11,0.975,"ER_40","Correct consensus",0.75
+1,5,12,0.925,"ER_40","Correct consensus",0.75
+1,6,1,0.6,"ER_40","Breakdown",0.55
+1,6,2,0.575,"ER_40","Breakdown",0.55
+1,6,3,0.6,"ER_40","Breakdown",0.55
+1,6,4,0.55,"ER_40","Breakdown",0.55
+1,6,5,0.575,"ER_40","Breakdown",0.55
+1,6,6,0.625,"ER_40","Breakdown",0.55
+1,6,7,0.55,"ER_40","Breakdown",0.55
+1,6,8,0.575,"ER_40","Breakdown",0.55
+1,6,9,0.575,"ER_40","Breakdown",0.55
+1,6,10,0.525,"ER_40","Breakdown",0.55
+1,6,11,0.5,"ER_40","Breakdown",0.55
+1,6,12,0.5,"ER_40","Breakdown",0.55
+2,1,1,0.75,"ER_40","Correct consensus",0.75
+2,1,2,0.75,"ER_40","Correct consensus",0.75
+2,1,3,0.675,"ER_40","Correct consensus",0.75
+2,1,4,0.75,"ER_40","Correct consensus",0.75
+2,1,5,0.725,"ER_40","Correct consensus",0.75
+2,1,6,0.725,"ER_40","Correct consensus",0.75
+2,1,7,0.8,"ER_40","Correct consensus",0.75
+2,1,8,0.725,"ER_40","Correct consensus",0.75
+2,1,9,0.725,"ER_40","Correct consensus",0.75
+2,1,10,0.725,"ER_40","Correct consensus",0.75
+2,1,11,0.75,"ER_40","Correct consensus",0.75
+2,1,12,0.75,"ER_40","Correct consensus",0.75
+2,2,1,0.625,"ER_40","Correct consensus",0.675
+2,2,2,0.65,"ER_40","Correct consensus",0.675
+2,2,3,0.7,"ER_40","Correct consensus",0.675
+2,2,4,0.725,"ER_40","Correct consensus",0.675
+2,2,5,0.55,"ER_40","Correct consensus",0.675
+2,2,6,0.55,"ER_40","Correct consensus",0.675
+2,2,7,0.575,"ER_40","Correct consensus",0.675
+2,2,8,0.6,"ER_40","Correct consensus",0.675
+2,2,9,0.575,"ER_40","Correct consensus",0.675
+2,2,10,0.7,"ER_40","Correct consensus",0.675
+2,2,11,0.625,"ER_40","Correct consensus",0.675
+2,2,12,0.575,"ER_40","Correct consensus",0.675
+2,3,1,0.575,"ER_40","Breakdown",0.6
+2,3,2,0.525,"ER_40","Breakdown",0.6
+2,3,3,0.55,"ER_40","Breakdown",0.6
+2,3,4,0.575,"ER_40","Breakdown",0.6
+2,3,5,0.6,"ER_40","Breakdown",0.6
+2,3,6,0.55,"ER_40","Breakdown",0.6
+2,3,7,0.65,"ER_40","Breakdown",0.6
+2,3,8,0.725,"ER_40","Breakdown",0.6
+2,3,9,0.65,"ER_40","Breakdown",0.6
+2,3,10,0.675,"ER_40","Breakdown",0.6
+2,3,11,0.725,"ER_40","Breakdown",0.6
+2,3,12,0.85,"ER_40","Breakdown",0.6
+2,4,1,0.7,"ER_40","Correct consensus",0.7
+2,4,2,0.85,"ER_40","Correct consensus",0.7
+2,4,3,0.95,"ER_40","Correct consensus",0.7
+2,4,4,0.925,"ER_40","Correct consensus",0.7
+2,4,5,0.925,"ER_40","Correct consensus",0.7
+2,4,6,0.9,"ER_40","Correct consensus",0.7
+2,4,7,0.85,"ER_40","Correct consensus",0.7
+2,4,8,0.875,"ER_40","Correct consensus",0.7
+2,4,9,0.9,"ER_40","Correct consensus",0.7
+2,4,10,0.85,"ER_40","Correct consensus",0.7
+2,4,11,0.875,"ER_40","Correct consensus",0.7
+2,4,12,0.925,"ER_40","Correct consensus",0.7
+2,5,1,0.7,"ER_40","Correct consensus",0.675
+2,5,2,0.775,"ER_40","Correct consensus",0.675
+2,5,3,0.775,"ER_40","Correct consensus",0.675
+2,5,4,0.875,"ER_40","Correct consensus",0.675
+2,5,5,0.875,"ER_40","Correct consensus",0.675
+2,5,6,0.9,"ER_40","Correct consensus",0.675
+2,5,7,0.875,"ER_40","Correct consensus",0.675
+2,5,8,0.9,"ER_40","Correct consensus",0.675
+2,5,9,0.9,"ER_40","Correct consensus",0.675
+2,5,10,0.875,"ER_40","Correct consensus",0.675
+2,5,11,0.875,"ER_40","Correct consensus",0.675
+2,5,12,0.875,"ER_40","Correct consensus",0.675
+2,6,1,0.675,"ER_40","Correct consensus",0.75
+2,6,2,0.775,"ER_40","Correct consensus",0.75
+2,6,3,0.825,"ER_40","Correct consensus",0.75
+2,6,4,0.9,"ER_40","Correct consensus",0.75
+2,6,5,0.95,"ER_40","Correct consensus",0.75
+2,6,6,0.95,"ER_40","Correct consensus",0.75
+2,6,7,0.95,"ER_40","Correct consensus",0.75
+2,6,8,0.925,"ER_40","Correct consensus",0.75
+2,6,9,0.925,"ER_40","Correct consensus",0.75
+2,6,10,0.95,"ER_40","Correct consensus",0.75
+2,6,11,0.975,"ER_40","Correct consensus",0.75
+2,6,12,0.925,"ER_40","Correct consensus",0.75
+3,1,1,0.7,"ER_40","Correct consensus",0.7
+3,1,2,0.725,"ER_40","Correct consensus",0.7
+3,1,3,0.75,"ER_40","Correct consensus",0.7
+3,1,4,0.775,"ER_40","Correct consensus",0.7
+3,1,5,0.725,"ER_40","Correct consensus",0.7
+3,1,6,0.725,"ER_40","Correct consensus",0.7
+3,1,7,0.675,"ER_40","Correct consensus",0.7
+3,1,8,0.75,"ER_40","Correct consensus",0.7
+3,1,9,0.775,"ER_40","Correct consensus",0.7
+3,1,10,0.775,"ER_40","Correct consensus",0.7
+3,1,11,0.775,"ER_40","Correct consensus",0.7
+3,1,12,0.85,"ER_40","Correct consensus",0.7
+3,2,1,0.625,"ER_40","Correct consensus",0.675
+3,2,2,0.675,"ER_40","Correct consensus",0.675
+3,2,3,0.7,"ER_40","Correct consensus",0.675
+3,2,4,0.575,"ER_40","Correct consensus",0.675
+3,2,5,0.575,"ER_40","Correct consensus",0.675
+3,2,6,0.6,"ER_40","Correct consensus",0.675
+3,2,7,0.65,"ER_40","Correct consensus",0.675
+3,2,8,0.725,"ER_40","Correct consensus",0.675
+3,2,9,0.675,"ER_40","Correct consensus",0.675
+3,2,10,0.725,"ER_40","Correct consensus",0.675
+3,2,11,0.75,"ER_40","Correct consensus",0.675
+3,2,12,0.725,"ER_40","Correct consensus",0.675
+3,3,1,0.7,"ER_40","Correct consensus",0.75
+3,3,2,0.775,"ER_40","Correct consensus",0.75
+3,3,3,0.75,"ER_40","Correct consensus",0.75
+3,3,4,0.825,"ER_40","Correct consensus",0.75
+3,3,5,0.75,"ER_40","Correct consensus",0.75
+3,3,6,0.85,"ER_40","Correct consensus",0.75
+3,3,7,0.875,"ER_40","Correct consensus",0.75
+3,3,8,0.825,"ER_40","Correct consensus",0.75
+3,3,9,0.75,"ER_40","Correct consensus",0.75
+3,3,10,0.725,"ER_40","Correct consensus",0.75
+3,3,11,0.725,"ER_40","Correct consensus",0.75
+3,3,12,0.725,"ER_40","Correct consensus",0.75
+3,4,1,0.625,"ER_40","Correct consensus",0.65
+3,4,2,0.625,"ER_40","Correct consensus",0.65
+3,4,3,0.65,"ER_40","Correct consensus",0.65
+3,4,4,0.7,"ER_40","Correct consensus",0.65
+3,4,5,0.7,"ER_40","Correct consensus",0.65
+3,4,6,0.7,"ER_40","Correct consensus",0.65
+3,4,7,0.725,"ER_40","Correct consensus",0.65
+3,4,8,0.75,"ER_40","Correct consensus",0.65
+3,4,9,0.75,"ER_40","Correct consensus",0.65
+3,4,10,0.775,"ER_40","Correct consensus",0.65
+3,4,11,0.825,"ER_40","Correct consensus",0.65
+3,4,12,0.825,"ER_40","Correct consensus",0.65
+3,5,1,0.5,"ER_40","Breakdown",0.625
+3,5,2,0.4,"ER_40","Breakdown",0.625
+3,5,3,0.4,"ER_40","Breakdown",0.625
+3,5,4,0.3,"ER_40","Breakdown",0.625
+3,5,5,0.225,"ER_40","Breakdown",0.625
+3,5,6,0.175,"ER_40","Breakdown",0.625
+3,5,7,0.175,"ER_40","Breakdown",0.625
+3,5,8,0.2,"ER_40","Breakdown",0.625
+3,5,9,0.25,"ER_40","Breakdown",0.625
+3,5,10,0.2,"ER_40","Breakdown",0.625
+3,5,11,0.2,"ER_40","Breakdown",0.625
+3,5,12,0.2,"ER_40","Breakdown",0.625
+3,6,1,0.625,"ER_40","Correct consensus",0.675
+3,6,2,0.625,"ER_40","Correct consensus",0.675
+3,6,3,0.75,"ER_40","Correct consensus",0.675
+3,6,4,0.8,"ER_40","Correct consensus",0.675
+3,6,5,0.75,"ER_40","Correct consensus",0.675
+3,6,6,0.8,"ER_40","Correct consensus",0.675
+3,6,7,0.875,"ER_40","Correct consensus",0.675
+3,6,8,0.95,"ER_40","Correct consensus",0.675
+3,6,9,0.95,"ER_40","Correct consensus",0.675
+3,6,10,0.95,"ER_40","Correct consensus",0.675
+3,6,11,0.925,"ER_40","Correct consensus",0.675
+3,6,12,0.95,"ER_40","Correct consensus",0.675
+4,1,1,0.675,"ER_40","Correct consensus",0.75
+4,1,2,0.725,"ER_40","Correct consensus",0.75
+4,1,3,0.75,"ER_40","Correct consensus",0.75
+4,1,4,0.725,"ER_40","Correct consensus",0.75
+4,1,5,0.7,"ER_40","Correct consensus",0.75
+4,1,6,0.7,"ER_40","Correct consensus",0.75
+4,1,7,0.7,"ER_40","Correct consensus",0.75
+4,1,8,0.75,"ER_40","Correct consensus",0.75
+4,1,9,0.75,"ER_40","Correct consensus",0.75
+4,1,10,0.725,"ER_40","Correct consensus",0.75
+4,1,11,0.775,"ER_40","Correct consensus",0.75
+4,1,12,0.775,"ER_40","Correct consensus",0.75
+4,2,1,0.725,"ER_40","Correct consensus",0.75
+4,2,2,0.675,"ER_40","Correct consensus",0.75
+4,2,3,0.725,"ER_40","Correct consensus",0.75
+4,2,4,0.7,"ER_40","Correct consensus",0.75
+4,2,5,0.775,"ER_40","Correct consensus",0.75
+4,2,6,0.75,"ER_40","Correct consensus",0.75
+4,2,7,0.8,"ER_40","Correct consensus",0.75
+4,2,8,0.825,"ER_40","Correct consensus",0.75
+4,2,9,0.8,"ER_40","Correct consensus",0.75
+4,2,10,0.825,"ER_40","Correct consensus",0.75
+4,2,11,0.825,"ER_40","Correct consensus",0.75
+4,2,12,0.775,"ER_40","Correct consensus",0.75
+4,3,1,0.8,"ER_40","Correct consensus",0.85
+4,3,2,0.925,"ER_40","Correct consensus",0.85
+4,3,3,0.95,"ER_40","Correct consensus",0.85
+4,3,4,0.9,"ER_40","Correct consensus",0.85
+4,3,5,0.875,"ER_40","Correct consensus",0.85
+4,3,6,0.925,"ER_40","Correct consensus",0.85
+4,3,7,0.95,"ER_40","Correct consensus",0.85
+4,3,8,0.95,"ER_40","Correct consensus",0.85
+4,3,9,0.925,"ER_40","Correct consensus",0.85
+4,3,10,0.95,"ER_40","Correct consensus",0.85
+4,3,11,0.95,"ER_40","Correct consensus",0.85
+4,3,12,0.95,"ER_40","Correct consensus",0.85
+4,4,1,0.7,"ER_40","Correct consensus",0.725
+4,4,2,0.825,"ER_40","Correct consensus",0.725
+4,4,3,0.9,"ER_40","Correct consensus",0.725
+4,4,4,0.95,"ER_40","Correct consensus",0.725
+4,4,5,0.95,"ER_40","Correct consensus",0.725
+4,4,6,0.95,"ER_40","Correct consensus",0.725
+4,4,7,0.95,"ER_40","Correct consensus",0.725
+4,4,8,0.95,"ER_40","Correct consensus",0.725
+4,4,9,0.95,"ER_40","Correct consensus",0.725
+4,4,10,0.95,"ER_40","Correct consensus",0.725
+4,4,11,0.95,"ER_40","Correct consensus",0.725
+4,4,12,0.95,"ER_40","Correct consensus",0.725
+4,5,1,0.675,"ER_40","Correct consensus",0.7
+4,5,2,0.75,"ER_40","Correct consensus",0.7
+4,5,3,0.75,"ER_40","Correct consensus",0.7
+4,5,4,0.8,"ER_40","Correct consensus",0.7
+4,5,5,0.8,"ER_40","Correct consensus",0.7
+4,5,6,0.8,"ER_40","Correct consensus",0.7
+4,5,7,0.8,"ER_40","Correct consensus",0.7
+4,5,8,0.8,"ER_40","Correct consensus",0.7
+4,5,9,0.8,"ER_40","Correct consensus",0.7
+4,5,10,0.825,"ER_40","Correct consensus",0.7
+4,5,11,0.85,"ER_40","Correct consensus",0.7
+4,5,12,0.85,"ER_40","Correct consensus",0.7
+4,6,1,0.75,"ER_40","Correct consensus",0.7
+4,6,2,0.825,"ER_40","Correct consensus",0.7
+4,6,3,0.875,"ER_40","Correct consensus",0.7
+4,6,4,0.85,"ER_40","Correct consensus",0.7
+4,6,5,0.85,"ER_40","Correct consensus",0.7
+4,6,6,0.85,"ER_40","Correct consensus",0.7
+4,6,7,0.825,"ER_40","Correct consensus",0.7
+4,6,8,0.825,"ER_40","Correct consensus",0.7
+4,6,9,0.825,"ER_40","Correct consensus",0.7
+4,6,10,0.825,"ER_40","Correct consensus",0.7
+4,6,11,0.825,"ER_40","Correct consensus",0.7
+4,6,12,0.8,"ER_40","Correct consensus",0.7
+1,1,1,0.65,"SB_40","Correct consensus",0.7
+1,1,2,0.725,"SB_40","Correct consensus",0.7
+1,1,3,0.7,"SB_40","Correct consensus",0.7
+1,1,4,0.675,"SB_40","Correct consensus",0.7
+1,1,5,0.625,"SB_40","Correct consensus",0.7
+1,1,6,0.6,"SB_40","Correct consensus",0.7
+1,1,7,0.55,"SB_40","Correct consensus",0.7
+1,1,8,0.475,"SB_40","Correct consensus",0.7
+1,1,9,0.525,"SB_40","Correct consensus",0.7
+1,1,10,0.525,"SB_40","Correct consensus",0.7
+1,1,11,0.425,"SB_40","Correct consensus",0.7
+1,1,12,0.525,"SB_40","Correct consensus",0.7
+1,2,1,0.65,"SB_40","Correct consensus",0.675
+1,2,2,0.75,"SB_40","Correct consensus",0.675
+1,2,3,0.775,"SB_40","Correct consensus",0.675
+1,2,4,0.775,"SB_40","Correct consensus",0.675
+1,2,5,0.65,"SB_40","Correct consensus",0.675
+1,2,6,0.675,"SB_40","Correct consensus",0.675
+1,2,7,0.675,"SB_40","Correct consensus",0.675
+1,2,8,0.75,"SB_40","Correct consensus",0.675
+1,2,9,0.75,"SB_40","Correct consensus",0.675
+1,2,10,0.65,"SB_40","Correct consensus",0.675
+1,2,11,0.625,"SB_40","Correct consensus",0.675
+1,2,12,0.675,"SB_40","Correct consensus",0.675
+1,3,1,0.65,"SB_40","Breakdown",0.7
+1,3,2,0.725,"SB_40","Breakdown",0.7
+1,3,3,0.75,"SB_40","Breakdown",0.7
+1,3,4,0.725,"SB_40","Breakdown",0.7
+1,3,5,0.75,"SB_40","Breakdown",0.7
+1,3,6,0.75,"SB_40","Breakdown",0.7
+1,3,7,0.675,"SB_40","Breakdown",0.7
+1,3,8,0.675,"SB_40","Breakdown",0.7
+1,3,9,0.675,"SB_40","Breakdown",0.7
+1,3,10,0.675,"SB_40","Breakdown",0.7
+1,3,11,0.775,"SB_40","Breakdown",0.7
+1,3,12,0.7,"SB_40","Breakdown",0.7
+1,4,1,0.75,"SB_40","Correct consensus",0.725
+1,4,2,0.8,"SB_40","Correct consensus",0.725
+1,4,3,0.85,"SB_40","Correct consensus",0.725
+1,4,4,0.925,"SB_40","Correct consensus",0.725
+1,4,5,0.925,"SB_40","Correct consensus",0.725
+1,4,6,1,"SB_40","Correct consensus",0.725
+1,4,7,1,"SB_40","Correct consensus",0.725
+1,4,8,0.975,"SB_40","Correct consensus",0.725
+1,4,9,0.95,"SB_40","Correct consensus",0.725
+1,4,10,0.95,"SB_40","Correct consensus",0.725
+1,4,11,0.925,"SB_40","Correct consensus",0.725
+1,4,12,0.975,"SB_40","Correct consensus",0.725
+1,5,1,0.7,"SB_40","Correct consensus",0.75
+1,5,2,0.7,"SB_40","Correct consensus",0.75
+1,5,3,0.7,"SB_40","Correct consensus",0.75
+1,5,4,0.7,"SB_40","Correct consensus",0.75
+1,5,5,0.675,"SB_40","Correct consensus",0.75
+1,5,6,0.675,"SB_40","Correct consensus",0.75
+1,5,7,0.675,"SB_40","Correct consensus",0.75
+1,5,8,0.675,"SB_40","Correct consensus",0.75
+1,5,9,0.65,"SB_40","Correct consensus",0.75
+1,5,10,0.65,"SB_40","Correct consensus",0.75
+1,5,11,0.675,"SB_40","Correct consensus",0.75
+1,5,12,0.7,"SB_40","Correct consensus",0.75
+1,6,1,0.55,"SB_40","Breakdown",0.55
+1,6,2,0.6,"SB_40","Breakdown",0.55
+1,6,3,0.6,"SB_40","Breakdown",0.55
+1,6,4,0.6,"SB_40","Breakdown",0.55
+1,6,5,0.7,"SB_40","Breakdown",0.55
+1,6,6,0.725,"SB_40","Breakdown",0.55
+1,6,7,0.775,"SB_40","Breakdown",0.55
+1,6,8,0.825,"SB_40","Breakdown",0.55
+1,6,9,0.875,"SB_40","Breakdown",0.55
+1,6,10,0.825,"SB_40","Breakdown",0.55
+1,6,11,0.8,"SB_40","Breakdown",0.55
+1,6,12,0.775,"SB_40","Breakdown",0.55
+2,1,1,0.675,"SB_40","Correct consensus",0.75
+2,1,2,0.625,"SB_40","Correct consensus",0.75
+2,1,3,0.625,"SB_40","Correct consensus",0.75
+2,1,4,0.625,"SB_40","Correct consensus",0.75
+2,1,5,0.6,"SB_40","Correct consensus",0.75
+2,1,6,0.7,"SB_40","Correct consensus",0.75
+2,1,7,0.6,"SB_40","Correct consensus",0.75
+2,1,8,0.625,"SB_40","Correct consensus",0.75
+2,1,9,0.625,"SB_40","Correct consensus",0.75
+2,1,10,0.7,"SB_40","Correct consensus",0.75
+2,1,11,0.675,"SB_40","Correct consensus",0.75
+2,1,12,0.7,"SB_40","Correct consensus",0.75
+2,2,1,0.65,"SB_40","Correct consensus",0.675
+2,2,2,0.675,"SB_40","Correct consensus",0.675
+2,2,3,0.725,"SB_40","Correct consensus",0.675
+2,2,4,0.775,"SB_40","Correct consensus",0.675
+2,2,5,0.7,"SB_40","Correct consensus",0.675
+2,2,6,0.7,"SB_40","Correct consensus",0.675
+2,2,7,0.725,"SB_40","Correct consensus",0.675
+2,2,8,0.775,"SB_40","Correct consensus",0.675
+2,2,9,0.725,"SB_40","Correct consensus",0.675
+2,2,10,0.7,"SB_40","Correct consensus",0.675
+2,2,11,0.75,"SB_40","Correct consensus",0.675
+2,2,12,0.775,"SB_40","Correct consensus",0.675
+2,3,1,0.575,"SB_40","Correct consensus",0.6
+2,3,2,0.6,"SB_40","Correct consensus",0.6
+2,3,3,0.65,"SB_40","Correct consensus",0.6
+2,3,4,0.6,"SB_40","Correct consensus",0.6
+2,3,5,0.55,"SB_40","Correct consensus",0.6
+2,3,6,0.625,"SB_40","Correct consensus",0.6
+2,3,7,0.6,"SB_40","Correct consensus",0.6
+2,3,8,0.6,"SB_40","Correct consensus",0.6
+2,3,9,0.6,"SB_40","Correct consensus",0.6
+2,3,10,0.7,"SB_40","Correct consensus",0.6
+2,3,11,0.65,"SB_40","Correct consensus",0.6
+2,3,12,0.625,"SB_40","Correct consensus",0.6
+2,4,1,0.625,"SB_40","Correct consensus",0.7
+2,4,2,0.7,"SB_40","Correct consensus",0.7
+2,4,3,0.825,"SB_40","Correct consensus",0.7
+2,4,4,0.825,"SB_40","Correct consensus",0.7
+2,4,5,0.775,"SB_40","Correct consensus",0.7
+2,4,6,0.8,"SB_40","Correct consensus",0.7
+2,4,7,0.75,"SB_40","Correct consensus",0.7
+2,4,8,0.7,"SB_40","Correct consensus",0.7
+2,4,9,0.7,"SB_40","Correct consensus",0.7
+2,4,10,0.775,"SB_40","Correct consensus",0.7
+2,4,11,0.775,"SB_40","Correct consensus",0.7
+2,4,12,0.825,"SB_40","Correct consensus",0.7
+2,5,1,0.675,"SB_40","Correct consensus",0.675
+2,5,2,0.725,"SB_40","Correct consensus",0.675
+2,5,3,0.75,"SB_40","Correct consensus",0.675
+2,5,4,0.8,"SB_40","Correct consensus",0.675
+2,5,5,0.85,"SB_40","Correct consensus",0.675
+2,5,6,0.775,"SB_40","Correct consensus",0.675
+2,5,7,0.775,"SB_40","Correct consensus",0.675
+2,5,8,0.75,"SB_40","Correct consensus",0.675
+2,5,9,0.825,"SB_40","Correct consensus",0.675
+2,5,10,0.825,"SB_40","Correct consensus",0.675
+2,5,11,0.825,"SB_40","Correct consensus",0.675
+2,5,12,0.8,"SB_40","Correct consensus",0.675
+2,6,1,0.7,"SB_40","Correct consensus",0.75
+2,6,2,0.725,"SB_40","Correct consensus",0.75
+2,6,3,0.8,"SB_40","Correct consensus",0.75
+2,6,4,0.85,"SB_40","Correct consensus",0.75
+2,6,5,0.9,"SB_40","Correct consensus",0.75
+2,6,6,0.85,"SB_40","Correct consensus",0.75
+2,6,7,0.95,"SB_40","Correct consensus",0.75
+2,6,8,0.925,"SB_40","Correct consensus",0.75
+2,6,9,0.875,"SB_40","Correct consensus",0.75
+2,6,10,0.95,"SB_40","Correct consensus",0.75
+2,6,11,0.95,"SB_40","Correct consensus",0.75
+2,6,12,0.95,"SB_40","Correct consensus",0.75
+3,1,1,0.625,"SB_40","Breakdown",0.7
+3,1,2,0.7,"SB_40","Breakdown",0.7
+3,1,3,0.75,"SB_40","Breakdown",0.7
+3,1,4,0.775,"SB_40","Breakdown",0.7
+3,1,5,0.775,"SB_40","Breakdown",0.7
+3,1,6,0.65,"SB_40","Breakdown",0.7
+3,1,7,0.725,"SB_40","Breakdown",0.7
+3,1,8,0.775,"SB_40","Breakdown",0.7
+3,1,9,0.75,"SB_40","Breakdown",0.7
+3,1,10,0.625,"SB_40","Breakdown",0.7
+3,1,11,0.675,"SB_40","Breakdown",0.7
+3,1,12,0.725,"SB_40","Breakdown",0.7
+3,2,1,0.625,"SB_40","Breakdown",0.675
+3,2,2,0.675,"SB_40","Breakdown",0.675
+3,2,3,0.625,"SB_40","Breakdown",0.675
+3,2,4,0.625,"SB_40","Breakdown",0.675
+3,2,5,0.625,"SB_40","Breakdown",0.675
+3,2,6,0.65,"SB_40","Breakdown",0.675
+3,2,7,0.7,"SB_40","Breakdown",0.675
+3,2,8,0.65,"SB_40","Breakdown",0.675
+3,2,9,0.6,"SB_40","Breakdown",0.675
+3,2,10,0.575,"SB_40","Breakdown",0.675
+3,2,11,0.625,"SB_40","Breakdown",0.675
+3,2,12,0.7,"SB_40","Breakdown",0.675
+3,3,1,0.7,"SB_40","Correct consensus",0.75
+3,3,2,0.7,"SB_40","Correct consensus",0.75
+3,3,3,0.7,"SB_40","Correct consensus",0.75
+3,3,4,0.725,"SB_40","Correct consensus",0.75
+3,3,5,0.675,"SB_40","Correct consensus",0.75
+3,3,6,0.65,"SB_40","Correct consensus",0.75
+3,3,7,0.65,"SB_40","Correct consensus",0.75
+3,3,8,0.75,"SB_40","Correct consensus",0.75
+3,3,9,0.725,"SB_40","Correct consensus",0.75
+3,3,10,0.8,"SB_40","Correct consensus",0.75
+3,3,11,0.8,"SB_40","Correct consensus",0.75
+3,3,12,0.8,"SB_40","Correct consensus",0.75
+3,4,1,0.65,"SB_40","Correct consensus",0.65
+3,4,2,0.775,"SB_40","Correct consensus",0.65
+3,4,3,0.775,"SB_40","Correct consensus",0.65
+3,4,4,0.75,"SB_40","Correct consensus",0.65
+3,4,5,0.725,"SB_40","Correct consensus",0.65
+3,4,6,0.75,"SB_40","Correct consensus",0.65
+3,4,7,0.775,"SB_40","Correct consensus",0.65
+3,4,8,0.85,"SB_40","Correct consensus",0.65
+3,4,9,0.85,"SB_40","Correct consensus",0.65
+3,4,10,0.85,"SB_40","Correct consensus",0.65
+3,4,11,0.875,"SB_40","Correct consensus",0.65
+3,4,12,0.9,"SB_40","Correct consensus",0.65
+3,5,1,0.55,"SB_40","Breakdown",0.625
+3,5,2,0.55,"SB_40","Breakdown",0.625
+3,5,3,0.5,"SB_40","Breakdown",0.625
+3,5,4,0.5,"SB_40","Breakdown",0.625
+3,5,5,0.55,"SB_40","Breakdown",0.625
+3,5,6,0.6,"SB_40","Breakdown",0.625
+3,5,7,0.6,"SB_40","Breakdown",0.625
+3,5,8,0.6,"SB_40","Breakdown",0.625
+3,5,9,0.55,"SB_40","Breakdown",0.625
+3,5,10,0.5,"SB_40","Breakdown",0.625
+3,5,11,0.5,"SB_40","Breakdown",0.625
+3,5,12,0.475,"SB_40","Breakdown",0.625
+3,6,1,0.7,"SB_40","Correct consensus",0.675
+3,6,2,0.8,"SB_40","Correct consensus",0.675
+3,6,3,0.825,"SB_40","Correct consensus",0.675
+3,6,4,0.8,"SB_40","Correct consensus",0.675
+3,6,5,0.85,"SB_40","Correct consensus",0.675
+3,6,6,0.925,"SB_40","Correct consensus",0.675
+3,6,7,0.85,"SB_40","Correct consensus",0.675
+3,6,8,0.825,"SB_40","Correct consensus",0.675
+3,6,9,0.875,"SB_40","Correct consensus",0.675
+3,6,10,0.875,"SB_40","Correct consensus",0.675
+3,6,11,0.925,"SB_40","Correct consensus",0.675
+3,6,12,0.9,"SB_40","Correct consensus",0.675
+4,1,1,0.625,"SB_40","Correct consensus",0.75
+4,1,2,0.6,"SB_40","Correct consensus",0.75
+4,1,3,0.75,"SB_40","Correct consensus",0.75
+4,1,4,0.7,"SB_40","Correct consensus",0.75
+4,1,5,0.65,"SB_40","Correct consensus",0.75
+4,1,6,0.7,"SB_40","Correct consensus",0.75
+4,1,7,0.775,"SB_40","Correct consensus",0.75
+4,1,8,0.8,"SB_40","Correct consensus",0.75
+4,1,9,0.775,"SB_40","Correct consensus",0.75
+4,1,10,0.775,"SB_40","Correct consensus",0.75
+4,1,11,0.75,"SB_40","Correct consensus",0.75
+4,1,12,0.725,"SB_40","Correct consensus",0.75
+4,2,1,0.775,"SB_40","Correct consensus",0.75
+4,2,2,0.75,"SB_40","Correct consensus",0.75
+4,2,3,0.725,"SB_40","Correct consensus",0.75
+4,2,4,0.75,"SB_40","Correct consensus",0.75
+4,2,5,0.7,"SB_40","Correct consensus",0.75
+4,2,6,0.675,"SB_40","Correct consensus",0.75
+4,2,7,0.75,"SB_40","Correct consensus",0.75
+4,2,8,0.775,"SB_40","Correct consensus",0.75
+4,2,9,0.825,"SB_40","Correct consensus",0.75
+4,2,10,0.825,"SB_40","Correct consensus",0.75
+4,2,11,0.775,"SB_40","Correct consensus",0.75
+4,2,12,0.8,"SB_40","Correct consensus",0.75
+4,3,1,0.75,"SB_40","Correct consensus",0.85
+4,3,2,0.725,"SB_40","Correct consensus",0.85
+4,3,3,0.75,"SB_40","Correct consensus",0.85
+4,3,4,0.8,"SB_40","Correct consensus",0.85
+4,3,5,0.775,"SB_40","Correct consensus",0.85
+4,3,6,0.775,"SB_40","Correct consensus",0.85
+4,3,7,0.825,"SB_40","Correct consensus",0.85
+4,3,8,0.775,"SB_40","Correct consensus",0.85
+4,3,9,0.775,"SB_40","Correct consensus",0.85
+4,3,10,0.825,"SB_40","Correct consensus",0.85
+4,3,11,0.775,"SB_40","Correct consensus",0.85
+4,3,12,0.825,"SB_40","Correct consensus",0.85
+4,4,1,0.7,"SB_40","Correct consensus",0.725
+4,4,2,0.7,"SB_40","Correct consensus",0.725
+4,4,3,0.675,"SB_40","Correct consensus",0.725
+4,4,4,0.675,"SB_40","Correct consensus",0.725
+4,4,5,0.7,"SB_40","Correct consensus",0.725
+4,4,6,0.7,"SB_40","Correct consensus",0.725
+4,4,7,0.65,"SB_40","Correct consensus",0.725
+4,4,8,0.625,"SB_40","Correct consensus",0.725
+4,4,9,0.6,"SB_40","Correct consensus",0.725
+4,4,10,0.6,"SB_40","Correct consensus",0.725
+4,4,11,0.6,"SB_40","Correct consensus",0.725
+4,4,12,0.55,"SB_40","Correct consensus",0.725
+4,5,1,0.6,"SB_40","Correct consensus",0.7
+4,5,2,0.725,"SB_40","Correct consensus",0.7
+4,5,3,0.775,"SB_40","Correct consensus",0.7
+4,5,4,0.825,"SB_40","Correct consensus",0.7
+4,5,5,0.8,"SB_40","Correct consensus",0.7
+4,5,6,0.85,"SB_40","Correct consensus",0.7
+4,5,7,0.825,"SB_40","Correct consensus",0.7
+4,5,8,0.775,"SB_40","Correct consensus",0.7
+4,5,9,0.725,"SB_40","Correct consensus",0.7
+4,5,10,0.8,"SB_40","Correct consensus",0.7
+4,5,11,0.825,"SB_40","Correct consensus",0.7
+4,5,12,0.8,"SB_40","Correct consensus",0.7
+4,6,1,0.725,"SB_40","Breakdown",0.7
+4,6,2,0.775,"SB_40","Breakdown",0.7
+4,6,3,0.85,"SB_40","Breakdown",0.7
+4,6,4,0.825,"SB_40","Breakdown",0.7
+4,6,5,0.8,"SB_40","Breakdown",0.7
+4,6,6,0.8,"SB_40","Breakdown",0.7
+4,6,7,0.8,"SB_40","Breakdown",0.7
+4,6,8,0.8,"SB_40","Breakdown",0.7
+4,6,9,0.8,"SB_40","Breakdown",0.7
+4,6,10,0.825,"SB_40","Breakdown",0.7
+4,6,11,0.8,"SB_40","Breakdown",0.7
+4,6,12,0.85,"SB_40","Breakdown",0.7
+1,1,1,0.625,"RF_40","Correct consensus",0.7
+1,1,2,0.475,"RF_40","Correct consensus",0.7
+1,1,3,0.4,"RF_40","Correct consensus",0.7
+1,1,4,0.15,"RF_40","Correct consensus",0.7
+1,1,5,0.3,"RF_40","Correct consensus",0.7
+1,1,6,0.4,"RF_40","Correct consensus",0.7
+1,1,7,0.4,"RF_40","Correct consensus",0.7
+1,1,8,0.475,"RF_40","Correct consensus",0.7
+1,1,9,0.25,"RF_40","Correct consensus",0.7
+1,1,10,0.275,"RF_40","Correct consensus",0.7
+1,1,11,0.225,"RF_40","Correct consensus",0.7
+1,1,12,0.15,"RF_40","Correct consensus",0.7
+1,2,1,0.75,"RF_40","Correct consensus",0.675
+1,2,2,0.725,"RF_40","Correct consensus",0.675
+1,2,3,0.65,"RF_40","Correct consensus",0.675
+1,2,4,0.5,"RF_40","Correct consensus",0.675
+1,2,5,0.625,"RF_40","Correct consensus",0.675
+1,2,6,0.475,"RF_40","Correct consensus",0.675
+1,2,7,0.8,"RF_40","Correct consensus",0.675
+1,2,8,0.8,"RF_40","Correct consensus",0.675
+1,2,9,0.6,"RF_40","Correct consensus",0.675
+1,2,10,0.375,"RF_40","Correct consensus",0.675
+1,2,11,0.55,"RF_40","Correct consensus",0.675
+1,2,12,0.675,"RF_40","Correct consensus",0.675
+1,3,1,0.6,"RF_40","Correct consensus",0.7
+1,3,2,0.525,"RF_40","Correct consensus",0.7
+1,3,3,0.525,"RF_40","Correct consensus",0.7
+1,3,4,0.55,"RF_40","Correct consensus",0.7
+1,3,5,0.65,"RF_40","Correct consensus",0.7
+1,3,6,0.7,"RF_40","Correct consensus",0.7
+1,3,7,0.75,"RF_40","Correct consensus",0.7
+1,3,8,0.75,"RF_40","Correct consensus",0.7
+1,3,9,0.725,"RF_40","Correct consensus",0.7
+1,3,10,0.575,"RF_40","Correct consensus",0.7
+1,3,11,0.725,"RF_40","Correct consensus",0.7
+1,3,12,0.7,"RF_40","Correct consensus",0.7
+1,4,1,0.625,"RF_40","Correct consensus",0.725
+1,4,2,0.725,"RF_40","Correct consensus",0.725
+1,4,3,0.775,"RF_40","Correct consensus",0.725
+1,4,4,0.725,"RF_40","Correct consensus",0.725
+1,4,5,0.8,"RF_40","Correct consensus",0.725
+1,4,6,0.825,"RF_40","Correct consensus",0.725
+1,4,7,0.75,"RF_40","Correct consensus",0.725
+1,4,8,0.75,"RF_40","Correct consensus",0.725
+1,4,9,0.825,"RF_40","Correct consensus",0.725
+1,4,10,0.8,"RF_40","Correct consensus",0.725
+1,4,11,0.85,"RF_40","Correct consensus",0.725
+1,4,12,0.85,"RF_40","Correct consensus",0.725
+1,5,1,0.625,"RF_40","Correct consensus",0.75
+1,5,2,0.85,"RF_40","Correct consensus",0.75
+1,5,3,0.825,"RF_40","Correct consensus",0.75
+1,5,4,0.825,"RF_40","Correct consensus",0.75
+1,5,5,0.775,"RF_40","Correct consensus",0.75
+1,5,6,0.8,"RF_40","Correct consensus",0.75
+1,5,7,0.825,"RF_40","Correct consensus",0.75
+1,5,8,0.775,"RF_40","Correct consensus",0.75
+1,5,9,0.85,"RF_40","Correct consensus",0.75
+1,5,10,0.85,"RF_40","Correct consensus",0.75
+1,5,11,0.875,"RF_40","Correct consensus",0.75
+1,5,12,0.85,"RF_40","Correct consensus",0.75
+1,6,1,0.575,"RF_40","Incorrect consensus",0.55
+1,6,2,0.4,"RF_40","Incorrect consensus",0.55
+1,6,3,0.325,"RF_40","Incorrect consensus",0.55
+1,6,4,0.25,"RF_40","Incorrect consensus",0.55
+1,6,5,0.125,"RF_40","Incorrect consensus",0.55
+1,6,6,0.175,"RF_40","Incorrect consensus",0.55
+1,6,7,0.175,"RF_40","Incorrect consensus",0.55
+1,6,8,0.175,"RF_40","Incorrect consensus",0.55
+1,6,9,0.2,"RF_40","Incorrect consensus",0.55
+1,6,10,0.225,"RF_40","Incorrect consensus",0.55
+1,6,11,0.175,"RF_40","Incorrect consensus",0.55
+1,6,12,0.175,"RF_40","Incorrect consensus",0.55
+2,1,1,0.825,"RF_40","Correct consensus",0.75
+2,1,2,0.825,"RF_40","Correct consensus",0.75
+2,1,3,0.875,"RF_40","Correct consensus",0.75
+2,1,4,0.8,"RF_40","Correct consensus",0.75
+2,1,5,0.8,"RF_40","Correct consensus",0.75
+2,1,6,0.8,"RF_40","Correct consensus",0.75
+2,1,7,0.8,"RF_40","Correct consensus",0.75
+2,1,8,0.875,"RF_40","Correct consensus",0.75
+2,1,9,0.8,"RF_40","Correct consensus",0.75
+2,1,10,0.9,"RF_40","Correct consensus",0.75
+2,1,11,0.9,"RF_40","Correct consensus",0.75
+2,1,12,0.9,"RF_40","Correct consensus",0.75
+2,2,1,0.65,"RF_40","Correct consensus",0.675
+2,2,2,0.875,"RF_40","Correct consensus",0.675
+2,2,3,0.825,"RF_40","Correct consensus",0.675
+2,2,4,0.9,"RF_40","Correct consensus",0.675
+2,2,5,0.95,"RF_40","Correct consensus",0.675
+2,2,6,0.95,"RF_40","Correct consensus",0.675
+2,2,7,0.9,"RF_40","Correct consensus",0.675
+2,2,8,0.875,"RF_40","Correct consensus",0.675
+2,2,9,0.95,"RF_40","Correct consensus",0.675
+2,2,10,0.9,"RF_40","Correct consensus",0.675
+2,2,11,0.9,"RF_40","Correct consensus",0.675
+2,2,12,0.9,"RF_40","Correct consensus",0.675
+2,3,1,0.575,"RF_40","Incorrect consensus",0.6
+2,3,2,0.425,"RF_40","Incorrect consensus",0.6
+2,3,3,0.325,"RF_40","Incorrect consensus",0.6
+2,3,4,0.3,"RF_40","Incorrect consensus",0.6
+2,3,5,0.3,"RF_40","Incorrect consensus",0.6
+2,3,6,0.325,"RF_40","Incorrect consensus",0.6
+2,3,7,0.325,"RF_40","Incorrect consensus",0.6
+2,3,8,0.575,"RF_40","Incorrect consensus",0.6
+2,3,9,0.625,"RF_40","Incorrect consensus",0.6
+2,3,10,0.325,"RF_40","Incorrect consensus",0.6
+2,3,11,0.3,"RF_40","Incorrect consensus",0.6
+2,3,12,0.325,"RF_40","Incorrect consensus",0.6
+2,4,1,0.7,"RF_40","Correct consensus",0.7
+2,4,2,0.875,"RF_40","Correct consensus",0.7
+2,4,3,0.9,"RF_40","Correct consensus",0.7
+2,4,4,0.9,"RF_40","Correct consensus",0.7
+2,4,5,0.9,"RF_40","Correct consensus",0.7
+2,4,6,0.875,"RF_40","Correct consensus",0.7
+2,4,7,0.9,"RF_40","Correct consensus",0.7
+2,4,8,0.875,"RF_40","Correct consensus",0.7
+2,4,9,0.95,"RF_40","Correct consensus",0.7
+2,4,10,0.875,"RF_40","Correct consensus",0.7
+2,4,11,0.9,"RF_40","Correct consensus",0.7
+2,4,12,0.9,"RF_40","Correct consensus",0.7
+2,5,1,0.625,"RF_40","Incorrect consensus",0.675
+2,5,2,0.35,"RF_40","Incorrect consensus",0.675
+2,5,3,0.25,"RF_40","Incorrect consensus",0.675
+2,5,4,0.15,"RF_40","Incorrect consensus",0.675
+2,5,5,0.2,"RF_40","Incorrect consensus",0.675
+2,5,6,0.125,"RF_40","Incorrect consensus",0.675
+2,5,7,0.15,"RF_40","Incorrect consensus",0.675
+2,5,8,0.175,"RF_40","Incorrect consensus",0.675
+2,5,9,0.225,"RF_40","Incorrect consensus",0.675
+2,5,10,0.225,"RF_40","Incorrect consensus",0.675
+2,5,11,0.225,"RF_40","Incorrect consensus",0.675
+2,5,12,0.275,"RF_40","Incorrect consensus",0.675
+2,6,1,0.725,"RF_40","Correct consensus",0.75
+2,6,2,0.75,"RF_40","Correct consensus",0.75
+2,6,3,0.85,"RF_40","Correct consensus",0.75
+2,6,4,0.925,"RF_40","Correct consensus",0.75
+2,6,5,0.8,"RF_40","Correct consensus",0.75
+2,6,6,0.85,"RF_40","Correct consensus",0.75
+2,6,7,0.9,"RF_40","Correct consensus",0.75
+2,6,8,0.95,"RF_40","Correct consensus",0.75
+2,6,9,0.925,"RF_40","Correct consensus",0.75
+2,6,10,0.925,"RF_40","Correct consensus",0.75
+2,6,11,1,"RF_40","Correct consensus",0.75
+2,6,12,0.975,"RF_40","Correct consensus",0.75
+3,1,1,0.65,"RF_40","Correct consensus",0.7
+3,1,2,0.8,"RF_40","Correct consensus",0.7
+3,1,3,0.8,"RF_40","Correct consensus",0.7
+3,1,4,0.875,"RF_40","Correct consensus",0.7
+3,1,5,0.725,"RF_40","Correct consensus",0.7
+3,1,6,0.7,"RF_40","Correct consensus",0.7
+3,1,7,0.825,"RF_40","Correct consensus",0.7
+3,1,8,0.775,"RF_40","Correct consensus",0.7
+3,1,9,0.775,"RF_40","Correct consensus",0.7
+3,1,10,0.75,"RF_40","Correct consensus",0.7
+3,1,11,0.725,"RF_40","Correct consensus",0.7
+3,1,12,0.8,"RF_40","Correct consensus",0.7
+3,2,1,0.675,"RF_40","Correct consensus",0.675
+3,2,2,0.9,"RF_40","Correct consensus",0.675
+3,2,3,0.875,"RF_40","Correct consensus",0.675
+3,2,4,0.75,"RF_40","Correct consensus",0.675
+3,2,5,0.85,"RF_40","Correct consensus",0.675
+3,2,6,0.825,"RF_40","Correct consensus",0.675
+3,2,7,0.575,"RF_40","Correct consensus",0.675
+3,2,8,0.725,"RF_40","Correct consensus",0.675
+3,2,9,0.875,"RF_40","Correct consensus",0.675
+3,2,10,0.85,"RF_40","Correct consensus",0.675
+3,2,11,0.825,"RF_40","Correct consensus",0.675
+3,2,12,0.9,"RF_40","Correct consensus",0.675
+3,3,1,0.675,"RF_40","Correct consensus",0.75
+3,3,2,0.925,"RF_40","Correct consensus",0.75
+3,3,3,0.925,"RF_40","Correct consensus",0.75
+3,3,4,0.925,"RF_40","Correct consensus",0.75
+3,3,5,0.975,"RF_40","Correct consensus",0.75
+3,3,6,0.95,"RF_40","Correct consensus",0.75
+3,3,7,0.9,"RF_40","Correct consensus",0.75
+3,3,8,0.85,"RF_40","Correct consensus",0.75
+3,3,9,0.85,"RF_40","Correct consensus",0.75
+3,3,10,0.875,"RF_40","Correct consensus",0.75
+3,3,11,0.925,"RF_40","Correct consensus",0.75
+3,3,12,0.875,"RF_40","Correct consensus",0.75
+3,4,1,0.675,"RF_40","Incorrect consensus",0.65
+3,4,2,0.85,"RF_40","Incorrect consensus",0.65
+3,4,3,0.9,"RF_40","Incorrect consensus",0.65
+3,4,4,0.975,"RF_40","Incorrect consensus",0.65
+3,4,5,0.975,"RF_40","Incorrect consensus",0.65
+3,4,6,0.95,"RF_40","Incorrect consensus",0.65
+3,4,7,0.925,"RF_40","Incorrect consensus",0.65
+3,4,8,0.925,"RF_40","Incorrect consensus",0.65
+3,4,9,0.925,"RF_40","Incorrect consensus",0.65
+3,4,10,0.9,"RF_40","Incorrect consensus",0.65
+3,4,11,0.95,"RF_40","Incorrect consensus",0.65
+3,4,12,0.975,"RF_40","Incorrect consensus",0.65
+3,5,1,0.625,"RF_40","Correct consensus",0.625
+3,5,2,0.8,"RF_40","Correct consensus",0.625
+3,5,3,0.9,"RF_40","Correct consensus",0.625
+3,5,4,0.9,"RF_40","Correct consensus",0.625
+3,5,5,0.85,"RF_40","Correct consensus",0.625
+3,5,6,0.8,"RF_40","Correct consensus",0.625
+3,5,7,0.9,"RF_40","Correct consensus",0.625
+3,5,8,0.925,"RF_40","Correct consensus",0.625
+3,5,9,0.875,"RF_40","Correct consensus",0.625
+3,5,10,0.95,"RF_40","Correct consensus",0.625
+3,5,11,0.875,"RF_40","Correct consensus",0.625
+3,5,12,0.925,"RF_40","Correct consensus",0.625
+3,6,1,0.7,"RF_40","Correct consensus",0.675
+3,6,2,0.95,"RF_40","Correct consensus",0.675
+3,6,3,0.925,"RF_40","Correct consensus",0.675
+3,6,4,0.925,"RF_40","Correct consensus",0.675
+3,6,5,0.975,"RF_40","Correct consensus",0.675
+3,6,6,0.925,"RF_40","Correct consensus",0.675
+3,6,7,0.925,"RF_40","Correct consensus",0.675
+3,6,8,0.95,"RF_40","Correct consensus",0.675
+3,6,9,0.9,"RF_40","Correct consensus",0.675
+3,6,10,0.95,"RF_40","Correct consensus",0.675
+3,6,11,0.975,"RF_40","Correct consensus",0.675
+3,6,12,0.975,"RF_40","Correct consensus",0.675
+4,1,1,0.725,"RF_40","Correct consensus",0.75
+4,1,2,0.75,"RF_40","Correct consensus",0.75
+4,1,3,0.775,"RF_40","Correct consensus",0.75
+4,1,4,0.925,"RF_40","Correct consensus",0.75
+4,1,5,0.825,"RF_40","Correct consensus",0.75
+4,1,6,0.8,"RF_40","Correct consensus",0.75
+4,1,7,0.85,"RF_40","Correct consensus",0.75
+4,1,8,0.85,"RF_40","Correct consensus",0.75
+4,1,9,0.825,"RF_40","Correct consensus",0.75
+4,1,10,0.8,"RF_40","Correct consensus",0.75
+4,1,11,0.8,"RF_40","Correct consensus",0.75
+4,1,12,0.875,"RF_40","Correct consensus",0.75
+4,2,1,0.725,"RF_40","Correct consensus",0.75
+4,2,2,0.875,"RF_40","Correct consensus",0.75
+4,2,3,0.925,"RF_40","Correct consensus",0.75
+4,2,4,0.975,"RF_40","Correct consensus",0.75
+4,2,5,0.95,"RF_40","Correct consensus",0.75
+4,2,6,0.95,"RF_40","Correct consensus",0.75
+4,2,7,0.9,"RF_40","Correct consensus",0.75
+4,2,8,0.95,"RF_40","Correct consensus",0.75
+4,2,9,1,"RF_40","Correct consensus",0.75
+4,2,10,1,"RF_40","Correct consensus",0.75
+4,2,11,0.975,"RF_40","Correct consensus",0.75
+4,2,12,1,"RF_40","Correct consensus",0.75
+4,3,1,0.85,"RF_40","Correct consensus",0.85
+4,3,2,0.85,"RF_40","Correct consensus",0.85
+4,3,3,0.95,"RF_40","Correct consensus",0.85
+4,3,4,0.925,"RF_40","Correct consensus",0.85
+4,3,5,0.975,"RF_40","Correct consensus",0.85
+4,3,6,0.975,"RF_40","Correct consensus",0.85
+4,3,7,0.925,"RF_40","Correct consensus",0.85
+4,3,8,0.975,"RF_40","Correct consensus",0.85
+4,3,9,0.975,"RF_40","Correct consensus",0.85
+4,3,10,0.925,"RF_40","Correct consensus",0.85
+4,3,11,0.975,"RF_40","Correct consensus",0.85
+4,3,12,0.975,"RF_40","Correct consensus",0.85
+4,4,1,0.725,"RF_40","Correct consensus",0.725
+4,4,2,0.95,"RF_40","Correct consensus",0.725
+4,4,3,0.975,"RF_40","Correct consensus",0.725
+4,4,4,0.975,"RF_40","Correct consensus",0.725
+4,4,5,1,"RF_40","Correct consensus",0.725
+4,4,6,0.95,"RF_40","Correct consensus",0.725
+4,4,7,0.975,"RF_40","Correct consensus",0.725
+4,4,8,0.95,"RF_40","Correct consensus",0.725
+4,4,9,0.975,"RF_40","Correct consensus",0.725
+4,4,10,0.95,"RF_40","Correct consensus",0.725
+4,4,11,0.975,"RF_40","Correct consensus",0.725
+4,4,12,0.975,"RF_40","Correct consensus",0.725
+4,5,1,0.675,"RF_40","Incorrect consensus",0.7
+4,5,2,0.475,"RF_40","Incorrect consensus",0.7
+4,5,3,0.35,"RF_40","Incorrect consensus",0.7
+4,5,4,0.175,"RF_40","Incorrect consensus",0.7
+4,5,5,0.15,"RF_40","Incorrect consensus",0.7
+4,5,6,0.15,"RF_40","Incorrect consensus",0.7
+4,5,7,0.15,"RF_40","Incorrect consensus",0.7
+4,5,8,0.15,"RF_40","Incorrect consensus",0.7
+4,5,9,0.15,"RF_40","Incorrect consensus",0.7
+4,5,10,0.175,"RF_40","Incorrect consensus",0.7
+4,5,11,0.15,"RF_40","Incorrect consensus",0.7
+4,5,12,0.125,"RF_40","Incorrect consensus",0.7
+4,6,1,0.725,"RF_40","Correct consensus",0.7
+4,6,2,0.8,"RF_40","Correct consensus",0.7
+4,6,3,0.875,"RF_40","Correct consensus",0.7
+4,6,4,0.85,"RF_40","Correct consensus",0.7
+4,6,5,0.875,"RF_40","Correct consensus",0.7
+4,6,6,0.875,"RF_40","Correct consensus",0.7
+4,6,7,0.9,"RF_40","Correct consensus",0.7
+4,6,8,0.9,"RF_40","Correct consensus",0.7
+4,6,9,0.9,"RF_40","Correct consensus",0.7
+4,6,10,0.9,"RF_40","Correct consensus",0.7
+4,6,11,0.9,"RF_40","Correct consensus",0.7
+4,6,12,0.9,"RF_40","Correct consensus",0.7
+1,1,1,0.7,"RGG_40","Correct consensus",0.7
+1,1,2,0.825,"RGG_40","Correct consensus",0.7
+1,1,3,0.8,"RGG_40","Correct consensus",0.7
+1,1,4,0.85,"RGG_40","Correct consensus",0.7
+1,1,5,0.75,"RGG_40","Correct consensus",0.7
+1,1,6,0.8,"RGG_40","Correct consensus",0.7
+1,1,7,0.875,"RGG_40","Correct consensus",0.7
+1,1,8,0.925,"RGG_40","Correct consensus",0.7
+1,1,9,0.825,"RGG_40","Correct consensus",0.7
+1,1,10,0.825,"RGG_40","Correct consensus",0.7
+1,1,11,0.875,"RGG_40","Correct consensus",0.7
+1,1,12,0.95,"RGG_40","Correct consensus",0.7
+1,2,1,0.6,"RGG_40","Correct consensus",0.675
+1,2,2,0.625,"RGG_40","Correct consensus",0.675
+1,2,3,0.6,"RGG_40","Correct consensus",0.675
+1,2,4,0.6,"RGG_40","Correct consensus",0.675
+1,2,5,0.625,"RGG_40","Correct consensus",0.675
+1,2,6,0.65,"RGG_40","Correct consensus",0.675
+1,2,7,0.7,"RGG_40","Correct consensus",0.675
+1,2,8,0.675,"RGG_40","Correct consensus",0.675
+1,2,9,0.75,"RGG_40","Correct consensus",0.675
+1,2,10,0.7,"RGG_40","Correct consensus",0.675
+1,2,11,0.775,"RGG_40","Correct consensus",0.675
+1,2,12,0.725,"RGG_40","Correct consensus",0.675
+1,3,1,0.625,"RGG_40","Correct consensus",0.7
+1,3,2,0.675,"RGG_40","Correct consensus",0.7
+1,3,3,0.65,"RGG_40","Correct consensus",0.7
+1,3,4,0.725,"RGG_40","Correct consensus",0.7
+1,3,5,0.7,"RGG_40","Correct consensus",0.7
+1,3,6,0.775,"RGG_40","Correct consensus",0.7
+1,3,7,0.775,"RGG_40","Correct consensus",0.7
+1,3,8,0.8,"RGG_40","Correct consensus",0.7
+1,3,9,0.8,"RGG_40","Correct consensus",0.7
+1,3,10,0.775,"RGG_40","Correct consensus",0.7
+1,3,11,0.775,"RGG_40","Correct consensus",0.7
+1,3,12,0.775,"RGG_40","Correct consensus",0.7
+1,4,1,0.7,"RGG_40","Correct consensus",0.725
+1,4,2,0.725,"RGG_40","Correct consensus",0.725
+1,4,3,0.7,"RGG_40","Correct consensus",0.725
+1,4,4,0.775,"RGG_40","Correct consensus",0.725
+1,4,5,0.85,"RGG_40","Correct consensus",0.725
+1,4,6,0.825,"RGG_40","Correct consensus",0.725
+1,4,7,0.85,"RGG_40","Correct consensus",0.725
+1,4,8,0.85,"RGG_40","Correct consensus",0.725
+1,4,9,0.875,"RGG_40","Correct consensus",0.725
+1,4,10,0.9,"RGG_40","Correct consensus",0.725
+1,4,11,0.875,"RGG_40","Correct consensus",0.725
+1,4,12,0.875,"RGG_40","Correct consensus",0.725
+1,5,1,0.65,"RGG_40","Correct consensus",0.75
+1,5,2,0.8,"RGG_40","Correct consensus",0.75
+1,5,3,0.85,"RGG_40","Correct consensus",0.75
+1,5,4,0.9,"RGG_40","Correct consensus",0.75
+1,5,5,0.925,"RGG_40","Correct consensus",0.75
+1,5,6,0.95,"RGG_40","Correct consensus",0.75
+1,5,7,0.975,"RGG_40","Correct consensus",0.75
+1,5,8,0.925,"RGG_40","Correct consensus",0.75
+1,5,9,0.925,"RGG_40","Correct consensus",0.75
+1,5,10,0.925,"RGG_40","Correct consensus",0.75
+1,5,11,0.925,"RGG_40","Correct consensus",0.75
+1,5,12,0.95,"RGG_40","Correct consensus",0.75
+1,6,1,0.625,"RGG_40","Breakdown",0.55
+1,6,2,0.8,"RGG_40","Breakdown",0.55
+1,6,3,0.875,"RGG_40","Breakdown",0.55
+1,6,4,0.85,"RGG_40","Breakdown",0.55
+1,6,5,0.9,"RGG_40","Breakdown",0.55
+1,6,6,0.9,"RGG_40","Breakdown",0.55
+1,6,7,0.925,"RGG_40","Breakdown",0.55
+1,6,8,0.925,"RGG_40","Breakdown",0.55
+1,6,9,0.95,"RGG_40","Breakdown",0.55
+1,6,10,0.9,"RGG_40","Breakdown",0.55
+1,6,11,0.9,"RGG_40","Breakdown",0.55
+1,6,12,0.925,"RGG_40","Breakdown",0.55
+2,1,1,0.75,"RGG_40","Correct consensus",0.75
+2,1,2,0.8,"RGG_40","Correct consensus",0.75
+2,1,3,0.75,"RGG_40","Correct consensus",0.75
+2,1,4,0.7,"RGG_40","Correct consensus",0.75
+2,1,5,0.775,"RGG_40","Correct consensus",0.75
+2,1,6,0.8,"RGG_40","Correct consensus",0.75
+2,1,7,0.775,"RGG_40","Correct consensus",0.75
+2,1,8,0.675,"RGG_40","Correct consensus",0.75
+2,1,9,0.725,"RGG_40","Correct consensus",0.75
+2,1,10,0.8,"RGG_40","Correct consensus",0.75
+2,1,11,0.825,"RGG_40","Correct consensus",0.75
+2,1,12,0.85,"RGG_40","Correct consensus",0.75
+2,2,1,0.7,"RGG_40","Correct consensus",0.675
+2,2,2,0.7,"RGG_40","Correct consensus",0.675
+2,2,3,0.725,"RGG_40","Correct consensus",0.675
+2,2,4,0.75,"RGG_40","Correct consensus",0.675
+2,2,5,0.675,"RGG_40","Correct consensus",0.675
+2,2,6,0.625,"RGG_40","Correct consensus",0.675
+2,2,7,0.725,"RGG_40","Correct consensus",0.675
+2,2,8,0.75,"RGG_40","Correct consensus",0.675
+2,2,9,0.8,"RGG_40","Correct consensus",0.675
+2,2,10,0.8,"RGG_40","Correct consensus",0.675
+2,2,11,0.775,"RGG_40","Correct consensus",0.675
+2,2,12,0.825,"RGG_40","Correct consensus",0.675
+2,3,1,0.575,"RGG_40","Correct consensus",0.6
+2,3,2,0.575,"RGG_40","Correct consensus",0.6
+2,3,3,0.625,"RGG_40","Correct consensus",0.6
+2,3,4,0.65,"RGG_40","Correct consensus",0.6
+2,3,5,0.675,"RGG_40","Correct consensus",0.6
+2,3,6,0.625,"RGG_40","Correct consensus",0.6
+2,3,7,0.625,"RGG_40","Correct consensus",0.6
+2,3,8,0.675,"RGG_40","Correct consensus",0.6
+2,3,9,0.675,"RGG_40","Correct consensus",0.6
+2,3,10,0.625,"RGG_40","Correct consensus",0.6
+2,3,11,0.675,"RGG_40","Correct consensus",0.6
+2,3,12,0.675,"RGG_40","Correct consensus",0.6
+2,4,1,0.65,"RGG_40","Correct consensus",0.7
+2,4,2,0.775,"RGG_40","Correct consensus",0.7
+2,4,3,0.825,"RGG_40","Correct consensus",0.7
+2,4,4,0.85,"RGG_40","Correct consensus",0.7
+2,4,5,0.85,"RGG_40","Correct consensus",0.7
+2,4,6,0.8,"RGG_40","Correct consensus",0.7
+2,4,7,0.875,"RGG_40","Correct consensus",0.7
+2,4,8,0.875,"RGG_40","Correct consensus",0.7
+2,4,9,0.925,"RGG_40","Correct consensus",0.7
+2,4,10,0.85,"RGG_40","Correct consensus",0.7
+2,4,11,0.85,"RGG_40","Correct consensus",0.7
+2,4,12,0.85,"RGG_40","Correct consensus",0.7
+2,5,1,0.725,"RGG_40","Correct consensus",0.675
+2,5,2,0.8,"RGG_40","Correct consensus",0.675
+2,5,3,0.825,"RGG_40","Correct consensus",0.675
+2,5,4,0.9,"RGG_40","Correct consensus",0.675
+2,5,5,0.825,"RGG_40","Correct consensus",0.675
+2,5,6,0.825,"RGG_40","Correct consensus",0.675
+2,5,7,0.825,"RGG_40","Correct consensus",0.675
+2,5,8,0.85,"RGG_40","Correct consensus",0.675
+2,5,9,0.85,"RGG_40","Correct consensus",0.675
+2,5,10,0.9,"RGG_40","Correct consensus",0.675
+2,5,11,0.875,"RGG_40","Correct consensus",0.675
+2,5,12,0.875,"RGG_40","Correct consensus",0.675
+2,6,1,0.7,"RGG_40","Correct consensus",0.75
+2,6,2,0.775,"RGG_40","Correct consensus",0.75
+2,6,3,0.85,"RGG_40","Correct consensus",0.75
+2,6,4,0.875,"RGG_40","Correct consensus",0.75
+2,6,5,0.925,"RGG_40","Correct consensus",0.75
+2,6,6,0.875,"RGG_40","Correct consensus",0.75
+2,6,7,0.925,"RGG_40","Correct consensus",0.75
+2,6,8,0.875,"RGG_40","Correct consensus",0.75
+2,6,9,0.85,"RGG_40","Correct consensus",0.75
+2,6,10,0.9,"RGG_40","Correct consensus",0.75
+2,6,11,0.925,"RGG_40","Correct consensus",0.75
+2,6,12,0.85,"RGG_40","Correct consensus",0.75
+3,1,1,0.7,"RGG_40","Correct consensus",0.7
+3,1,2,0.725,"RGG_40","Correct consensus",0.7
+3,1,3,0.7,"RGG_40","Correct consensus",0.7
+3,1,4,0.725,"RGG_40","Correct consensus",0.7
+3,1,5,0.675,"RGG_40","Correct consensus",0.7
+3,1,6,0.7,"RGG_40","Correct consensus",0.7
+3,1,7,0.725,"RGG_40","Correct consensus",0.7
+3,1,8,0.675,"RGG_40","Correct consensus",0.7
+3,1,9,0.65,"RGG_40","Correct consensus",0.7
+3,1,10,0.575,"RGG_40","Correct consensus",0.7
+3,1,11,0.75,"RGG_40","Correct consensus",0.7
+3,1,12,0.675,"RGG_40","Correct consensus",0.7
+3,2,1,0.625,"RGG_40","Correct consensus",0.675
+3,2,2,0.625,"RGG_40","Correct consensus",0.675
+3,2,3,0.725,"RGG_40","Correct consensus",0.675
+3,2,4,0.775,"RGG_40","Correct consensus",0.675
+3,2,5,0.825,"RGG_40","Correct consensus",0.675
+3,2,6,0.875,"RGG_40","Correct consensus",0.675
+3,2,7,0.825,"RGG_40","Correct consensus",0.675
+3,2,8,0.8,"RGG_40","Correct consensus",0.675
+3,2,9,0.85,"RGG_40","Correct consensus",0.675
+3,2,10,0.875,"RGG_40","Correct consensus",0.675
+3,2,11,0.825,"RGG_40","Correct consensus",0.675
+3,2,12,0.875,"RGG_40","Correct consensus",0.675
+3,3,1,0.65,"RGG_40","Correct consensus",0.75
+3,3,2,0.7,"RGG_40","Correct consensus",0.75
+3,3,3,0.675,"RGG_40","Correct consensus",0.75
+3,3,4,0.75,"RGG_40","Correct consensus",0.75
+3,3,5,0.75,"RGG_40","Correct consensus",0.75
+3,3,6,0.75,"RGG_40","Correct consensus",0.75
+3,3,7,0.725,"RGG_40","Correct consensus",0.75
+3,3,8,0.7,"RGG_40","Correct consensus",0.75
+3,3,9,0.7,"RGG_40","Correct consensus",0.75
+3,3,10,0.775,"RGG_40","Correct consensus",0.75
+3,3,11,0.75,"RGG_40","Correct consensus",0.75
+3,3,12,0.75,"RGG_40","Correct consensus",0.75
+3,4,1,0.725,"RGG_40","Correct consensus",0.65
+3,4,2,0.775,"RGG_40","Correct consensus",0.65
+3,4,3,0.775,"RGG_40","Correct consensus",0.65
+3,4,4,0.775,"RGG_40","Correct consensus",0.65
+3,4,5,0.8,"RGG_40","Correct consensus",0.65
+3,4,6,0.8,"RGG_40","Correct consensus",0.65
+3,4,7,0.75,"RGG_40","Correct consensus",0.65
+3,4,8,0.825,"RGG_40","Correct consensus",0.65
+3,4,9,0.825,"RGG_40","Correct consensus",0.65
+3,4,10,0.8,"RGG_40","Correct consensus",0.65
+3,4,11,0.8,"RGG_40","Correct consensus",0.65
+3,4,12,0.8,"RGG_40","Correct consensus",0.65
+3,5,1,0.6,"RGG_40","Correct consensus",0.625
+3,5,2,0.65,"RGG_40","Correct consensus",0.625
+3,5,3,0.65,"RGG_40","Correct consensus",0.625
+3,5,4,0.625,"RGG_40","Correct consensus",0.625
+3,5,5,0.675,"RGG_40","Correct consensus",0.625
+3,5,6,0.675,"RGG_40","Correct consensus",0.625
+3,5,7,0.65,"RGG_40","Correct consensus",0.625
+3,5,8,0.675,"RGG_40","Correct consensus",0.625
+3,5,9,0.75,"RGG_40","Correct consensus",0.625
+3,5,10,0.7,"RGG_40","Correct consensus",0.625
+3,5,11,0.725,"RGG_40","Correct consensus",0.625
+3,5,12,0.75,"RGG_40","Correct consensus",0.625
+3,6,1,0.65,"RGG_40","Correct consensus",0.675
+3,6,2,0.75,"RGG_40","Correct consensus",0.675
+3,6,3,0.725,"RGG_40","Correct consensus",0.675
+3,6,4,0.75,"RGG_40","Correct consensus",0.675
+3,6,5,0.775,"RGG_40","Correct consensus",0.675
+3,6,6,0.85,"RGG_40","Correct consensus",0.675
+3,6,7,0.85,"RGG_40","Correct consensus",0.675
+3,6,8,0.825,"RGG_40","Correct consensus",0.675
+3,6,9,0.85,"RGG_40","Correct consensus",0.675
+3,6,10,0.875,"RGG_40","Correct consensus",0.675
+3,6,11,0.95,"RGG_40","Correct consensus",0.675
+3,6,12,0.925,"RGG_40","Correct consensus",0.675
+4,1,1,0.725,"RGG_40","Correct consensus",0.75
+4,1,2,0.825,"RGG_40","Correct consensus",0.75
+4,1,3,0.825,"RGG_40","Correct consensus",0.75
+4,1,4,0.775,"RGG_40","Correct consensus",0.75
+4,1,5,0.75,"RGG_40","Correct consensus",0.75
+4,1,6,0.825,"RGG_40","Correct consensus",0.75
+4,1,7,0.85,"RGG_40","Correct consensus",0.75
+4,1,8,0.8,"RGG_40","Correct consensus",0.75
+4,1,9,0.8,"RGG_40","Correct consensus",0.75
+4,1,10,0.725,"RGG_40","Correct consensus",0.75
+4,1,11,0.675,"RGG_40","Correct consensus",0.75
+4,1,12,0.775,"RGG_40","Correct consensus",0.75
+4,2,1,0.775,"RGG_40","Correct consensus",0.75
+4,2,2,0.9,"RGG_40","Correct consensus",0.75
+4,2,3,0.875,"RGG_40","Correct consensus",0.75
+4,2,4,0.8,"RGG_40","Correct consensus",0.75
+4,2,5,0.925,"RGG_40","Correct consensus",0.75
+4,2,6,0.825,"RGG_40","Correct consensus",0.75
+4,2,7,0.775,"RGG_40","Correct consensus",0.75
+4,2,8,0.85,"RGG_40","Correct consensus",0.75
+4,2,9,0.875,"RGG_40","Correct consensus",0.75
+4,2,10,0.85,"RGG_40","Correct consensus",0.75
+4,2,11,0.875,"RGG_40","Correct consensus",0.75
+4,2,12,0.9,"RGG_40","Correct consensus",0.75
+4,3,1,0.775,"RGG_40","Correct consensus",0.85
+4,3,2,0.9,"RGG_40","Correct consensus",0.85
+4,3,3,0.85,"RGG_40","Correct consensus",0.85
+4,3,4,0.825,"RGG_40","Correct consensus",0.85
+4,3,5,0.85,"RGG_40","Correct consensus",0.85
+4,3,6,0.85,"RGG_40","Correct consensus",0.85
+4,3,7,0.875,"RGG_40","Correct consensus",0.85
+4,3,8,0.85,"RGG_40","Correct consensus",0.85
+4,3,9,0.85,"RGG_40","Correct consensus",0.85
+4,3,10,0.875,"RGG_40","Correct consensus",0.85
+4,3,11,0.875,"RGG_40","Correct consensus",0.85
+4,3,12,0.8,"RGG_40","Correct consensus",0.85
+4,4,1,0.675,"RGG_40","Correct consensus",0.725
+4,4,2,0.85,"RGG_40","Correct consensus",0.725
+4,4,3,0.9,"RGG_40","Correct consensus",0.725
+4,4,4,0.875,"RGG_40","Correct consensus",0.725
+4,4,5,0.925,"RGG_40","Correct consensus",0.725
+4,4,6,0.95,"RGG_40","Correct consensus",0.725
+4,4,7,0.9,"RGG_40","Correct consensus",0.725
+4,4,8,0.95,"RGG_40","Correct consensus",0.725
+4,4,9,0.925,"RGG_40","Correct consensus",0.725
+4,4,10,0.95,"RGG_40","Correct consensus",0.725
+4,4,11,1,"RGG_40","Correct consensus",0.725
+4,4,12,1,"RGG_40","Correct consensus",0.725
+4,5,1,0.675,"RGG_40","Correct consensus",0.7
+4,5,2,0.675,"RGG_40","Correct consensus",0.7
+4,5,3,0.7,"RGG_40","Correct consensus",0.7
+4,5,4,0.75,"RGG_40","Correct consensus",0.7
+4,5,5,0.8,"RGG_40","Correct consensus",0.7
+4,5,6,0.775,"RGG_40","Correct consensus",0.7
+4,5,7,0.8,"RGG_40","Correct consensus",0.7
+4,5,8,0.825,"RGG_40","Correct consensus",0.7
+4,5,9,0.825,"RGG_40","Correct consensus",0.7
+4,5,10,0.85,"RGG_40","Correct consensus",0.7
+4,5,11,0.825,"RGG_40","Correct consensus",0.7
+4,5,12,0.825,"RGG_40","Correct consensus",0.7
+4,6,1,0.7,"RGG_40","Correct consensus",0.7
+4,6,2,0.825,"RGG_40","Correct consensus",0.7
+4,6,3,0.85,"RGG_40","Correct consensus",0.7
+4,6,4,0.9,"RGG_40","Correct consensus",0.7
+4,6,5,0.875,"RGG_40","Correct consensus",0.7
+4,6,6,0.85,"RGG_40","Correct consensus",0.7
+4,6,7,0.925,"RGG_40","Correct consensus",0.7
+4,6,8,0.925,"RGG_40","Correct consensus",0.7
+4,6,9,0.975,"RGG_40","Correct consensus",0.7
+4,6,10,0.95,"RGG_40","Correct consensus",0.7
+4,6,11,0.95,"RGG_40","Correct consensus",0.7
+4,6,12,0.9,"RGG_40","Correct consensus",0.7

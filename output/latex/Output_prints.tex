@@ -1,0 +1,90 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 1251
+
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, total={2in, 2in}]{geometry}
+\pagestyle{plain}
+%\setlength{\parskip}{\medskipamount}
+%\setlength{\parindent}{0pt}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{esint}
+\usepackage{booktabs}
+\usepackage[comma,round]{natbib}
+\onehalfspacing
+\usepackage[unicode=true,
+ bookmarks=false,
+ breaklinks=false,pdfborder={0 0 1},backref=section,colorlinks=false]
+ {hyperref}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+
+
+
+\usepackage{color}
+\usepackage{amsthm}
+
+\usepackage{fullpage}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{enumerate}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{subcaption}
+
+
+\captionsetup[subfigure]{labelformat=empty}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+\newtheorem{claim}{Claim}
+\newtheorem{axiom}{Axiom}
+\newtheorem{remark}{Remark}
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{conjecture}{}[section]
+\newtheorem{observation}{}[section]
+
+\def\argmax{{\rm argmax}}
+\def\argmin{{\rm argmin}}
+%\def\beginproof{\par\noindent {\bf Proof.}\ \ }
+%\def\endproof{\hskip .5cm \Box \vskip .5cm}
+
+
+\newcommand{\bs}{\boldsymbol}
+\newcommand{\ve}{\varepsilon}
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\V}{\mathrm{Var}}
+\newcommand{\Sign}{\mathrm{Sign}}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\ul}[1]{\underline{#1}}
+
+\newcommand{\ignore}[1]{}
+
+\makeatother
+
+\begin{document}
+	
+\title{Adaptation of Galeotti-JET model to endogenous networks}
+
+\maketitle
+\section{Content}
+\input{Regression_indicator0.2,n=10.tex}
+\input{Regression_indicator0.2,n=40.tex}
+\input{Regression_indicator0.15,n=10.tex}
+\input{Regression_indicator0.15,n=40.tex}
+
+\input{Match_imi_lead,n_10.tex}
+\input{Match_imi_lead,n_40.tex}
+\input{Match_fol_sig,n_10.tex}
+\input{Match_fol_sig,n_40.tex}
+
+\input{Match_mistake,n_10.tex}
+\input{Match_mistake,n_40.tex}
+\end{document}
